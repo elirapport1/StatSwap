@@ -1,0 +1,131 @@
+/* 
+   GameEndModal.module.css
+   Provides the full-screen popup style, plus the "correct answer grid" style
+*/
+
+/* The full-screen dark overlay */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+  }
+  
+  /* The white box in the center */
+  .modal {
+    background-color: #fff;
+    color: #000;
+    width: 80%;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .resultText {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Buttons */
+  .shareButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .closeButton {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  /* Below are the "correct answer grid" classes */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  
+  /* The top row with the corner cell + 3 player labels */
+  .headerRow {
+    display: grid;
+    grid-template-columns: 80px repeat(3, 80px);
+    gap: 8px;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  .cornerLabel {
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Player label tiles */
+  .playerLabel {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 8px;
+  }
+  
+  /* Each row for categories + 3 cells */
+  .gridRow {
+    display: grid;
+    grid-template-columns: 80px repeat(3, 80px);
+    gap: 8px;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  /* The left-most category label tile */
+  .categoryLabel {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 8px;
+  }
+  
+  /* Each "cell" with the final correct stat */
+  .cell {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background-color 0.2s;
+  }
+  

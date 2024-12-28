@@ -1,0 +1,122 @@
+.guessControls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    min-height: 3rem; /* to keep space if no button is shown */
+  }
+  
+  .submitButton {
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    color: white;
+    background-color: #007bff;
+    border-radius: 6px;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  }
+  
+  /* When disabled, we make it "hollow" + faded */
+  .submitButton:disabled {
+    background-color: transparent;      /* no fill */
+    border-color: #007bff;             /* outline border */
+    color: #007bff;   /* faded text color */
+    cursor: not-allowed;
+  }
+
+  
+  .submitButton:hover {
+    background-color: #007bffb6;
+    border-color: #007bffb6;
+  }
+  
+
+  .alertContainer {
+    position: absolute;
+    top: -4rem;              /* or some offset if you prefer, e.g. top: 0.5rem; */
+    left: 0;
+    right: 0;            /* so it stretches across the container's width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center horizontally within .mainContainer */
+    gap: 0.5rem;
+    z-index: 9999;
+  }
+  
+  
+  /* Example wide banner style for each message */
+  .correctBanner,
+  .oneAwayBanner,
+  .incorrectBanner,
+  .endGameBanner {
+    width: 80%;            /* wide look */
+    max-width: 600px;      /* or 700px, pick your preference */
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* You already have colors set for each, but if you want them bigger: */
+  .correctBanner {
+    background-color: #28a745; /* green */
+    color: #fff;
+  }
+  
+  .incorrectBanner {
+    background-color: #dc3545; /* red */
+    color: #fff;
+  }
+  
+  .oneAwayBanner {
+    background-color: #ffc107; /* yellow */
+    color: #333;
+  }
+  
+  .endGameBanner {
+    background-color: #dc3545; /* or any color for "You Win"/"You Lose" */
+    color: #fff;
+  }
+
+  
+  /* 
+
+  .oneAwayBanner {
+    background-color: #ffc107;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .endGameBanner {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .correctBanner {
+    background-color: #28a745; 
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .incorrectBanner {
+    background-color: #dc3545; 
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  */

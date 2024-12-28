@@ -1,0 +1,23 @@
+.placedTile {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+    transition: opacity 0.2s;
+    font-weight: bold;
+    position: absolute; /* or static, depends on your preference */
+  }
+  
+  .locked {
+    background-color: green;
+    color: #fff; /* so text is visible on green */
+    cursor: default; /* no grabbing hand if locked */
+  }
+  

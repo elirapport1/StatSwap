@@ -1,0 +1,13 @@
+.bankContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem auto;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1rem;
+  }
+  

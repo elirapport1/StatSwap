@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+  }
+  
+  .headerRow {
+    display: grid;
+    /* 4 columns of 80px each, matching the 80×80 answer cells */
+    grid-template-columns: repeat(4, 80px);
+    gap: 8px;
+    margin-bottom: 1rem;
+    /* Center the entire grid horizontally */
+    justify-content: center;
+  }
+  
+  .gridRow {
+    display: grid;
+    /* 4 columns of 80px each, matching the 80×80 answer cells */
+    grid-template-columns: repeat(4, 80px);
+    gap: 8px;
+    margin-bottom: 1rem;
+    /* Center the entire grid horizontally */
+    justify-content: center;
+  }
+  
+  
+  .cornerLabel {
+    /* top-left corner cell (empty) */
+  }
+  
+  .playerLabel {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 0; /* changed from 8px to 0 */
+  }
+  
+  .categoryLabel {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 0; /* changed from 8px to 0 */
+  }
+  
+  
