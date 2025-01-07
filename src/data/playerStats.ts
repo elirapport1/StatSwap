@@ -1,9 +1,20 @@
 // src/data/playerStats.ts
 import * as fs from 'fs';
 import * as path from 'path';
-import { scrapeStatFromStatmuse } from './scrape_stats';
+import { scrapeStatFromStatmuse } from './scrape_stats.ts';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+
+// Add type definitions at the top
+export interface PlayerStat {
+  "Career Points": number;
+  "Career Rebounds Per Game": number;
+  weight: number;
+}
+
+export interface PlayerStatsData {
+  [playerName: string]: PlayerStat;
+}
 
 // __filename / __dirname
 const __filename = fileURLToPath(import.meta.url);
@@ -28,8 +39,16 @@ if (!fs.existsSync(statsFilePath)) {
 const player_fileContent = fs.readFileSync(player_filePath, 'utf-8');
 const player_names = player_fileContent.split('\n').filter((name) => name.trim() !== '');
 
+// Define valid stats that match our PlayerStat interface
+const validStats = ["Career Points", "Career Rebounds Per Game", "weight"] as const;
+type ValidStat = typeof validStats[number];
+
+// Read and filter stats to only include valid ones
 const statsFileContent = fs.readFileSync(statsFilePath, 'utf-8');
-const stats = statsFileContent.split('\n').filter((stat) => stat.trim() !== '');
+const stats = statsFileContent
+  .split('\n')
+  .filter((stat) => stat.trim() !== '')
+  .filter((stat): stat is ValidStat => validStats.includes(stat as ValidStat));
 
 // Utility to pick N random items
 function getRandomItems<T>(arr: T[], count: number): T[] {
@@ -38,29 +57,26 @@ function getRandomItems<T>(arr: T[], count: number): T[] {
   return shuffled.slice(0, count);
 }
 
-// Type definition
-interface PlayerStats {
-  [player: string]: {
-    [stat: string]: number | null;
-  };
-}
-
 // We'll export this at the bottom
-let playerStats: PlayerStats = {};
+export let playerStats: PlayerStatsData = {};
 
 /**
  * fetchPlayerStats:
  *  For each of the 3 random players, and 3 random stats, we query Statmuse
  *  and store the numeric result in an object: { playerName: { statName: value } }
  */
-async function fetchPlayerStats(players: string[], statList: string[]): Promise<PlayerStats> {
-  const results: PlayerStats = {};
+export async function fetchPlayerStats(players: string[], statList: ValidStat[]): Promise<PlayerStatsData> {
+  const results: PlayerStatsData = {};
   for (const player of players) {
-    results[player] = {};
+    results[player] = {
+      "Career Points": 0,
+      "Career Rebounds Per Game": 0,
+      "weight": 0
+    };
     for (const stat of statList) {
       const query = `${player} ${stat}`;
       const statValue = await scrapeStatFromStatmuse(query);
-      results[player][stat] = statValue;
+      results[player][stat] = statValue ?? 0;
     }
   }
   return results;
@@ -94,8 +110,5 @@ if (fs.existsSync(playerStatsFilePath)) {
   // If the file doesn't exist, you can choose to either generate it now or leave it empty
   console.warn('player_stats.json not found, playerStats is empty or re-run initializePlayerStats().');
 }
-
-// We'll export the loaded "playerStats" object
-// export { playerStats };
 
 initializePlayerStats().catch(console.error);

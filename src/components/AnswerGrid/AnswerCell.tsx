@@ -1,15 +1,15 @@
 import React from 'react';
 import { useDroppable } from '@dnd-kit/core';
 import styles from './AnswerCell.module.css';
-import PlacedTile from './PlacedTile';
+import PlacedTile from './PlacedTile.tsx';
 
 interface AnswerCellProps {
   droppableId: string;
   occupantTileId: string | null;
   occupantValue: string | null;
   locked: boolean;
-  isRed: boolean; 
-  shakingTiles: Set<string>; // NEW
+  wasIncorrect: boolean;
+  shakingTiles?: Set<string>;
 }
 
 const AnswerCell: React.FC<AnswerCellProps> = ({
@@ -17,7 +17,7 @@ const AnswerCell: React.FC<AnswerCellProps> = ({
   occupantTileId,
   occupantValue,
   locked,
-  isRed,
+  wasIncorrect,
   shakingTiles
 }) => {
   const { setNodeRef, isOver } = useDroppable({
@@ -44,8 +44,8 @@ const AnswerCell: React.FC<AnswerCellProps> = ({
           tileId={occupantTileId}
           statValue={occupantValue}
           isLocked={locked}
-          isRed={isRed}
-          shakingTiles={shakingTiles}
+          isRed={wasIncorrect}
+          shakingTiles={shakingTiles || new Set()}
         />
       )}
     </div>

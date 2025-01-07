@@ -8,13 +8,15 @@ interface PlacedTileProps {
   statValue: string;
   isLocked: boolean;
   isRed: boolean;
+  shakingTiles: Set<string>;
 }
 
 const PlacedTile: React.FC<PlacedTileProps> = ({
   tileId,
   statValue,
   isLocked,
-  isRed
+  isRed,
+  shakingTiles
 }) => {
   const {
     attributes,

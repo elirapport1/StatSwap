@@ -1,6 +1,9 @@
 import React from 'react';
-import playerStats from '../../data/player_stats.json';
+import playerStatsRaw from '../../data/player_stats.json' with { type: 'json' };
+import type { PlayerStat, PlayerStatsData } from '../../data/playerStats.ts';
 import styles from './GameEndModal.module.css';
+
+const playerStats = playerStatsRaw as PlayerStatsData;
 
 interface GameEndModalProps {
   onClose: () => void;             // closes the popup
@@ -80,7 +83,7 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
     if (!players.length) {
       return <div>No data loaded for the correct answer grid.</div>;
     }
-    const categories = Object.keys(playerStats[players[0]]);
+    const categories = Object.keys(playerStats[players[0]]) as Array<keyof PlayerStat>;
 
     return (
       <div className={styles.container}>
@@ -109,7 +112,7 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
             </div>
 
             {players.map((playerName) => {
-              const correctValue = playerStats[playerName][category];
+              const correctValue = playerStats[playerName][category as keyof PlayerStat];
               return (
                 <div
                   key={`${playerName}-${category}`}

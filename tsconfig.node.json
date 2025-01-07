@@ -3,17 +3,23 @@
       "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
       "target": "ES2022",
       "lib": ["ES2023"],
-      // The critical part:
-      "module": "nodenext",
+      // The critical parts:
+      "module": "NodeNext",
       "moduleResolution": "nodenext",
   
+      // Optional to quell Babel type errors:
       "skipLibCheck": true,
+  
+      // For possible JSON imports in Node code:
+      "resolveJsonModule": true,
+      "esModuleInterop": true,                // Ensure interoperability
+  
       "allowImportingTsExtensions": true,
       "isolatedModules": true,
       "moduleDetection": "force",
       "noEmit": true,
   
-      // Linting
+      // Linting/strict
       "strict": true,
       "noUnusedLocals": true,
       "noUnusedParameters": true,
@@ -22,4 +28,3 @@
     },
     "include": ["vite.config.ts"]
   }
-  

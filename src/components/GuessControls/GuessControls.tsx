@@ -1,5 +1,5 @@
 import React from 'react';
-import { useGameContext } from '../../context/GameContext';
+import { useGameContext } from '../../context/GameContext.tsx';
 import styles from './GuessControls.module.css';
 
 interface GuessControlsProps {

@@ -1,22 +1,25 @@
 {
-  "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2022",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
-  },
-  "include": ["src"]
-}
+    "compilerOptions": {
+      "module": "NodeNext",
+      "moduleResolution": "nodenext",
+  
+      // This makes TS understand the DOM types (HTMLDivElement, <div>, etc.)
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      // This ensures <div> ... </div> is valid in .tsx:
+      "jsx": "react-jsx",
+      "resolveJsonModule": true,
+      // Turn this on if your Babel packages are generating type complaints:
+      "skipLibCheck": true,
+  
+      // “strict” mode if you want:
+      "strict": true,
+      
+      // No compile output for CRA or Vite setups:
+      "noEmit": true,
+      "allowImportingTsExtensions": true,
+      // For incremental builds (optional):
+      "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo"
+    },
+    // Make sure we include your actual source folder:
+    "include": ["src"]
+  }

@@ -1,11 +1,14 @@
 import React from 'react';
-import AnswerCell from './AnswerCell';
+import AnswerCell from './AnswerCell.tsx';
 import styles from './AnswerGrid.module.css';
-import playerStats from '../../data/player_stats.json';
+import playerStatsRaw from '../../data/player_stats.json' with { type: 'json' };
+import type { PlayerStat, PlayerStatsData } from '../../data/playerStats.ts';
+
+const playerStats = playerStatsRaw as PlayerStatsData;
 
 interface CellStatus {
   locked: boolean;
-  incorrectHistory: Set<string>; 
+  incorrectHistory: Set<string>;
 }
 
 interface AnswerGridProps {

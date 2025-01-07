@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDroppable } from '@dnd-kit/core';
-import BankTile from './BankTile';
+import BankTile from './BankTile.tsx';
 import styles from './Bank.module.css';
 
 /**

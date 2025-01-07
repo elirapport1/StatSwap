@@ -1,15 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { DndContext, DragOverEvent, DragEndEvent } from '@dnd-kit/core';
-import playerStats from './data/player_stats.json';
-
-import Header from './components/Header/Header';
-import AttemptsIndicator from './components/AttemptsIndicator/AttemptsIndicator';
-import AnswerGrid from './components/AnswerGrid/AnswerGrid';
-import Bank from './components/Bank/Bank';
-import { useGameContext } from './context/GameContext';
-import GuessControls from './components/GuessControls/GuessControls';
+import Header from './components/Header/Header.tsx';
+import AttemptsIndicator from './components/AttemptsIndicator/AttemptsIndicator.tsx';
+import AnswerGrid from './components/AnswerGrid/AnswerGrid.tsx';
+import Bank from './components/Bank/Bank.tsx';
+import { useGameContext } from './context/GameContext.tsx';
+import GuessControls from './components/GuessControls/GuessControls.tsx';
 import styles from './components/GuessControls/GuessControls.module.css';
-import GameEndModal from './components/GameEndModal/GameEndModal';
+import GameEndModal from './components/GameEndModal/GameEndModal.tsx';
+import playerStatsRaw from './data/player_stats.json' with { type: 'json' };
+import type { PlayerStat, PlayerStatsData } from './data/playerStats.ts';
+
+const playerStats = playerStatsRaw as PlayerStatsData;
+
+// Helper to get today's date as a string for localStorage key
+const getTodayKey = () => {
+  const date = new Date();
+  return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+};
+
+// Helper to check if saved game is from today
+const isSameDay = (savedDate: string) => {
+  return savedDate === getTodayKey();
+};
 
 /**
  * placements: cellId -> occupantTileId
@@ -40,6 +53,18 @@ function parseCategory(cellId: string): string {
   return cellId.split('-').slice(1).join('-').trim();
 }
 
+// Interface for saved game state
+interface SavedGameState {
+  placements: Placements;
+  cellStatus: Record<string, { locked: boolean; incorrectHistory: string[] }>;
+  attemptsLeft: number;
+  gameResult: 'none' | 'win' | 'lose';
+  date: string;
+  allTiles: TileData[];
+  finalGrid: ('correct' | 'incorrect')[][];
+  attemptsUsed: number;
+}
+
 const App: React.FC = () => {
   const {
     attemptsLeft,
@@ -49,35 +74,10 @@ const App: React.FC = () => {
   } = useGameContext();
 
   const [activeId, setActiveId] = useState<string | null>(null);
-
-  /**
-   * 1) Build the tile data from playerStats
-   */
   const [allTiles, setAllTiles] = useState<TileData[]>([]);
-
-  useEffect(() => {
-    const statsArray: string[] = [];
-    for (const p in playerStats) {
-      const statsObj = playerStats[p];
-      for (const c in statsObj) {
-        const val = statsObj[c];
-        statsArray.push(val != null ? String(val) : 'N/A');
-      }
-    }
-    const shuffled = [...statsArray].sort(() => 0.5 - Math.random());
-    const tileObjs = shuffled.map((val, i) => ({
-      tileId: `bankTile-${i}`,
-      statValue: val
-    }));
-    setAllTiles(tileObjs);
-  }, []);
-
-  // tileMap: tileId -> statValue
-  const tileMap = allTiles.reduce<Record<string, string>>((acc, t) => {
-    acc[t.tileId] = t.statValue;
-    return acc;
-  }, {});
-
+  const [finalGrid, setFinalGrid] = useState<('correct'|'incorrect')[][]>([[],[],[]]);
+  const [attemptsUsed, setAttemptsUsed] = useState(0);
+  
   /**
    * 2) placements: For each cell, which occupant tile is there?
    */
@@ -85,7 +85,7 @@ const App: React.FC = () => {
     const init: Placements = {};
     const players = Object.keys(playerStats);
     if (!players.length) return init;
-    const categories = Object.keys(playerStats[players[0]]);
+    const categories = Object.keys(playerStats[players[0]]) as Array<keyof PlayerStat>;
     for (const p of players) {
       for (const c of categories) {
         init[`${p}-${c}`] = null;
@@ -103,7 +103,7 @@ const App: React.FC = () => {
     const init: Record<string, CellStatus> = {};
     const players = Object.keys(playerStats);
     if (!players.length) return init;
-    const categories = Object.keys(playerStats[players[0]]);
+    const categories = Object.keys(playerStats[players[0]]) as Array<keyof PlayerStat>;
     for (const p of players) {
       for (const c of categories) {
         init[`${p}-${c}`] = {
@@ -119,9 +119,82 @@ const App: React.FC = () => {
   const [correctBanner, setCorrectBanner] = useState(false);
   const [incorrectBanner, setIncorrectBanner] = useState(false);
 
-  // For final popup
-  const [finalGrid, setFinalGrid] = useState<('correct'|'incorrect')[][]>([[],[],[]]);
-  const [attemptsUsed, setAttemptsUsed] = useState(0);
+  // Initialize game state from localStorage or create new game
+  useEffect(() => {
+    const savedState = localStorage.getItem('statswap_game_state');
+    if (savedState) {
+      const parsed = JSON.parse(savedState) as SavedGameState;
+      
+      // Only restore if it's from today
+      if (isSameDay(parsed.date)) {
+        setAllTiles(parsed.allTiles);
+        setPlacements(parsed.placements);
+        // Convert incorrectHistory arrays back to Sets
+        const restoredCellStatus: Record<string, CellStatus> = {};
+        Object.entries(parsed.cellStatus).forEach(([key, value]) => {
+          restoredCellStatus[key] = {
+            locked: value.locked,
+            incorrectHistory: new Set(value.incorrectHistory)
+          };
+        });
+        setCellStatus(restoredCellStatus);
+        setAttemptsLeft(parsed.attemptsLeft);
+        setGameResult(parsed.gameResult);
+        setFinalGrid(parsed.finalGrid);
+        setAttemptsUsed(parsed.attemptsUsed);
+        return;
+      }
+    }
+
+    // If no saved state or not from today, initialize new game
+    const statsArray: string[] = [];
+    for (const p in playerStats) {
+      const statsObj = playerStats[p];
+      for (const key in statsObj) {
+        if (Object.prototype.hasOwnProperty.call(statsObj, key)) {
+          const val = statsObj[key as keyof PlayerStat];
+          statsArray.push(String(val));
+        }
+      }
+    }
+    const shuffled = [...statsArray].sort(() => 0.5 - Math.random());
+    const tileObjs = shuffled.map((val, i) => ({
+      tileId: `bankTile-${i}`,
+      statValue: val
+    }));
+    setAllTiles(tileObjs);
+  }, [setAttemptsLeft, setGameResult]);
+
+  // Save game state to localStorage whenever it changes
+  useEffect(() => {
+    // Don't save until game is initialized and all state is ready
+    if (allTiles.length === 0 || !placements || !cellStatus) return;
+
+    const gameState: SavedGameState = {
+      placements,
+      cellStatus: Object.entries(cellStatus).reduce((acc, [key, value]) => {
+        acc[key] = {
+          locked: value.locked,
+          incorrectHistory: Array.from(value.incorrectHistory)
+        };
+        return acc;
+      }, {} as Record<string, { locked: boolean; incorrectHistory: string[] }>),
+      attemptsLeft,
+      gameResult,
+      date: getTodayKey(),
+      allTiles,
+      finalGrid,
+      attemptsUsed
+    };
+    
+    localStorage.setItem('statswap_game_state', JSON.stringify(gameState));
+  }, [placements, cellStatus, attemptsLeft, gameResult, allTiles, finalGrid, attemptsUsed]);
+
+  // tileMap: tileId -> statValue
+  const tileMap = allTiles.reduce<Record<string, string>>((acc, t) => {
+    acc[t.tileId] = t.statValue;
+    return acc;
+  }, {});
 
   function updatePlacements(fn: (prev: Placements) => Placements) {
     setPlacements((prev) => fn(prev));
@@ -149,7 +222,7 @@ const App: React.FC = () => {
       return;
     }
     const fromTileId = active.id;
-    const toCellId = over.id;
+    const toCellId = over.id as string;
 
     // If dropping onto bank => remove occupant from old cell
     if (toCellId === 'STAT_BANK') {
@@ -195,7 +268,7 @@ const App: React.FC = () => {
         copy[toCellId] = null;
       }
 
-      copy[toCellId] = fromTileId;
+      copy[toCellId] = fromTileId as string;
       return copy;
     });
 
@@ -215,7 +288,7 @@ const App: React.FC = () => {
     const newPlacements = { ...placements };
     const newCellStatus = { ...cellStatus };
     const players = Object.keys(playerStats);
-    const categories = Object.keys(playerStats[players[0]]);
+    const categories = Object.keys(playerStats[players[0]]) as Array<keyof PlayerStat>;
 
     let allCorrect = true;
 
@@ -229,7 +302,7 @@ const App: React.FC = () => {
 
       // Check correctness
       const p = parsePlayer(cid);
-      const cat = parseCategory(cid);
+      const cat = parseCategory(cid) as keyof PlayerStat;
       const needed = String(playerStats[p][cat]);
       const tileVal = tileMap[occupantTile];
 
@@ -279,7 +352,7 @@ const App: React.FC = () => {
 
   function buildFinalGridForPopup(placementSnapshot: Placements) {
     const players = Object.keys(playerStats);
-    const categories = Object.keys(playerStats[players[0]]);
+    const categories = Object.keys(playerStats[players[0]]) as Array<keyof PlayerStat>;
     const grid: ('correct'|'incorrect')[][] = [[],[],[]];
     for (let i=0;i<3;i++){
       for (let j=0;j<3;j++){
@@ -344,6 +417,6 @@ const App: React.FC = () => {
       </DndContext>
     </div>
   );
-};
+}
 
 export default App;
