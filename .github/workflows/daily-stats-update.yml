@@ -50,10 +50,7 @@ jobs:
               "allowJs": true,
               "checkJs": false,
               "strict": true,
-              "moduleDetection": "force",
-              "allowImportingTsExtensions": true,
-              "emitDeclarationOnly": false,
-              "noEmit": false
+              "moduleDetection": "force"
             },
             "ts-node": {
               "esm": true
@@ -69,6 +66,10 @@ jobs:
 
       - name: Compile and run stats generator
         run: |
+          # Create a temporary TypeScript file without .ts extension in import
+          sed 's/from '\''\.\/scrape_stats'\''/from '\''\.\/scrape_stats\.js'\''/g' src/data/playerStats.ts > src/data/playerStats.temp.ts
+          mv src/data/playerStats.temp.ts src/data/playerStats.ts
+          # Now compile and run
           npx tsc -p tsconfig.build.json
           node dist-scripts/data/playerStats.js
         env:
@@ -87,6 +88,8 @@ jobs:
 
       - name: Commit and push if changes
         run: |
+          # Restore original playerStats.ts before committing
+          git checkout src/data/playerStats.ts
           git add src/data/player_stats.json
           git diff --staged --quiet || (git commit -m "Update player stats for $(date +'%Y-%m-%d')" && git push)
         env:
