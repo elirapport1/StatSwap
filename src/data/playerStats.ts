@@ -16,14 +16,22 @@ export interface PlayerStatsData {
   [playerName: string]: PlayerStat;
 }
 
-// __filename / __dirname
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+// Get the directory path in a way that works with both ESM and CommonJS
+const getCurrentDir = () => {
+  try {
+    const __filename = fileURLToPath(import.meta.url);
+    return dirname(__filename);
+  } catch (e) {
+    return __dirname;
+  }
+};
+
+const __currentDir = getCurrentDir();
 
 // File paths
-const player_filePath = path.join(__dirname, 'player_names.txt');
-const statsFilePath = path.join(__dirname, 'stats.txt');
-const playerStatsFilePath = path.join(__dirname, 'player_stats.json');
+const player_filePath = path.join(__currentDir, 'player_names.txt');
+const statsFilePath = path.join(__currentDir, 'stats.txt');
+const playerStatsFilePath = path.join(__currentDir, 'player_stats.json');
 
 // If these text files don't exist, handle the error.
 if (!fs.existsSync(player_filePath)) {
@@ -50,11 +58,39 @@ const stats = statsFileContent
   .filter((stat) => stat.trim() !== '')
   .filter((stat): stat is ValidStat => validStats.includes(stat as ValidStat));
 
-// Utility to pick N random items
+// Utility to pick N random items with seed based on date
 function getRandomItems<T>(arr: T[], count: number): T[] {
-  // Make a copy to avoid in-place shuffle
-  const shuffled = [...arr].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
+  // Create a seeded random number based on today's date
+  const today = new Date();
+  const dateString = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+  let seed = 0;
+  for (let i = 0; i < dateString.length; i++) {
+    seed = ((seed << 5) - seed) + dateString.charCodeAt(i);
+    seed = seed & seed; // Convert to 32-bit integer
+  }
+
+  // Seeded shuffle function
+  const seededShuffle = (array: T[]): T[] => {
+    const shuffled = [...array];
+    let currentIndex = shuffled.length;
+    let temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+      // Pick a remaining element...
+      randomIndex = Math.floor((seed = (seed * 9301 + 49297) % 233280) / 233280 * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = shuffled[currentIndex];
+      shuffled[currentIndex] = shuffled[randomIndex];
+      shuffled[randomIndex] = temporaryValue;
+    }
+
+    return shuffled;
+  };
+
+  return seededShuffle(arr).slice(0, count);
 }
 
 // We'll export this at the bottom
@@ -84,7 +120,7 @@ export async function fetchPlayerStats(players: string[], statList: ValidStat[])
 
 /**
  * initializePlayerStats():
- *  1) Randomly pick 3 players, 3 stats
+ *  1) Randomly pick 3 players, 3 stats using date-based seed
  *  2) Scrape their stats
  *  3) Write to player_stats.json
  */
@@ -97,18 +133,26 @@ export async function initializePlayerStats() {
   fs.writeFileSync(playerStatsFilePath, JSON.stringify(fetched, null, 2), 'utf-8');
 
   console.log('Generated new daily playerStats:', fetched);
+  return fetched;
 }
 
-/**
- * If "player_stats.json" already exists (e.g. was generated at midnight),
- * we read it so that multiple users see the same data.
- */
-if (fs.existsSync(playerStatsFilePath)) {
-  const raw = fs.readFileSync(playerStatsFilePath, 'utf-8');
-  playerStats = JSON.parse(raw);
+// Only run initialization if this file is being run directly
+if (import.meta.url === new URL(process.argv[1], 'file:').href) {
+  initializePlayerStats()
+    .then((stats) => {
+      console.log('Successfully generated new player stats');
+      process.exit(0);
+    })
+    .catch((error) => {
+      console.error('Error generating player stats:', error);
+      process.exit(1);
+    });
 } else {
-  // If the file doesn't exist, you can choose to either generate it now or leave it empty
-  console.warn('player_stats.json not found, playerStats is empty or re-run initializePlayerStats().');
+  // If being imported, just load existing stats
+  if (fs.existsSync(playerStatsFilePath)) {
+    const raw = fs.readFileSync(playerStatsFilePath, 'utf-8');
+    playerStats = JSON.parse(raw);
+  } else {
+    console.warn('player_stats.json not found, playerStats is empty.');
+  }
 }
-
-initializePlayerStats().catch(console.error);

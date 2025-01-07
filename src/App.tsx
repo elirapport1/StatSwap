@@ -13,15 +13,61 @@ import type { PlayerStat, PlayerStatsData } from './data/playerStats.ts';
 
 const playerStats = playerStatsRaw as PlayerStatsData;
 
+// Add these constants at the top of the file, after imports
+const STORAGE_KEY = 'statswap_game_state';
+const STORAGE_VERSION = '1.0';
+
 // Helper to get today's date as a string for localStorage key
 const getTodayKey = () => {
   const date = new Date();
-  return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+  // Use UTC to ensure consistency across timezones
+  return `${date.getUTCFullYear()}-${date.getUTCMonth() + 1}-${date.getUTCDate()}`;
 };
 
 // Helper to check if saved game is from today
 const isSameDay = (savedDate: string) => {
   return savedDate === getTodayKey();
+};
+
+// Helper to safely interact with localStorage
+const storage = {
+  save: (data: SavedGameState) => {
+    try {
+      const saveData = {
+        ...data,
+        version: STORAGE_VERSION
+      };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(saveData));
+    } catch (e) {
+      console.error('Failed to save game state:', e);
+    }
+  },
+  load: (): SavedGameState | null => {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (!saved) return null;
+      
+      const parsed = JSON.parse(saved);
+      
+      // Version check (for future compatibility)
+      if (parsed.version !== STORAGE_VERSION) {
+        localStorage.removeItem(STORAGE_KEY);
+        return null;
+      }
+      
+      return parsed;
+    } catch (e) {
+      console.error('Failed to load game state:', e);
+      return null;
+    }
+  },
+  clear: () => {
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch (e) {
+      console.error('Failed to clear game state:', e);
+    }
+  }
 };
 
 /**
@@ -63,6 +109,7 @@ interface SavedGameState {
   allTiles: TileData[];
   finalGrid: ('correct' | 'incorrect')[][];
   attemptsUsed: number;
+  version?: string;
 }
 
 const App: React.FC = () => {
@@ -121,32 +168,35 @@ const App: React.FC = () => {
 
   // Initialize game state from localStorage or create new game
   useEffect(() => {
-    const savedState = localStorage.getItem('statswap_game_state');
-    if (savedState) {
-      const parsed = JSON.parse(savedState) as SavedGameState;
-      
-      // Only restore if it's from today
-      if (isSameDay(parsed.date)) {
-        setAllTiles(parsed.allTiles);
-        setPlacements(parsed.placements);
+    const savedState = storage.load();
+    
+    if (savedState && isSameDay(savedState.date)) {
+      try {
+        setAllTiles(savedState.allTiles);
+        setPlacements(savedState.placements);
+        
         // Convert incorrectHistory arrays back to Sets
         const restoredCellStatus: Record<string, CellStatus> = {};
-        Object.entries(parsed.cellStatus).forEach(([key, value]) => {
+        Object.entries(savedState.cellStatus).forEach(([key, value]) => {
           restoredCellStatus[key] = {
             locked: value.locked,
             incorrectHistory: new Set(value.incorrectHistory)
           };
         });
+        
         setCellStatus(restoredCellStatus);
-        setAttemptsLeft(parsed.attemptsLeft);
-        setGameResult(parsed.gameResult);
-        setFinalGrid(parsed.finalGrid);
-        setAttemptsUsed(parsed.attemptsUsed);
+        setAttemptsLeft(savedState.attemptsLeft);
+        setGameResult(savedState.gameResult);
+        setFinalGrid(savedState.finalGrid);
+        setAttemptsUsed(savedState.attemptsUsed);
         return;
+      } catch (e) {
+        console.error('Error restoring saved game:', e);
+        storage.clear(); // Clear corrupted state
       }
     }
 
-    // If no saved state or not from today, initialize new game
+    // If no valid saved state, initialize new game
     const statsArray: string[] = [];
     for (const p in playerStats) {
       const statsObj = playerStats[p];
@@ -187,7 +237,7 @@ const App: React.FC = () => {
       attemptsUsed
     };
     
-    localStorage.setItem('statswap_game_state', JSON.stringify(gameState));
+    storage.save(gameState);
   }, [placements, cellStatus, attemptsLeft, gameResult, allTiles, finalGrid, attemptsUsed]);
 
   // tileMap: tileId -> statValue
