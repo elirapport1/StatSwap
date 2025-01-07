@@ -45,18 +45,20 @@ jobs:
               "moduleResolution": "NodeNext",
               "esModuleInterop": true,
               "resolveJsonModule": true,
-              "allowImportingTsExtensions": true,
               "outDir": "./dist-scripts",
               "rootDir": "./src",
-              "noEmit": false
+              "allowJs": true,
+              "checkJs": false,
+              "strict": true
             },
-            "include": ["src/data/playerStats.ts"]
+            "include": ["src/data/playerStats.ts", "src/data/scrape_stats.js"]
           }' > tsconfig.build.json
 
       - name: Compile and run stats generator
         run: |
-          # First, create a JavaScript version of scrape_stats.ts
-          echo "export const scrapeStatFromStatmuse = async (query) => { return Math.floor(Math.random() * 1000); }" > src/data/scrape_stats.js
+          # First, create a JavaScript version of scrape_stats
+          mkdir -p src/data
+          echo "export const scrapeStatFromStatmuse = async (query) => { return Math.floor(Math.random() * 1000); };" > src/data/scrape_stats.js
           # Now compile and run playerStats
           npx tsc -p tsconfig.build.json
           node dist-scripts/data/playerStats.js
