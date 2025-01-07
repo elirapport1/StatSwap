@@ -50,7 +50,10 @@ jobs:
               "allowJs": true,
               "checkJs": false,
               "strict": true,
-              "moduleDetection": "force"
+              "moduleDetection": "force",
+              "allowImportingTsExtensions": true,
+              "emitDeclarationOnly": false,
+              "noEmit": false
             },
             "ts-node": {
               "esm": true
