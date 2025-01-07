@@ -39,10 +39,10 @@ jobs:
 
       - name: Generate new player stats
         run: |
-          npx ts-node -T --esm src/data/playerStats.ts
+          NODE_OPTIONS="--loader ts-node/esm" node --experimental-specifier-resolution=node src/data/playerStats.ts
         env:
           NODE_ENV: production
-          TS_NODE_TRANSPILE_ONLY: true
+          TS_NODE_PROJECT: ./tsconfig.node.json
 
       - name: Build application
         run: |
