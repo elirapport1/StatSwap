@@ -35,14 +35,28 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          npm install -g typescript ts-node @types/node
 
-      - name: Generate new player stats
+      - name: Create build script
         run: |
-          NODE_OPTIONS="--loader ts-node/esm" node --experimental-specifier-resolution=node src/data/playerStats.ts
+          echo '{
+            "compilerOptions": {
+              "target": "ES2022",
+              "module": "CommonJS",
+              "moduleResolution": "node",
+              "esModuleInterop": true,
+              "resolveJsonModule": true,
+              "outDir": "./dist-scripts",
+              "rootDir": "./src"
+            },
+            "include": ["src/data/playerStats.ts"]
+          }' > tsconfig.build.json
+
+      - name: Compile and run stats generator
+        run: |
+          npx tsc -p tsconfig.build.json
+          node dist-scripts/data/playerStats.js
         env:
           NODE_ENV: production
-          TS_NODE_PROJECT: ./tsconfig.node.json
 
       - name: Build application
         run: |
