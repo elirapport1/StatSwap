@@ -51,15 +51,16 @@ jobs:
               "checkJs": false,
               "strict": true
             },
-            "include": ["src/data/playerStats.ts", "src/data/scrape_stats.js"]
+            "include": ["src/data/playerStats.ts"]
           }' > tsconfig.build.json
+
+      - name: Create mock data directory
+        run: |
+          mkdir -p dist-scripts/data
+          echo "export const scrapeStatFromStatmuse = async (query) => { return Math.floor(Math.random() * 1000); };" > dist-scripts/data/scrape_stats.js
 
       - name: Compile and run stats generator
         run: |
-          # First, create a JavaScript version of scrape_stats
-          mkdir -p src/data
-          echo "export const scrapeStatFromStatmuse = async (query) => { return Math.floor(Math.random() * 1000); };" > src/data/scrape_stats.js
-          # Now compile and run playerStats
           npx tsc -p tsconfig.build.json
           node dist-scripts/data/playerStats.js
         env:
