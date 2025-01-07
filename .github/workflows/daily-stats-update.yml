@@ -49,15 +49,20 @@ jobs:
               "rootDir": "./src",
               "allowJs": true,
               "checkJs": false,
-              "strict": true
+              "strict": true,
+              "moduleDetection": "force"
+            },
+            "ts-node": {
+              "esm": true
             },
             "include": ["src/data/playerStats.ts"]
           }' > tsconfig.build.json
 
       - name: Create mock data directory
         run: |
-          mkdir -p dist-scripts/data
-          echo "export const scrapeStatFromStatmuse = async (query) => { return Math.floor(Math.random() * 1000); };" > dist-scripts/data/scrape_stats.js
+          # First create the source mock file
+          mkdir -p src/data
+          echo "export const scrapeStatFromStatmuse = async (query) => { return Math.floor(Math.random() * 1000); };" > src/data/scrape_stats.js
 
       - name: Compile and run stats generator
         run: |
