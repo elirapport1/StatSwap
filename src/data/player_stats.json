@@ -1,17 +1,20 @@
 {
-  "Rudy Gobert": {
-    "Career Points": 9880,
-    "Career Rebounds Per Game": 11.7,
-    "weight": 250
+  "Shareef Abdur Rahim": {
+    "Career Points": 15028,
+    "Career Rebounds Per Game": 0,
+    "weight": 0,
+    "undefined": 0
   },
-  "Lamond Murray": {
-    "Career Points": 8286,
-    "Career Rebounds Per Game": 4.1,
-    "weight": 235
+  "Latrell Sprewell": {
+    "Career Points": 16712,
+    "Career Rebounds Per Game": 0,
+    "weight": 0,
+    "undefined": 0
   },
-  "Dirk Nowitzki": {
-    "Career Points": 31560,
-    "Career Rebounds Per Game": 7.5,
-    "weight": 245
+  "Kevin Garnett": {
+    "Career Points": 26071,
+    "Career Rebounds Per Game": 0,
+    "weight": 0,
+    "undefined": 0
   }
 }
