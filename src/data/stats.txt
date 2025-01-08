@@ -1,6 +1,5 @@
 career minutes per game
-weight
-Career jersey numbers
+Weight
 Career Games Played
 Career Minutes Per Game
 Career Points Per Game
@@ -29,7 +28,7 @@ Career Blocks
 Career Turnovers
 Career Personal Fouls
 Career Plus-Minus
-highest scoring game - Jim Jackson had his most points in a game against the Nuggets on November 26, 1994, with 50 points.
+highest scoring game
 career triple doubles
 career double doubles
 
