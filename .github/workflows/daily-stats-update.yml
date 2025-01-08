@@ -35,31 +35,22 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          npm install ts-node typescript @types/node @swc/core @swc/helpers
 
       - name: Create build script
         run: |
           echo '{
             "compilerOptions": {
-              "composite": true,
+              "target": "ES2022",
               "module": "NodeNext",
               "moduleResolution": "nodenext",
-              "lib": ["DOM", "DOM.Iterable", "ESNext"],
-              "jsx": "react-jsx",
+              "esModuleInterop": true,
               "resolveJsonModule": true,
               "skipLibCheck": true,
               "strict": true,
-              "noEmit": true,
-              "allowImportingTsExtensions": true,
               "outDir": "./dist-scripts",
-              "rootDir": "./src",
-              "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo"
+              "rootDir": "./src"
             },
-            "include": ["src/data/*.ts", "src/data/*.js"],
-            "ts-node": {
-              "swc": true,
-              "esm": true
-            }
+            "include": ["src/data/*.ts"]
           }' > tsconfig.build.json
 
       - name: Create mock data directory
@@ -70,11 +61,12 @@ jobs:
 
       - name: Compile and run stats generator
         run: |
-          mkdir -p ./node_modules/.tmp
-          npx ts-node --swc --esm src/data/playerStats.ts
+          # Compile TypeScript to JavaScript
+          npx tsc -p tsconfig.build.json
+          # Run the compiled JavaScript
+          node dist-scripts/data/playerStats.js
         env:
           NODE_ENV: production
-          TS_NODE_PROJECT: tsconfig.build.json
 
       - name: Build application
         run: |
