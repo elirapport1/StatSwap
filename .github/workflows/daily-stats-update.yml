@@ -35,7 +35,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          npm install -g ts-node typescript @types/node
+          npm install -g ts-node typescript @types/node @swc/core @swc/helpers
 
       - name: Create build script
         run: |
@@ -57,8 +57,8 @@ jobs:
             },
             "include": ["src/data/*.ts", "src/data/*.js"],
             "ts-node": {
-              "esm": true,
-              "experimentalSpecifiers": true
+              "swc": true,
+              "esm": true
             }
           }' > tsconfig.build.json
 
@@ -71,7 +71,7 @@ jobs:
       - name: Compile and run stats generator
         run: |
           mkdir -p ./node_modules/.tmp
-          NODE_OPTIONS="--loader ts-node/esm" node --experimental-specifier-resolution=node src/data/playerStats.ts
+          npx ts-node --swc --esm src/data/playerStats.ts
         env:
           NODE_ENV: production
           TS_NODE_PROJECT: tsconfig.build.json
