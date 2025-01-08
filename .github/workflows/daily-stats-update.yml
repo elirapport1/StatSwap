@@ -40,20 +40,19 @@ jobs:
         run: |
           echo '{
             "compilerOptions": {
-              "target": "ES2022",
+              "composite": true,
               "module": "NodeNext",
-              "moduleResolution": "NodeNext",
-              "esModuleInterop": true,
+              "moduleResolution": "nodenext",
+              "lib": ["DOM", "DOM.Iterable", "ESNext"],
+              "jsx": "react-jsx",
               "resolveJsonModule": true,
+              "skipLibCheck": true,
+              "strict": true,
+              "noEmit": false,
+              "allowImportingTsExtensions": true,
               "outDir": "./dist-scripts",
               "rootDir": "./src",
-              "allowJs": true,
-              "checkJs": false,
-              "strict": true,
-              "moduleDetection": "force"
-            },
-            "ts-node": {
-              "esm": true
+              "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo"
             },
             "include": ["src/data/playerStats.ts"]
           }' > tsconfig.build.json
@@ -66,10 +65,7 @@ jobs:
 
       - name: Compile and run stats generator
         run: |
-          # Create a temporary TypeScript file without .ts extension in import
-          sed 's/from '\''\.\/scrape_stats'\''/from '\''\.\/scrape_stats\.js'\''/g' src/data/playerStats.ts > src/data/playerStats.temp.ts
-          mv src/data/playerStats.temp.ts src/data/playerStats.ts
-          # Now compile and run
+          mkdir -p ./node_modules/.tmp
           npx tsc -p tsconfig.build.json
           node dist-scripts/data/playerStats.js
         env:
@@ -88,8 +84,6 @@ jobs:
 
       - name: Commit and push if changes
         run: |
-          # Restore original playerStats.ts before committing
-          git checkout src/data/playerStats.ts
           git add src/data/player_stats.json
           git diff --staged --quiet || (git commit -m "Update player stats for $(date +'%Y-%m-%d')" && git push)
         env:
