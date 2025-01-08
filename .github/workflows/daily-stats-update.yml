@@ -48,7 +48,7 @@ jobs:
               "resolveJsonModule": true,
               "skipLibCheck": true,
               "strict": true,
-              "noEmit": false,
+              "noEmit": true,
               "allowImportingTsExtensions": true,
               "outDir": "./dist-scripts",
               "rootDir": "./src",
