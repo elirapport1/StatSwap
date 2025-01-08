@@ -5,9 +5,7 @@ import { scrapeStatFromStatmuse } from './scrape_stats';
 
 // Add type definitions at the top
 export interface PlayerStat {
-  "Career Points": number;
-  "Career Rebounds Per Game": number;
-  weight: number;
+  [key: string]: number;  // Dynamic keys based on selected stats
 }
 
 export interface PlayerStatsData {
@@ -41,16 +39,11 @@ if (!fs.existsSync(statsFilePath)) {
 const player_fileContent = fs.readFileSync(player_filePath, 'utf-8');
 const player_names = player_fileContent.split('\n').filter((name) => name.trim() !== '');
 
-// Define valid stats that match our PlayerStat interface
-const validStats = ["Career Points", "Career Rebounds Per Game", "weight"] as const;
-type ValidStat = typeof validStats[number];
-
-// Read and filter stats to only include valid ones
+// Read and filter stats
 const statsFileContent = fs.readFileSync(statsFilePath, 'utf-8');
 const stats = statsFileContent
   .split('\n')
-  .filter((stat) => stat.trim() !== '')
-  .filter((stat): stat is ValidStat => validStats.includes(stat as ValidStat));
+  .filter((stat) => stat.trim() !== '');
 
 // Utility to pick N random items with seed based on date
 function getRandomItems<T>(arr: T[], count: number): T[] {
@@ -92,20 +85,21 @@ export let playerStats: PlayerStatsData = {};
  *  For each of the 3 random players, and 3 random stats, we query Statmuse
  *  and store the numeric result in an object: { playerName: { statName: value } }
  */
-export async function fetchPlayerStats(players: string[], statList: ValidStat[]): Promise<PlayerStatsData> {
+export async function fetchPlayerStats(players: string[], statList: string[]): Promise<PlayerStatsData> {
   const results: PlayerStatsData = {};
+  
   for (const player of players) {
-    results[player] = {
-      "Career Points": 0,
-      "Career Rebounds Per Game": 0,
-      "weight": 0
-    };
+    // Initialize player's stats object
+    results[player] = {};
+    
+    // Fetch each stat for the player
     for (const stat of statList) {
       const query = `${player} ${stat}`;
       const statValue = await scrapeStatFromStatmuse(query);
       results[player][stat] = statValue ?? 0;
     }
   }
+  
   return results;
 }
 
@@ -118,6 +112,9 @@ export async function fetchPlayerStats(players: string[], statList: ValidStat[])
 export async function initializePlayerStats() {
   const chosenPlayers = getRandomItems(player_names, 3);
   const chosenStats = getRandomItems(stats, 3);
+
+  console.log('Selected players:', chosenPlayers);
+  console.log('Selected stats:', chosenStats);
 
   const fetched = await fetchPlayerStats(chosenPlayers, chosenStats);
 
