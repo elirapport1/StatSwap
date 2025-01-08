@@ -54,22 +54,22 @@ jobs:
               "rootDir": "./src",
               "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo"
             },
-            "include": ["src/data/playerStats.ts"]
+            "include": ["src/data/*.ts", "src/data/*.js"]
           }' > tsconfig.build.json
 
       - name: Create mock data directory
         run: |
           # First create the source mock file
           mkdir -p src/data
-          echo "export const scrapeStatFromStatmuse = async (query) => { return Math.floor(Math.random() * 1000); };" > src/data/scrape_stats.js
+          echo "export const scrapeStatFromStatmuse = async (query) => { return Math.floor(Math.random() * 1000); };" > src/data/scrape_stats.ts
 
       - name: Compile and run stats generator
         run: |
           mkdir -p ./node_modules/.tmp
-          npx tsc -p tsconfig.build.json
-          node dist-scripts/data/playerStats.js
+          npx ts-node --esm src/data/playerStats.ts
         env:
           NODE_ENV: production
+          TS_NODE_PROJECT: tsconfig.build.json
 
       - name: Build application
         run: |
