@@ -48,16 +48,22 @@ jobs:
               "skipLibCheck": true,
               "strict": true,
               "outDir": "./dist-scripts",
-              "rootDir": "./src"
+              "rootDir": "./src",
+              "allowJs": true,
+              "checkJs": false
             },
-            "include": ["src/data/*.ts"]
+            "include": ["src/data/*.ts", "src/data/*.js"]
           }' > tsconfig.build.json
 
       - name: Create mock data directory
         run: |
           # First create the source mock file
           mkdir -p src/data
-          echo "export const scrapeStatFromStatmuse = async (query) => { return Math.floor(Math.random() * 1000); };" > src/data/scrape_stats.ts
+          echo "export const scrapeStatFromStatmuse = async (query: string): Promise<number> => { return Math.floor(Math.random() * 1000); };" > src/data/scrape_stats.js
+
+      - name: Update playerStats imports
+        run: |
+          sed -i 's/from '\''\.\/scrape_stats'\''/from '\''\.\/scrape_stats\.js'\''/g' src/data/playerStats.ts
 
       - name: Compile and run stats generator
         run: |
@@ -81,6 +87,8 @@ jobs:
 
       - name: Commit and push if changes
         run: |
+          # Restore original playerStats.ts before committing
+          git checkout src/data/playerStats.ts
           git add src/data/player_stats.json
           git diff --staged --quiet || (git commit -m "Update player stats for $(date +'%Y-%m-%d')" && git push)
         env:
