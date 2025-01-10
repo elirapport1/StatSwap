@@ -45,36 +45,22 @@ const stats = statsFileContent
   .split('\n')
   .filter((stat) => stat.trim() !== '');
 
-// Utility to pick N random items with seed based on date
+// Utility to pick N random items without date-based seed
 function getRandomItems<T>(arr: T[], count: number): T[] {
-  // Create a seeded random number based on today's date
-  const today = new Date();
-  const dateString = `${today.getUTCFullYear()}-${today.getUTCMonth() + 1}-${today.getUTCDate()}`;
-  let seed = 0;
-  for (let i = 0; i < dateString.length; i++) {
-    seed = ((seed << 5) - seed) + dateString.charCodeAt(i);
-    seed = seed & seed; // Convert to 32-bit integer
+  const shuffled = [...arr];
+  let currentIndex = shuffled.length;
+  let temporaryValue, randomIndex;
+
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    temporaryValue = shuffled[currentIndex];
+    shuffled[currentIndex] = shuffled[randomIndex];
+    shuffled[randomIndex] = temporaryValue;
   }
 
-  // Seeded shuffle function
-  const seededShuffle = (array: T[]): T[] => {
-    const shuffled = [...array];
-    let currentIndex = shuffled.length;
-    let temporaryValue, randomIndex;
-
-    while (0 !== currentIndex) {
-      randomIndex = Math.floor((seed = (seed * 9301 + 49297) % 233280) / 233280 * currentIndex);
-      currentIndex -= 1;
-
-      temporaryValue = shuffled[currentIndex];
-      shuffled[currentIndex] = shuffled[randomIndex];
-      shuffled[randomIndex] = temporaryValue;
-    }
-
-    return shuffled;
-  };
-
-  return seededShuffle(arr).slice(0, count);
+  return shuffled.slice(0, count);
 }
 
 // We'll export this at the bottom
