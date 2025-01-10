@@ -17,6 +17,19 @@ const playerStats = playerStatsRaw as PlayerStatsData;
 const STORAGE_KEY = 'statswap_game_state';
 const STORAGE_VERSION = '1.0';
 
+// Add a function to get the current stats version (based on content hash)
+const getStatsVersion = () => {
+  // Use a hash of the current stats as the version
+  const statsString = JSON.stringify(playerStats);
+  let hash = 0;
+  for (let i = 0; i < statsString.length; i++) {
+    const char = statsString.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash; // Convert to 32-bit integer
+  }
+  return hash.toString();
+};
+
 // Helper to get today's date as a string for localStorage key
 const getTodayKey = () => {
   const date = new Date();
@@ -35,7 +48,8 @@ const storage = {
     try {
       const saveData = {
         ...data,
-        version: STORAGE_VERSION
+        version: STORAGE_VERSION,
+        statsVersion: getStatsVersion()
       };
       localStorage.setItem(STORAGE_KEY, JSON.stringify(saveData));
     } catch (e) {
@@ -51,6 +65,12 @@ const storage = {
       
       // Version check (for future compatibility)
       if (parsed.version !== STORAGE_VERSION) {
+        localStorage.removeItem(STORAGE_KEY);
+        return null;
+      }
+
+      // Stats version check - if stats have changed, clear the saved state
+      if (parsed.statsVersion !== getStatsVersion()) {
         localStorage.removeItem(STORAGE_KEY);
         return null;
       }
@@ -110,6 +130,7 @@ interface SavedGameState {
   finalGrid: ('correct' | 'incorrect')[][];
   attemptsUsed: number;
   version?: string;
+  statsVersion?: string;
 }
 
 const App: React.FC = () => {
