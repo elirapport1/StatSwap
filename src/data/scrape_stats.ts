@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import * as fs from 'fs';
-import { openai } from './openai-config.ts';
+import { openai } from './openai-config.js';
 
 export async function scrapeStatFromStatmuse(query: string): Promise<number | null> {
   try {
