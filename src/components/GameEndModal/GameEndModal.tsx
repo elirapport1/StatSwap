@@ -63,8 +63,31 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
   }
 
   /**
+   * shareResult:
+   * Uses Web Share API if available (mobile), falls back to clipboard
+   */
+  async function shareResult() {
+    const text = buildShareText();
+    
+    // Check if Web Share API is available
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          text: text,
+        });
+      } catch (error) {
+        // User cancelled or share failed - fall back to clipboard
+        copyToClipboard();
+      }
+    } else {
+      // Web Share API not available - use clipboard
+      copyToClipboard();
+    }
+  }
+
+  /**
    * copyToClipboard:
-   * Copies the share text to the user’s clipboard.
+   * Copies the share text to the user's clipboard.
    */
   function copyToClipboard() {
     const text = buildShareText();
@@ -148,7 +171,7 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
         {/* Show the 3×3 correct answer grid, all in green */}
         {renderCorrectAnswerGrid()}
 
-        <button className={styles.shareButton} onClick={copyToClipboard}>
+        <button className={styles.shareButton} onClick={shareResult}>
           share your game
         </button>
         

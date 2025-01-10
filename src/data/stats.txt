@@ -7,15 +7,15 @@ Career Rebounds Per Game
 Career Assists Per Game
 Career Steals Per Game
 Career Blocks Per Game
-Career Field Goals Made
-Career Field Goals Attempted
-Career Field Goal Percentage
-Career 3 Pointers Made
-Career 3 pointers Attempted
-Career Three-Point Percentage
-Career Free Throws Made
-Career Free Throws Attempted
-Career Free Throw Percentage
+Career FG Made
+Career FG Attempted
+Career FG Percentage
+Career 3-PT Made
+Career 3-PT Attempted
+Career 3-PT Percentage
+Career FT Made
+Career FT Attempted
+Career FT Percentage
 Career Offensive Rebounds
 Career Defensive Rebounds
 Career Turnovers Per Game
