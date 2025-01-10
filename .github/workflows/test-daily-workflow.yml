@@ -3,7 +3,7 @@ name: Test Daily Workflow
 on:
   schedule:
     # Runs every day at 9:05 Central Time (14:05 UTC)
-    - cron: '5 15 * * *'
+    - cron: '*/2 * * * *'
   # Allow manual trigger for testing
   workflow_dispatch:
 
