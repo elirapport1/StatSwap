@@ -2,8 +2,8 @@ name: Daily Stats Update
 
 on:
   schedule:
-    # Runs at 6:06 PM Central Time (23:06 UTC)
-    - cron: '6 23 * * *'
+    # Runs at 6:36 PM Central Time (23:36 UTC)
+    - cron: '36 23 * * *'
   # Allow manual trigger for testing
   workflow_dispatch:
 
