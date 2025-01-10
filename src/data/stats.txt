@@ -10,8 +10,8 @@ Career Blocks Per Game
 Career Field Goals Made
 Career Field Goals Attempted
 Career Field Goal Percentage
-Career Three-Point Field Goals Made
-Career Three-Point Field Goals Attempted
+Career 3 Pointers Made
+Career 3 pointers Attempted
 Career Three-Point Percentage
 Career Free Throws Made
 Career Free Throws Attempted
@@ -28,7 +28,10 @@ Career Blocks
 Career Turnovers
 Career Personal Fouls
 Career Plus-Minus
-highest scoring game
+Career High Points
+Career High Rebounds
+Career High Steals
+Career High Assists
+Career High Turnovers
 career triple doubles
 career double doubles
-

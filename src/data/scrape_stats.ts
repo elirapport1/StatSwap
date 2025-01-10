@@ -1,23 +1,18 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import * as fs from 'fs';
+import { openai } from './openai-config';
+
 export async function scrapeStatFromStatmuse(query: string): Promise<number | null> {
   try {
-    // Construct URL for the Statmuse query
-    // The resulting URL is something like:
-    // https://www.statmuse.com/nba/ask/how-many-fouls-has-draymond-green-had-in-his-career
     const formattedQuery = query.trim().replace(/\s+/g, '-');
     const url = `https://www.statmuse.com/nba/ask/${formattedQuery}`;    
 
-    // Fetch the HTML page
     const { data } = await axios.get(url);
-    fs.writeFileSync('scraped_data.html', data); // Write the entire HTML to a file for debugging
+    fs.writeFileSync('scraped_data.html', data);
 
     const $ = cheerio.load(data);
-
-    // Select the span that contains the statistic
     const resultSpan = $('span.text-pretty').first();
-    // console.log(resultSpan.html()); // See what is inside
 
     if (!resultSpan || resultSpan.length === 0) {
       console.error('Could not find the result span.');
@@ -25,28 +20,39 @@ export async function scrapeStatFromStatmuse(query: string): Promise<number | nu
     }
 
     const text = resultSpan.text().trim();
-    // console.log(text)
 
-    const numberWordsMap: { [key: string]: string } = {
-        'zero': '0',
-        'once': '1',
-        'twice': '2'
-      };
-      
-      const numberMatch = text.match(/(\d[\d,\.]+|zero|once|twice)/i);
-      if (!numberMatch) {
-        console.error('Could not extract a number from the result text.');
+    // Use OpenAI to extract the correct statistic
+    const prompt = `Given the query "${query}" and the following text: "${text}", what is the specific numerical statistic that answers the query? Please respond with only the number, without any additional text or explanation.`;
+
+    const completion = await openai.chat.completions.create({
+        model: 'gpt-3.5-turbo',
+        messages: [
+          {
+            role: 'system',
+            content: 'You are a helpful assistant that extracts specific numerical statistics from text. Always respond with just the number, no additional text.'
+          },
+          { role: 'user', content: prompt }
+        ],
+        temperature: 0,
+        max_tokens: 10
+      });
+    
+      const response = completion.choices[0]?.message?.content?.trim();
+      if (!response) {
+        console.error('Could not get a valid response from OpenAI');
         return null;
       }
-      
-      let statString = numberMatch[1];
-      if (numberWordsMap[statString.toLowerCase()]) {
-        statString = numberWordsMap[statString.toLowerCase()];
-      } else {
-        statString = statString.replace(/,/g, ''); // Remove commas
-      }
-      
-      return parseFloat(statString);
+
+    // Convert response to number, removing any commas
+    const cleanNumber = response.replace(/,/g, '');
+    const result = parseFloat(cleanNumber);
+
+    if (isNaN(result)) {
+      console.error('Could not convert OpenAI response to a number');
+      return null;
+    }
+
+    return result;
 
   } catch (error) {
     console.error('Error scraping Statmuse:', error);
@@ -54,10 +60,6 @@ export async function scrapeStatFromStatmuse(query: string): Promise<number | nu
   }
 }
 
-
-// module.exports = {
-//     scrapeStatFromStatmuse,
-// };
   
 
 
