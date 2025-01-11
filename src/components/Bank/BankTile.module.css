@@ -1,6 +1,6 @@
 .tile {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background-color: #d4d6da;
     color: #000;
     display: flex;
@@ -15,7 +15,7 @@
     transition: opacity 0.2s;
     font-weight: bold;
     padding: 6px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     line-height: 1.1;
     text-align: center;
     overflow-wrap: break-word;
