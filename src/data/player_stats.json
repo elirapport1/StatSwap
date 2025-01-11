@@ -1,17 +1,17 @@
 {
-  "Nené": {
-    "Career Minutes Per Game": 26.2,
-    "Career Rebounds": 5828,
-    "Weight": 250
+  "Derek Fisher": {
+    "Career Steals Per Game": 1.1,
+    "Career FG Attempted": 9329,
+    "Career Blocks": 98
   },
-  "Trevor Ariza": {
-    "Career Minutes Per Game": 29.4,
-    "Career Rebounds": 5356,
-    "Weight": 215
+  "Malik Monk": {
+    "Career Steals Per Game": 0.6,
+    "Career FG Attempted": 4847,
+    "Career Blocks": 153
   },
-  "Caris LeVert": {
-    "Career Minutes Per Game": 27.9,
-    "Career Rebounds": 1864,
-    "Weight": 205
+  "Dirk Nowitzki": {
+    "Career Steals Per Game": 0.8,
+    "Career FG Attempted": 23734,
+    "Career Blocks": 1281
   }
 }
