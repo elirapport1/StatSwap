@@ -73,28 +73,28 @@
   /* The top row with the corner cell + 3 player labels */
   .headerRow {
     display: grid;
-    grid-template-columns: 80px repeat(3, 80px);
+    grid-template-columns: 60px repeat(3, 60px);
     gap: 8px;
     margin-bottom: 1rem;
     justify-content: center;
   }
   
   .cornerLabel {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
   
   /* Common tile styles that will be shared across different tile types */
   .baseTileStyles {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
-    font-size: 0.9rem;
-    line-height: 1.2;
+    padding: 6px;
+    font-size: 0.75rem;
+    line-height: 1.1;
     text-align: center;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -126,7 +126,7 @@
   /* Each row for categories + 3 cells */
   .gridRow {
     display: grid;
-    grid-template-columns: 80px repeat(3, 80px);
+    grid-template-columns: 60px repeat(3, 60px);
     gap: 8px;
     margin-bottom: 1rem;
     justify-content: center;
