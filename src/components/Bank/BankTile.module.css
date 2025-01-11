@@ -14,5 +14,13 @@
     touch-action: none;
     transition: opacity 0.2s;
     font-weight: bold;
+    padding: 8px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow: hidden;
   }
   

@@ -12,12 +12,20 @@
     touch-action: none;
     transition: opacity 0.2s;
     font-weight: bold;
-    position: absolute; /* or static, depends on your preference */
+    position: absolute;
+    padding: 8px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow: hidden;
   }
   
   .locked {
     background-color: green;
-    color: #fff; /* so text is visible on green */
-    cursor: default; /* no grabbing hand if locked */
+    color: #fff;
+    cursor: default;
   }
   

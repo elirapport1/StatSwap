@@ -84,16 +84,43 @@
     height: 80px;
   }
   
-  /* Player label tiles */
-  .playerLabel {
+  /* Common tile styles that will be shared across different tile types */
+  .baseTileStyles {
     width: 80px;
     height: 80px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow: hidden;
+  }
+  
+  /* Update player label tiles */
+  .playerLabel {
+    composes: baseTileStyles;
     font-weight: bold;
     color: #fff;
-    border-radius: 8px;
+  }
+  
+  /* Update category label tiles */
+  .categoryLabel {
+    composes: baseTileStyles;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Update cell tiles */
+  .cell {
+    composes: baseTileStyles;
+    color: #fff;
+    transition: background-color 0.2s;
   }
   
   /* Each row for categories + 3 cells */
@@ -103,30 +130,6 @@
     gap: 8px;
     margin-bottom: 1rem;
     justify-content: center;
-  }
-  
-  /* The left-most category label tile */
-  .categoryLabel {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 8px;
-  }
-  
-  /* Each "cell" with the final correct stat */
-  .cell {
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    transition: background-color 0.2s;
   }
   
   .notificationSection {
