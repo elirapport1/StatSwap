@@ -212,18 +212,9 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
           </p>
         )}
 
-        {/* Show the 3×3 correct answer grid, all in green */}
-        {renderCorrectAnswerGrid()}
-
-        <button className={styles.shareButton} onClick={shareResult}>
-          share your game
-        </button>
-
         {/* Phone number form */}
         <div className={styles.notificationSection}>
           <p>I'll text you when tomorrow's game comes out</p>
-          <p className={styles.optOutText}>(opt out any time)</p>
-          
           <form onSubmit={handlePhoneSubmit} className={styles.phoneForm}>
             <div className={styles.inputGroup}>
               <input
@@ -231,7 +222,7 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
                 id="phone"
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
-                placeholder="Enter your phone number"
+                placeholder="Enter phone number (opt out any time)"
                 className={styles.phoneInput}
                 disabled={isSubmitting || submitSuccess}
               />
@@ -251,7 +242,13 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
             )}
           </form>
         </div>
-        
+
+        {/* Show the 3×3 correct answer grid, all in green */}
+        {renderCorrectAnswerGrid()}
+
+        <button className={styles.shareButton} onClick={shareResult}>
+          share your game
+        </button>
       </div>
     </div>
   );
