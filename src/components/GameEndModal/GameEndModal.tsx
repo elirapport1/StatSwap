@@ -3,7 +3,7 @@ import playerStatsRaw from '../../data/player_stats.json' with { type: 'json' };
 import type { PlayerStat, PlayerStatsData } from '../../data/playerStats.ts';
 import styles from './GameEndModal.module.css';
 import { createClient } from '@supabase/supabase-js';
-import { supabaseConfig } from '../../config/supabase';
+import { supabaseConfig } from '../../config/supabase.js';
 
 const supabase = createClient(
   supabaseConfig.supabaseUrl,
