@@ -3,10 +3,11 @@ import playerStatsRaw from '../../data/player_stats.json' with { type: 'json' };
 import type { PlayerStat, PlayerStatsData } from '../../data/playerStats.ts';
 import styles from './GameEndModal.module.css';
 import { createClient } from '@supabase/supabase-js';
+import { supabaseConfig } from '../../config/supabase';
 
 const supabase = createClient(
-  process.env.VITE_SUPABASE_URL!,
-  process.env.VITE_SUPABASE_ANON_KEY!
+  supabaseConfig.supabaseUrl,
+  supabaseConfig.supabaseAnonKey
 );
 
 const playerStats = playerStatsRaw as PlayerStatsData;
