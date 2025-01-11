@@ -221,10 +221,10 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
 
         {/* Phone number form */}
         <div className={styles.notificationSection}>
+          <p>I'll text you when tomorrow's game comes out</p>
+          <p className={styles.optOutText}>(opt out any time)</p>
+          
           <form onSubmit={handlePhoneSubmit} className={styles.phoneForm}>
-            <label htmlFor="phone" className={styles.phoneLabel}>
-              Play again? I'll send you a text when tomorrow's game comes out!
-            </label>
             <div className={styles.inputGroup}>
               <input
                 type="tel"
