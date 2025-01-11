@@ -1,17 +1,17 @@
 {
-  "Kobe Bryant": {
-    "Career High Assists": 17,
-    "Career Blocks": 640,
-    "Career Defensive Rebounds": 5548
+  "Andrea Bargnani": {
+    "Career 3-PT Percentage": 35.4,
+    "Career FT Percentage": 82.4,
+    "Career High Points": 41
   },
-  "Luka Dončić": {
-    "Career High Assists": 20,
-    "Career Blocks": 191,
-    "Career Defensive Rebounds": 3252
+  "Giannis Antetokounmpo": {
+    "Career 3-PT Percentage": 28.5,
+    "Career FT Percentage": 69.7,
+    "Career High Points": 64
   },
-  "Spencer Dinwiddie": {
-    "Career High Assists": 16,
-    "Career Blocks": 158,
-    "Career Defensive Rebounds": 1481
+  "Rajon Rondo": {
+    "Career 3-PT Percentage": 32.4,
+    "Career FT Percentage": 61.1,
+    "Career High Points": 35
   }
 }
