@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import playerStatsRaw from '../../data/player_stats.json' with { type: 'json' };
 import type { PlayerStat, PlayerStatsData } from '../../data/playerStats.ts';
 import styles from './GameEndModal.module.css';
+import { createClient } from '@supabase/supabase-js';
+
+const supabase = createClient(
+  process.env.VITE_SUPABASE_URL!,
+  process.env.VITE_SUPABASE_ANON_KEY!
+);
 
 const playerStats = playerStatsRaw as PlayerStatsData;
 
@@ -18,6 +24,11 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
   attemptsUsed,
   finalGrid
 }) => {
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [error, setError] = useState('');
+
   /**
    * buildShareText():
    * Produces the share text for the final outcome.
@@ -152,6 +163,38 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
     );
   }
 
+  const handlePhoneSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError('');
+
+    // Basic phone number validation
+    const phoneRegex = /^\+?1?\d{10,12}$/;
+    if (!phoneRegex.test(phoneNumber.replace(/[- ()]/g, ''))) {
+      setError('Please enter a valid phone number');
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const { error: supabaseError } = await supabase
+        .from('notifications')
+        .insert([
+          { phone_number: phoneNumber, created_at: new Date().toISOString() }
+        ]);
+
+      if (supabaseError) throw supabaseError;
+
+      setSubmitSuccess(true);
+      setPhoneNumber('');
+    } catch (err) {
+      setError('Failed to save phone number. Please try again.');
+      console.error('Error saving phone number:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className={styles.backdrop}>
       <div className={styles.modal}>
@@ -174,6 +217,39 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
         <button className={styles.shareButton} onClick={shareResult}>
           share your game
         </button>
+
+        {/* Phone number form */}
+        <div className={styles.notificationSection}>
+          <form onSubmit={handlePhoneSubmit} className={styles.phoneForm}>
+            <label htmlFor="phone" className={styles.phoneLabel}>
+              Play again? I'll send you a text when tomorrow's game comes out!
+            </label>
+            <div className={styles.inputGroup}>
+              <input
+                type="tel"
+                id="phone"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
+                placeholder="Enter your phone number"
+                className={styles.phoneInput}
+                disabled={isSubmitting || submitSuccess}
+              />
+              <button
+                type="submit"
+                className={styles.submitButton}
+                disabled={isSubmitting || submitSuccess}
+              >
+                {isSubmitting ? 'Saving...' : submitSuccess ? '✓ Saved!' : 'Notify Me'}
+              </button>
+            </div>
+            {error && <p className={styles.error}>{error}</p>}
+            {submitSuccess && (
+              <p className={styles.success}>
+                Great! You'll receive a text when tomorrow's game is ready.
+              </p>
+            )}
+          </form>
+        </div>
         
       </div>
     </div>
