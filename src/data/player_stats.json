@@ -1,17 +1,17 @@
 {
-  "Paul George": {
-    "Career FG Attempted": 14343,
-    "Career Rebounds": 5610,
-    "Career Games Played": 892
+  "Trae Young": {
+    "Career High Steals": 5,
+    "Career FG Percentage": 43.4,
+    "Career Rebounds Per Game": 3.6
   },
-  "Dennis Smith Jr.": {
-    "Career FG Attempted": 3009,
-    "Career Rebounds": 967,
-    "Career Games Played": 326
+  "DeMarcus Cousins": {
+    "Career High Steals": 7,
+    "Career FG Percentage": 46,
+    "Career Rebounds Per Game": 10.2
   },
-  "Joakim Noah": {
-    "Career FG Attempted": 4574,
-    "Career Rebounds": 6058,
-    "Career Games Played": 672
+  "Monta Ellis": {
+    "Career High Steals": 7,
+    "Career FG Percentage": 45.1,
+    "Career Rebounds Per Game": 3.5
   }
 }
