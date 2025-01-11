@@ -3,11 +3,11 @@
     flex-direction: column;
     margin: 0rem auto;
     align-items: center;
-    gap: 6px;
   }
   
   .row {
     display: flex;
-    gap: 6px;
+    gap: 8px;
+    margin-bottom: 1rem;
   }
   

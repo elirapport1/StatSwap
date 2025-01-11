@@ -199,53 +199,54 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
   return (
     <div className={styles.backdrop}>
       <div className={styles.modal}>
-        <h2 className={styles.title}>
-          {gameResult === 'win' ? 'Congratulations!' : 'Better luck tomorrow ☹️'}
-        </h2>
-        <p className={styles.resultText}>
-          {gameResult === 'win'
-            ? `You solved it in ${attemptsUsed} ${attemptsUsed === 1 ? 'attempt' : 'attempts'}!`
-            : 'Keep practicing!'}
-        </p>
+        <h2 className={styles.title}>thanks for playing StatSwap</h2>
 
-        <div className={styles.container}>
-          {/* Grid display code here */}
-        </div>
+        {/* If user won => show attemptsUsed; if lost => no attempts message */}
+        {gameResult === 'win' ? (
+          <p className={styles.resultText}>
+            you solved in {attemptsUsed} attempts 🤩
+          </p>
+        ) : (
+          <p className={styles.resultText}>
+            better luck tomorrow ☹️
+          </p>
+        )}
 
-        <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <button className={styles.shareButton} onClick={handleShare}>
-            Share
-          </button>
-
-          <form className={styles.phoneForm} onSubmit={handleSubmit}>
-            <input
-              type="tel"
-              className={styles.phoneInput}
-              value={phoneNumber}
-              onChange={(e) => setPhoneNumber(e.target.value)}
-              placeholder="Enter phone #"
-              disabled={isSubmitting || submitSuccess}
-            />
-            <button
-              type="submit"
-              className={styles.submitButton}
-              disabled={isSubmitting || submitSuccess || !phoneNumber}
-            >
-              {isSubmitting ? 'Submitting...' : submitSuccess ? 'Submitted!' : 'Submit'}
-            </button>
-          </form>
-        </div>
-
-        {error && <p className={styles.error}>{error}</p>}
-        {submitSuccess && <p className={styles.success}>You're all set for tomorrow's game!</p>}
+        {/* Show the 3×3 correct answer grid, all in green */}
+        {renderCorrectAnswerGrid()}
 
         <div className={styles.notificationSection}>
-          Sign up below if you wanna play tomorrow's game in {getHoursUntilTomorrow()} hours
+          <p>sign up below if you wanna play tomorrow's game in __ hours</p>
+          <form onSubmit={handlePhoneSubmit} className={styles.phoneForm}>
+            <div className={styles.inputGroup}>
+              <input
+                type="tel"
+                id="phone"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
+                placeholder="Enter phone number (opt out any time)"
+                className={styles.phoneInput}
+                disabled={isSubmitting || submitSuccess}
+              />
+              <button
+                type="submit"
+                className={styles.submitButton}
+                disabled={isSubmitting || submitSuccess}
+              >
+                {isSubmitting ? 'Saving...' : submitSuccess ? '✓ Saved!' : 'Notify Me'}
+              </button>
+            </div>
+            {error && <p className={styles.error}>{error}</p>}
+            {submitSuccess && (
+              <p className={styles.success}>
+                Great! You'll receive a text when tomorrow's game is ready.
+              </p>
+            )}
+          </form>
+          <button className={styles.shareButton} onClick={shareResult}>
+            share game
+          </button>
         </div>
-
-        <button className={styles.closeButton} onClick={onClose}>
-          Close
-        </button>
       </div>
     </div>
   );

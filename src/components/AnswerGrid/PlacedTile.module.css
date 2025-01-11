@@ -1,6 +1,6 @@
 .placedTile {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background-color: #fff;
     color: #000;
     display: flex;
@@ -12,13 +12,12 @@
     touch-action: none;
     transition: opacity 0.2s;
     font-weight: bold;
-    font-size: 0.85rem;
-    position: absolute;
+    position: absolute; /* or static, depends on your preference */
   }
   
   .locked {
     background-color: green;
-    color: #fff;
-    cursor: default;
+    color: #fff; /* so text is visible on green */
+    cursor: default; /* no grabbing hand if locked */
   }
   

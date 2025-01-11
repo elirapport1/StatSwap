@@ -134,6 +134,10 @@
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
   }
   
   .optOutText {
@@ -144,24 +148,27 @@
   }
   
   .phoneForm {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 16px;
-    margin-left: 16px;
+    gap: 8px;
+    margin: 0;
   }
   
   .phoneLabel {
     font-size: 1rem;
     color: #333;
+    text-align: center;
   }
   
   .inputGroup {
     display: flex;
     gap: 8px;
+    justify-content: center;
   }
   
   .phoneInput {
-    width: 150px;
+    flex: 1;
+    max-width: 250px;
     padding: 10px 16px;
     border: 2px solid #007bff;
     border-radius: 6px;
