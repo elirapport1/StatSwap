@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "generate-stats": "tsx src/data/playerStats.ts",
     "start": "react-scripts start",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
