@@ -1,17 +1,17 @@
 {
-  "Trae Young": {
-    "Career High Steals": 5,
-    "Career FG Percentage": 43.4,
-    "Career Rebounds Per Game": 3.6
+  "Jalen Williams": {
+    "Career Games Played": 183,
+    "Career Personal Fouls": 462,
+    "Career Blocks Per Game": 0.6
   },
-  "DeMarcus Cousins": {
-    "Career High Steals": 7,
-    "Career FG Percentage": 46,
-    "Career Rebounds Per Game": 10.2
+  "Jordan Poole": {
+    "Career Games Played": 373,
+    "Career Personal Fouls": 938,
+    "Career Blocks Per Game": 0.3
   },
-  "Monta Ellis": {
-    "Career High Steals": 7,
-    "Career FG Percentage": 45.1,
-    "Career Rebounds Per Game": 3.5
+  "Lorenzen Wright": {
+    "Career Games Played": 778,
+    "Career Personal Fouls": 2276,
+    "Career Blocks Per Game": 0.7
   }
 }
