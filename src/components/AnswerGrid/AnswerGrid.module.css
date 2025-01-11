@@ -7,74 +7,68 @@
   
   .headerRow {
     display: grid;
-    /* 4 columns of 80px each, matching the 80×80 answer cells */
-    grid-template-columns: repeat(4, 80px);
-    gap: 8px;
-    margin-bottom: 1rem;
-    /* Center the entire grid horizontally */
+    grid-template-columns: repeat(4, 70px);
+    gap: 6px;
+    margin-bottom: 6px;
     justify-content: center;
   }
   
   .gridRow {
     display: grid;
-    /* 4 columns of 80px each, matching the 80×80 answer cells */
-    grid-template-columns: repeat(4, 80px);
-    gap: 8px;
-    margin-bottom: 1rem;
-    /* Center the entire grid horizontally */
+    grid-template-columns: repeat(4, 70px);
+    gap: 6px;
+    margin-bottom: 6px;
     justify-content: center;
   }
   
-  
   .cornerLabel {
-    /* top-left corner cell (empty) */
+    width: 70px;
+    height: 70px;
   }
   
   .playerLabel {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-  
     text-align: center;
     font-weight: bold;
     color: white;
     background-color: #000000;
     border-radius: 8px;
     padding: 4px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     hyphens: auto;
     word-wrap: break-word;
     overflow-wrap: break-word;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     line-height: 1.2;
-    max-height: 80px;
+    max-height: 70px;
     overflow: hidden;
   }
   
   .categoryLabel {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-  
     font-weight: bold;
     text-align: center;
     color: white;
     background-color: #000000;
     border-radius: 8px;
     padding: 4px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     hyphens: auto;
     word-wrap: break-word;
     overflow-wrap: break-word;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     line-height: 1.2;
-    max-height: 80px;
+    max-height: 70px;
     overflow: hidden;
   }
   
