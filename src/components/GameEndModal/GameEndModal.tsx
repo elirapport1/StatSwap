@@ -204,7 +204,7 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
         {/* If user won => show attemptsUsed; if lost => no attempts message */}
         {gameResult === 'win' ? (
           <p className={styles.resultText}>
-            you solved in {attemptsUsed} attempts
+            you solved in {attemptsUsed} attempts 🤩
           </p>
         ) : (
           <p className={styles.resultText}>
