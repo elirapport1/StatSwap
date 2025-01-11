@@ -12,6 +12,7 @@
     touch-action: none;
     transition: opacity 0.2s;
     font-weight: bold;
+    font-size: 0.9rem;
     position: absolute; /* or static, depends on your preference */
   }
   

@@ -42,7 +42,16 @@
     color: white;
     background-color: #000000;
     border-radius: 8px;
-    padding: 0; /* changed from 8px to 0 */
+    padding: 4px;
+    font-size: 0.9rem;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    line-height: 1.2;
+    max-height: 80px;
+    overflow: hidden;
   }
   
   .categoryLabel {
@@ -57,7 +66,16 @@
     color: white;
     background-color: #000000;
     border-radius: 8px;
-    padding: 0; /* changed from 8px to 0 */
+    padding: 4px;
+    font-size: 0.9rem;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    line-height: 1.2;
+    max-height: 80px;
+    overflow: hidden;
   }
   
   
