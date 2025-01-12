@@ -1,17 +1,17 @@
 {
-  "Benedict Mathurin": {
-    "Career Turnovers Per Game": 1.9,
-    "Career Turnovers": 329,
-    "Career Points": 2804
+  "Tyrese Haliburton": {
+    "career minutes per game": 33.1,
+    "Career Minutes": 9910,
+    "Career Assists": 2622
   },
-  "Antoine Walker": {
-    "Career Turnovers Per Game": 2.8,
-    "Career Turnovers": 2504,
-    "Career Points": 15647
+  "Klay Thompson": {
+    "career minutes per game": 32.4,
+    "Career Minutes": 26754,
+    "Career Assists": 1909
   },
-  "Larry Johnson": {
-    "Career Turnovers Per Game": 2,
-    "Career Turnovers": 1435,
-    "Career Points": 11450
+  "Christian Wood": {
+    "career minutes per game": 23.2,
+    "Career Minutes": 7858,
+    "Career Assists": 469
   }
 }
