@@ -1,17 +1,17 @@
 {
-  "Trae Young": {
-    "Career High Steals": 5,
-    "Career FG Percentage": 43.4,
-    "Career Rebounds Per Game": 3.6
+  "Vlade Divac": {
+    "career triple doubles": 8,
+    "Career Minutes": 33838,
+    "Career Points Per Game": 11.8
   },
-  "DeMarcus Cousins": {
-    "Career High Steals": 7,
-    "Career FG Percentage": 46,
-    "Career Rebounds Per Game": 10.2
+  "JaVale McGee": {
+    "career triple doubles": 1,
+    "Career Minutes": 14675,
+    "Career Points Per Game": 7.6
   },
-  "Monta Ellis": {
-    "Career High Steals": 7,
-    "Career FG Percentage": 45.1,
-    "Career Rebounds Per Game": 3.5
+  "Ray Allen": {
+    "career triple doubles": 3,
+    "Career Minutes": 46344,
+    "Career Points Per Game": 18.9
   }
 }
