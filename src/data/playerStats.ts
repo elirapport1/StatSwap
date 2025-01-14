@@ -1,7 +1,7 @@
 // src/data/playerStats.ts
 import * as fs from 'fs';
 import * as path from 'path';
-import { scrapeStatFromStatmuse } from './scrape_stats';
+import { scrapeStatFromStatmuse } from './scrape_stats.js';
 
 // Add type definitions at the top
 export interface PlayerStat {
