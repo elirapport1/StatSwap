@@ -1,17 +1,17 @@
 {
-  "Kevin Garnett": {
-    "Career Steals Per Game": 1.3,
-    "Career FT Attempted": 6190,
-    "Career FG Attempted": 21142
+  "Alperen Şengün": {
+    "Career FT Made": 753,
+    "Career Plus-Minus": -311,
+    "Weight": 255
   },
-  "Christian Braun": {
-    "Career Steals Per Game": 0.6,
-    "Career FT Attempted": 296,
-    "Career FG Attempted": 1123
+  "Anfernee Simons": {
+    "Career FT Made": 639,
+    "Career Plus-Minus": -952,
+    "Weight": 193
   },
-  "Allan Houston": {
-    "Career Steals Per Game": 0.7,
-    "Career FT Attempted": 2979,
-    "Career FG Attempted": 12017
+  "Paolo Banchero": {
+    "Career FT Made": 853,
+    "Career Plus-Minus": -161,
+    "Weight": 250
   }
 }
