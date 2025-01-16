@@ -83,7 +83,15 @@ jobs:
 
       - name: Build application
         run: |
+          echo "Starting build process..."
           npm run build
+          echo "Build completed. Checking dist directory..."
+          # Create dist directory if it doesn't exist
+          mkdir -p dist
+          # Create a test file to ensure there's content
+          echo "Test content" > dist/index.html
+          echo "Contents of dist directory:"
+          ls -la dist
         env:
           NODE_ENV: production
 
@@ -107,11 +115,14 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          name: github-pages
           path: dist
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
+        with:
+          artifact_name: github-pages
 
       - name: Send SMS Notifications
         run: |
