@@ -4,6 +4,7 @@ on:
   schedule:
     # Runs at 6:38 PM Central Time (23:38 UTC)
     - cron: '36 10 * * *'
+  # Allow manual trigger for testing
   workflow_dispatch:
 
 permissions:
@@ -14,12 +15,22 @@ permissions:
 jobs:
   update-stats:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+      TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+      TWILIO_PHONE_NUMBER: ${{ secrets.TWILIO_PHONE_NUMBER }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Fetch all history for proper git operations
-
+        
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -28,7 +39,8 @@ jobs:
           cache-dependency-path: package-lock.json
           
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci
 
       - name: Create build script
         run: |
@@ -51,6 +63,7 @@ jobs:
 
       - name: Create mock data directory
         run: |
+          # First create the source mock file
           mkdir -p src/data
           echo "export const scrapeStatFromStatmuse = async (query: string): Promise<number> => { return Math.floor(Math.random() * 1000); };" > src/data/scrape_stats.js
 
@@ -66,12 +79,11 @@ jobs:
           node dist-scripts/data/playerStats.js
         env:
           NODE_ENV: production
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Build application
         run: |
           npm run build
-          # Confirm that the dist folder exists
-          ls -al dist || echo "No 'dist' folder found!"
         env:
           NODE_ENV: production
 
@@ -82,6 +94,7 @@ jobs:
 
       - name: Commit and push if changes
         run: |
+          # Restore original playerStats.ts before committing
           git checkout src/data/playerStats.ts
           git add src/data/player_stats.json
           git diff --staged --quiet || (git commit -m "Update player stats for $(date +'%Y-%m-%d')" && git push)
@@ -95,45 +108,42 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-          name: github-pages  # Ensures name matches what "deploy-pages" expects
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
 
-      # ---- OPTIONAL: Uncomment these if/when you want to enable Twilio & Supabase again ----
-      #
       - name: Send SMS Notifications
         run: |
           npm install @supabase/supabase-js twilio
           node -e '
             const { createClient } = require("@supabase/supabase-js");
             const twilio = require("twilio");
-      
+
             async function sendNotifications() {
               const supabase = createClient(
                 process.env.SUPABASE_URL,
                 process.env.SUPABASE_SERVICE_KEY
               );
-      
+
               const twilioClient = twilio(
                 process.env.TWILIO_ACCOUNT_SID,
                 process.env.TWILIO_AUTH_TOKEN
               );
-      
+
               // Fetch all phone numbers
               const { data: subscribers, error } = await supabase
                 .from("notifications")
                 .select("phone_number");
-      
+
               if (error) {
                 console.error("Error fetching subscribers:", error);
                 process.exit(1);
               }
-      
+
               // Send SMS to each subscriber
               const message = "Good morning! 🤗 😴 new day new statswap! https://elirapport1.github.io/StatSwap";
-      
+              
               for (const subscriber of subscribers) {
                 try {
                   await twilioClient.messages.create({
@@ -147,7 +157,7 @@ jobs:
                 }
               }
             }
-      
+
             sendNotifications().catch(console.error);
           '
         env:
