@@ -1,17 +1,17 @@
 {
-  "Anthony Davis": {
-    "Career 3-PT Made": 367,
-    "Career High Rebounds": 26,
-    "Career FT Attempted": 5463
+  "John Wall": {
+    "Career FT Percentage": 77.6,
+    "career triple doubles": 8,
+    "Career Minutes Per Game": 34.9
   },
-  "Gerald Wallace": {
-    "Career 3-PT Made": 407,
-    "Career High Rebounds": 20,
-    "Career FT Attempted": 3517
+  "Jason Richardson": {
+    "Career FT Percentage": 70.7,
+    "career triple doubles": 0,
+    "Career Minutes Per Game": 34.1
   },
-  "Alex Caruso": {
-    "Career 3-PT Made": 387,
-    "Career High Rebounds": 13,
-    "Career FT Attempted": 517
+  "Donte DiVincenzo": {
+    "Career FT Percentage": 77.6,
+    "career triple doubles": 0,
+    "Career Minutes Per Game": 25.5
   }
 }
