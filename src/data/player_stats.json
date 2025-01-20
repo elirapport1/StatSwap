@@ -1,17 +1,17 @@
 {
-  "John Wall": {
-    "Career FT Percentage": 77.6,
-    "career triple doubles": 8,
-    "Career Minutes Per Game": 34.9
+  "Collin Sexton": {
+    "Career Blocks Per Game": 0.1,
+    "Career Blocks": 51,
+    "Career Offensive Rebounds": 334
   },
-  "Jason Richardson": {
-    "Career FT Percentage": 70.7,
-    "career triple doubles": 0,
-    "Career Minutes Per Game": 34.1
+  "Terance Mann": {
+    "Career Blocks Per Game": 0.2,
+    "Career Blocks": 82,
+    "Career Offensive Rebounds": 359
   },
-  "Donte DiVincenzo": {
-    "Career FT Percentage": 77.6,
-    "career triple doubles": 0,
-    "Career Minutes Per Game": 25.5
+  "Jaden McDaniels": {
+    "Career Blocks Per Game": 0.8,
+    "Career Blocks": 265,
+    "Career Offensive Rebounds": 337
   }
 }
