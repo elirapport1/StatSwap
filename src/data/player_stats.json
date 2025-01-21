@@ -1,17 +1,17 @@
 {
-  "Collin Sexton": {
-    "Career Blocks Per Game": 0.1,
-    "Career Blocks": 51,
-    "Career Offensive Rebounds": 334
+  "Reggie Jackson": {
+    "Career Minutes Per Game": 24.8,
+    "Career FT Made": 1547,
+    "Career FT Attempted": 1811
   },
-  "Terance Mann": {
-    "Career Blocks Per Game": 0.2,
-    "Career Blocks": 82,
-    "Career Offensive Rebounds": 359
+  "Ivica Zubac": {
+    "Career Minutes Per Game": 22.2,
+    "Career FT Made": 948,
+    "Career FT Attempted": 1312
   },
-  "Jaden McDaniels": {
-    "Career Blocks Per Game": 0.8,
-    "Career Blocks": 265,
-    "Career Offensive Rebounds": 337
+  "Jameer Nelson": {
+    "Career Minutes Per Game": 27.9,
+    "Career FT Made": 1207,
+    "Career FT Attempted": 1491
   }
 }
