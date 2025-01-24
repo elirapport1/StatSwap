@@ -13,9 +13,12 @@ export async function scrapeStatFromStatmuse(query: string): Promise<number | nu
 
     const $ = cheerio.load(data);
     const resultSpan = $('span.text-pretty').first();
+    console.log("resultSpan: ", resultSpan);
+    // console. 
 
     if (!resultSpan || resultSpan.length === 0) {
       console.error('Could not find the result span.');
+
       return null;
     }
 

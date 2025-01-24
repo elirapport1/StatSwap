@@ -75,6 +75,7 @@ export async function fetchPlayerStats(players: string[], statList: string[]): P
   const results: PlayerStatsData = {};
   
   for (const player of players) {
+    console.log(`Fetching stats for player: ${player}`);
     // Initialize player's stats object
     results[player] = {};
     
@@ -84,6 +85,7 @@ export async function fetchPlayerStats(players: string[], statList: string[]): P
       const statValue = await scrapeStatFromStatmuse(query);
       results[player][stat] = statValue ?? 0;
     }
+    console.log(`Stats for ${player}:`, results[player]);
   }
   
   return results;
