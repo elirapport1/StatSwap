@@ -118,7 +118,8 @@ jobs:
         with:
           name: github-pages
           path: dist
-
+      - name: Check dist contents
+        run: ls -la dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
