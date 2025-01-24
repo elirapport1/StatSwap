@@ -202,50 +202,62 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
         <h2 className={styles.title}>thanks for playing StatSwap</h2>
 
         {/* If user won => show attemptsUsed; if lost => no attempts message */}
-        {gameResult === 'win' ? (
-          <p className={styles.resultText}>
-            you solved in {attemptsUsed} attempts 🤩
-          </p>
-        ) : (
-          <p className={styles.resultText}>
-            better luck tomorrow ☹️
-          </p>
-        )}
-        <p className={styles.resultText} >sign up below to play tomorrow's game in __ countdown</p>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          {gameResult === 'win' ? (
+            <p className={styles.resultText}>
+              you solved in {attemptsUsed} attempts 🤩
+            </p>
+          ) : (
+            <p className={styles.resultText}>
+              better luck tomorrow ☹️
+            </p>
+          )}
+          <button className={styles.shareButton} onClick={shareResult}>
+              share game
+          </button>
+        </div>
+        
+        
+        
+        
 
         {/* Show the 3×3 correct answer grid, all in green */}
         {renderCorrectAnswerGrid()}
-
-        <div className={styles.notificationSection}>
-          <form onSubmit={handlePhoneSubmit} className={styles.phoneForm}>
-            <div className={styles.inputGroup}>
-              <input
-                type="tel"
-                id="phone"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
-                placeholder="Enter phone number (opt out any time)"
-                className={styles.phoneInput}
-                disabled={isSubmitting || submitSuccess}
-              />
-              <button
-                type="submit"
-                className={styles.submitButton}
-                disabled={isSubmitting || submitSuccess}
-              >
-                {isSubmitting ? 'Saving...' : submitSuccess ? '✓ Saved!' : 'Notify Me'}
-              </button>
+        
+        {/* <p className={styles.resultText} >sign up to play tomorrow</p>  */}
+        
+            // Start of Selection
+            <div className={styles.notificationSection}>
+              <form onSubmit={handlePhoneSubmit} className={styles.phoneForm}>
+                <div className={styles.inputGroup} style={{ display: 'flex', alignItems: 'center' }}>
+                  <input
+                    type="tel"
+                    id="phone"
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
+                    placeholder="Enter 📞 (opt out whenever)"
+                    className={styles.phoneInput}
+                    disabled={isSubmitting || submitSuccess}
+                    style={{ flex: 1, marginRight: '8px', height: '100%' }}
+                  />
+                  <button
+                    type="submit"
+                    className={styles.submitButton}
+                    disabled={isSubmitting || submitSuccess}
+                    style={{ height: '100%' }}
+                  >
+                    {isSubmitting ? 'Saving...' : submitSuccess ? '✓ Saved!' : 'sign up to play tomorrow'}
+                  </button>
+                </div>
+                {error && <p className={styles.error}>{error}</p>}
+                {submitSuccess && (
+                  <p className={styles.success}>
+                    Great! You'll receive a text when tomorrow's game is ready.
+                  </p>
+                )}
+              </form>
             </div>
-            {error && <p className={styles.error}>{error}</p>}
-            {submitSuccess && (
-              <p className={styles.success}>
-                Great! You'll receive a text when tomorrow's game is ready.
-              </p>
-            )}
           </form>
-          <button className={styles.shareButton} onClick={shareResult}>
-            share game
-          </button>
         </div>
       </div>
     </div>
