@@ -211,6 +211,7 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
             better luck tomorrow ☹️
           </p>
         )}
+        <p className={styles.resultText} >sign up below if you wanna play tomorrow's game in __ hours</p>
 
         {/* Show the 3×3 correct answer grid, all in green */}
         {renderCorrectAnswerGrid()}
