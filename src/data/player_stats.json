@@ -1,17 +1,17 @@
 {
-  "LeBron James": {
-    "Career High Turnovers": 11,
-    "Career Minutes Per Game": 37.9,
-    "Career Offensive Rebounds": 1764
+  "Paul Pierce": {
+    "Career Assists Per Game": 3.5,
+    "Career FT Percentage": 80.6,
+    "Career 3-PT Percentage": 36.8
   },
-  "DeAndre Jordan": {
-    "Career High Turnovers": 9,
-    "Career Minutes Per Game": 25.4,
-    "Career Offensive Rebounds": 3146
+  "Ivica Zubac": {
+    "Career Assists Per Game": 1.3,
+    "Career FT Percentage": 72.2,
+    "Career 3-PT Percentage": 8.3
   },
-  "Robin Lopez": {
-    "Career High Turnovers": 6,
-    "Career Minutes Per Game": 21.1,
-    "Career Offensive Rebounds": 2147
+  "Tim Hardaway": {
+    "Career Assists Per Game": 8.2,
+    "Career FT Percentage": 78.2,
+    "Career 3-PT Percentage": 35.5
   }
 }
