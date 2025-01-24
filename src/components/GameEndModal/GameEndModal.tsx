@@ -33,7 +33,7 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
   /**
    * buildShareText():
    * Produces the share text for the final outcome.
-   * We’ll simply show 3 lines of 🟩🟩🟩 for a 3×3 correct grid. 
+   * We'll simply show 3 lines of 🟩🟩🟩 for a 3×3 correct grid. 
    * If user "win," we show attemptsUsed as well.
    */
   function buildShareText(): string {
@@ -88,6 +88,7 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
           text: text,
         });
       } catch (error) {
+        console.error('Failed to share:', error);
         // User cancelled or share failed - fall back to clipboard
         copyToClipboard();
       }
@@ -199,6 +200,13 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
   return (
     <div className={styles.backdrop}>
       <div className={styles.modal}>
+        <button 
+          onClick={onClose}
+          className={styles.closeButton}
+          aria-label="Close modal"
+        >
+          ×
+        </button>
         <h2 className={styles.title}>thanks for playing StatSwap</h2>
 
         {/* If user won => show attemptsUsed; if lost => no attempts message */}
@@ -224,39 +232,35 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
         {/* Show the 3×3 correct answer grid, all in green */}
         {renderCorrectAnswerGrid()}
         
-        {/* <p className={styles.resultText} >sign up to play tomorrow</p>  */}
-        
-            // Start of Selection
-            <div className={styles.notificationSection}>
-              <form onSubmit={handlePhoneSubmit} className={styles.phoneForm}>
-                <div className={styles.inputGroup} style={{ display: 'flex', alignItems: 'center' }}>
-                  <input
-                    type="tel"
-                    id="phone"
-                    value={phoneNumber}
-                    onChange={(e) => setPhoneNumber(e.target.value)}
-                    placeholder="Enter 📞 (opt out whenever)"
-                    className={styles.phoneInput}
-                    disabled={isSubmitting || submitSuccess}
-                    style={{ flex: 1, marginRight: '8px', height: '100%' }}
-                  />
-                  <button
-                    type="submit"
-                    className={styles.submitButton}
-                    disabled={isSubmitting || submitSuccess}
-                    style={{ height: '100%' }}
-                  >
-                    {isSubmitting ? 'Saving...' : submitSuccess ? '✓ Saved!' : 'sign up to play tomorrow'}
-                  </button>
-                </div>
-                {error && <p className={styles.error}>{error}</p>}
-                {submitSuccess && (
-                  <p className={styles.success}>
-                    Great! You'll receive a text when tomorrow's game is ready.
-                  </p>
-                )}
-              </form>
+        {/* Notification signup section */}
+        <div className={styles.notificationSection}>
+          <form onSubmit={handlePhoneSubmit} className={styles.phoneForm}>
+            <div className={styles.inputGroup} style={{ display: 'flex', alignItems: 'center' }}>
+              <input
+                type="tel"
+                id="phone"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
+                placeholder="Enter 📞 (opt out whenever)"
+                className={styles.phoneInput}
+                disabled={isSubmitting || submitSuccess}
+                style={{ flex: 1, marginRight: '8px', height: '100%' }}
+              />
+              <button
+                type="submit"
+                className={styles.submitButton}
+                disabled={isSubmitting || submitSuccess}
+                style={{ height: '100%' }}
+              >
+                {isSubmitting ? 'Saving...' : submitSuccess ? '✓ Saved!' : 'sign up to play tomorrow'}
+              </button>
             </div>
+            {error && <p className={styles.error}>{error}</p>}
+            {submitSuccess && (
+              <p className={styles.success}>
+                Great! You'll receive a text when tomorrow's game is ready.
+              </p>
+            )}
           </form>
         </div>
       </div>
