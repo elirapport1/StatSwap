@@ -88,10 +88,6 @@ jobs:
           echo "Build completed. Checking dist directory..."
           # If the dist directory for some reason doesn't exist, create it
           mkdir -p dist
-          # Create a test file to ensure there's some content (optional)
-          echo "Test content" > dist/index.html
-          echo "Contents of dist directory:"
-          ls -la dist
         env:
           NODE_ENV: production
 
