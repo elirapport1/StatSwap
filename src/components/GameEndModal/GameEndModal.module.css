@@ -46,10 +46,15 @@
     color: #fff;
     border: none;
     border-radius: 6px;
-    padding: 0.75rem 1.25rem;
+    padding: 10px 20px;
     cursor: pointer;
     margin-right: 0.5rem;
     margin-top: 1rem;
+    font-size: 1rem;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .closeButton {
@@ -57,9 +62,14 @@
     color: #fff;
     border: none;
     border-radius: 6px;
-    padding: 0.75rem 1.25rem;
+    padding: 10px 20px;
     cursor: pointer;
     margin-top: 1rem;
+    font-size: 1rem;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* Below are the "correct answer grid" classes */
@@ -178,6 +188,7 @@
     font-size: 1rem;
     background: transparent;
     transition: all 0.2s ease;
+    height: 44px;
   }
   
   .phoneInput:focus {
@@ -201,6 +212,10 @@
     font-size: 1rem;
     transition: background-color 0.2s;
     white-space: nowrap;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .submitButton:hover:not(:disabled) {

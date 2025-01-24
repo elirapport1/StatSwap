@@ -211,13 +211,12 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
             better luck tomorrow ☹️
           </p>
         )}
-        <p className={styles.resultText} >sign up below if you wanna play tomorrow's game in __ hours</p>
+        <p className={styles.resultText} >sign up below to play tomorrow's game in __ countdown</p>
 
         {/* Show the 3×3 correct answer grid, all in green */}
         {renderCorrectAnswerGrid()}
 
         <div className={styles.notificationSection}>
-          <p>sign up below if you wanna play tomorrow's game in __ hours</p>
           <form onSubmit={handlePhoneSubmit} className={styles.phoneForm}>
             <div className={styles.inputGroup}>
               <input
