@@ -200,13 +200,6 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
   return (
     <div className={styles.backdrop}>
       <div className={styles.modal}>
-        <button 
-          onClick={onClose}
-          className={styles.closeButton}
-          aria-label="Close modal"
-        >
-          ×
-        </button>
         <h2 className={styles.title}>thanks for playing StatSwap</h2>
 
         {/* If user won => show attemptsUsed; if lost => no attempts message */}
