@@ -7,8 +7,8 @@
   
   .headerRow {
     display: grid;
-    /* 4 columns of 60px each, matching the 60×60 answer cells */
-    grid-template-columns: repeat(4, 60px);
+    /* 4 columns of 80px each, matching the 80×80 answer cells */
+    grid-template-columns: repeat(4, 80px);
     gap: 8px;
     margin-bottom: 1rem;
     /* Center the entire grid horizontally */
@@ -17,8 +17,8 @@
   
   .gridRow {
     display: grid;
-    /* 4 columns of 60px each, matching the 60×60 answer cells */
-    grid-template-columns: repeat(4, 60px);
+    /* 4 columns of 80px each, matching the 80×80 answer cells */
+    grid-template-columns: repeat(4, 80px);
     gap: 8px;
     margin-bottom: 1rem;
     /* Center the entire grid horizontally */
@@ -31,31 +31,33 @@
   }
   
   .playerLabel {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+  
     text-align: center;
     font-weight: bold;
     color: white;
     background-color: #000000;
     border-radius: 8px;
-    padding: 0;
+    padding: 0; /* changed from 8px to 0 */
   }
   
   .categoryLabel {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+  
     font-weight: bold;
     text-align: center;
     color: white;
     background-color: #000000;
     border-radius: 8px;
-    padding: 0;
+    padding: 0; /* changed from 8px to 0 */
   }
   
   
