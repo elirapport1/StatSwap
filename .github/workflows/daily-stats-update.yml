@@ -83,11 +83,10 @@ jobs:
       - name: Build application
         run: |
           echo "Starting build process..."
-          # Use the vite build, which will directly output to "dist"
           npm run build
           echo "Build completed. Checking dist directory..."
-          # If the dist directory for some reason doesn't exist, create it
-          mkdir -p dist
+          echo "Contents of dist directory:"
+          ls -la dist
         env:
           NODE_ENV: production
 
