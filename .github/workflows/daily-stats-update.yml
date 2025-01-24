@@ -84,16 +84,12 @@ jobs:
       - name: Build application
         run: |
           echo "Starting build process..."
-          # Ensure we have a build script that creates dist folder
+          # Use the vite build, which will directly output to "dist"
           npm run build
-          # If using create-react-app, rename build to dist
-          if [ -d "build" ]; then
-            mv build dist
-          fi
           echo "Build completed. Checking dist directory..."
-          # Create dist directory if it doesn't exist
+          # If the dist directory for some reason doesn't exist, create it
           mkdir -p dist
-          # Create a test file to ensure there's some content
+          # Create a test file to ensure there's some content (optional)
           echo "Test content" > dist/index.html
           echo "Contents of dist directory:"
           ls -la dist
