@@ -1,17 +1,17 @@
 {
-  "Jimmy Butler": {
-    "career minutes per game": 33.1,
-    "Career Blocks Per Game": 0.4,
-    "Career Plus-Minus": 2305
+  "Marc Gasol": {
+    "Career Personal Fouls": 2551,
+    "Career FT Percentage": 77.6,
+    "Career Assists Per Game": 3.4
   },
-  "Tre Jones": {
-    "career minutes per game": 21.6,
-    "Career Blocks Per Game": 0.1,
-    "Career Plus-Minus": -411
+  "Patrick Beverley": {
+    "Career Personal Fouls": 1947,
+    "Career FT Percentage": 76,
+    "Career Assists Per Game": 3.4
   },
-  "Pau Gasol": {
-    "career minutes per game": 33.4,
-    "Career Blocks Per Game": 1.6,
-    "Career Plus-Minus": 1826
+  "Jaylen Brown": {
+    "Career Personal Fouls": 1460,
+    "Career FT Percentage": 72.2,
+    "Career Assists Per Game": 2.6
   }
 }
