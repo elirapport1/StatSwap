@@ -1,17 +1,17 @@
 {
-  "Cade Cunningham": {
-    "Career Blocks Per Game": 0.6,
-    "Career Turnovers Per Game": 3.8,
-    "Career Defensive Rebounds": 821
+  "Rui Hachimura": {
+    "career minutes per game": 27.5,
+    "Weight": 245,
+    "Career FT Made": 528
   },
-  "Cason Wallace": {
-    "Career Blocks Per Game": 0.5,
-    "Career Turnovers Per Game": 0.6,
-    "Career Defensive Rebounds": 242
+  "Ricky Rubio": {
+    "career minutes per game": 29.6,
+    "Weight": 190,
+    "Career FT Made": 1997
   },
-  "Nic Claxton": {
-    "Career Blocks Per Game": 1.7,
-    "Career Turnovers Per Game": 1.1,
-    "Career Defensive Rebounds": 1570
+  "Emeka Okafor": {
+    "career minutes per game": 30.9,
+    "Weight": 255,
+    "Career FT Made": 1362
   }
 }
