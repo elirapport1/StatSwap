@@ -1,4 +1,4 @@
-#StatSwap
+# StatSwap
 is a daily matching game for basketball fans to test their player stat knowledge.
 
 #Why?
