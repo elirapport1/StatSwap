@@ -2,33 +2,45 @@ import React, { useState } from 'react';
 import playerStatsRaw from '../../data/player_stats.json' with { type: 'json' };
 import type { PlayerStat, PlayerStatsData } from '../../data/playerStats.ts';
 import styles from './GameEndModal.module.css';
-import { createClient } from '@supabase/supabase-js';
-import { supabaseConfig } from '../../config/supabase.js';
-
-const supabase = createClient(
-  supabaseConfig.supabaseUrl,
-  supabaseConfig.supabaseAnonKey
-);
 
 const playerStats = playerStatsRaw as PlayerStatsData;
 
 interface GameEndModalProps {
-  onClose: () => void;             // closes the popup
   gameResult: 'win' | 'lose';
   attemptsUsed: number;            // how many times user clicked "Submit" to guess
   finalGrid: ('correct' | 'incorrect')[][];
 }
 
 const GameEndModal: React.FC<GameEndModalProps> = ({
-  onClose,
   gameResult,
   attemptsUsed,
   finalGrid
 }) => {
   const [phoneNumber, setPhoneNumber] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [error, setError] = useState('');
+
+  const formatPhoneNumber = (value: string) => {
+    // Remove all non-digits
+    const number = value.replace(/\D/g, '');
+    
+    // Format the number as user types
+    if (number.length <= 3) {
+      return number;
+    } else if (number.length <= 6) {
+      return `${number.slice(0, 3)}-${number.slice(3)}`;
+    } else {
+      return `${number.slice(0, 3)}-${number.slice(3, 6)}-${number.slice(6, 10)}`;
+    }
+  };
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const formattedNumber = formatPhoneNumber(e.target.value);
+    setPhoneNumber(formattedNumber);
+    // Reset success state if number is cleared
+    if (!formattedNumber) {
+      setSubmitSuccess(false);
+    }
+  };
 
   /**
    * buildShareText():
@@ -167,57 +179,29 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
 
   const handlePhoneSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setError('');
-
-    // Basic phone number validation
-    const phoneRegex = /^\+?1?\d{10,12}$/;
-    if (!phoneRegex.test(phoneNumber.replace(/[- ()]/g, ''))) {
-      setError('Please enter a valid phone number');
-      setIsSubmitting(false);
-      return;
-    }
-
-    try {
-      const { error: supabaseError } = await supabase
-        .from('notifications')
-        .insert([
-          { phone_number: phoneNumber, created_at: new Date().toISOString() }
-        ]);
-
-      if (supabaseError) throw supabaseError;
-
-      setSubmitSuccess(true);
-      setPhoneNumber('');
-    } catch (err) {
-      setError('Failed to save phone number. Please try again.');
-      console.error('Error saving phone number:', err);
-    } finally {
-      setIsSubmitting(false);
-    }
+    setSubmitSuccess(true);
+    setPhoneNumber(phoneNumber); // Keep the number visible
   };
 
   return (
     <div className={styles.backdrop}>
       <div className={styles.modal}>
-        <h2 className={styles.title}>thanks for playing StatSwap</h2>
-
+        <h2 className={styles.title} style={{ fontSize: '1.7rem' }}>thanks for playing StatSwap</h2>
         {/* If user won => show attemptsUsed; if lost => no attempts message */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.15rem' }}>
           {gameResult === 'win' ? (
             <p className={styles.resultText}>
-              you solved in {attemptsUsed} attempts 🤩
+              solved in {attemptsUsed} attempts 🤩
             </p>
           ) : (
             <p className={styles.resultText}>
               better luck tomorrow ☹️
             </p>
           )}
-          <button className={styles.shareButton} onClick={shareResult}>
-              share game
+          <button className={styles.shareButton} onClick={shareResult} style={{padding: '0.5rem 1rem', marginTop: '.4rem'}}>
+            share game
           </button>
         </div>
-        
         
         
         
@@ -226,34 +210,45 @@ const GameEndModal: React.FC<GameEndModalProps> = ({
         {renderCorrectAnswerGrid()}
         
         {/* Notification signup section */}
-        <div className={styles.notificationSection}>
+        <div className={styles.notificationSection} style={{ display: 'flex', justifyContent: 'center' }}>
           <form onSubmit={handlePhoneSubmit} className={styles.phoneForm}>
-            <div className={styles.inputGroup} style={{ display: 'flex', alignItems: 'center' }}>
+            <div className={styles.inputGroup} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '5px' }}>
               <input
                 type="tel"
                 id="phone"
                 value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
-                placeholder="Enter 📞 (opt out whenever)"
+                onChange={handlePhoneChange}
+                placeholder="enter your 📞 to"
                 className={styles.phoneInput}
-                disabled={isSubmitting || submitSuccess}
-                style={{ flex: 1, marginRight: '8px', height: '100%' }}
+                disabled={submitSuccess}
+                style={{ 
+                  flex: 1, 
+                  marginRight: '-2px', 
+                  width: '8px', 
+                  minWidth: '115px', 
+                  padding: '8px 7px',
+                  borderColor: submitSuccess ? 'green' : undefined,
+                  textAlign: 'left',
+                }}
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                autoComplete="tel"
+                inputMode="tel"
+                autoCapitalize="off"
+                autoCorrect="off"
               />
               <button
                 type="submit"
                 className={styles.submitButton}
-                disabled={isSubmitting || submitSuccess}
-                style={{ height: '100%' }}
+                disabled={!phoneNumber || submitSuccess}
+                style={{ 
+                  padding: '8px 7px', 
+                  height: '40px',
+                  backgroundColor: submitSuccess ? 'green' : undefined,
+                }}
               >
-                {isSubmitting ? 'Saving...' : submitSuccess ? '✓ Saved!' : 'sign up to play tomorrow'}
+                {submitSuccess ? 'texts enabled' : 'play tomorrow'}
               </button>
             </div>
-            {error && <p className={styles.error}>{error}</p>}
-            {submitSuccess && (
-              <p className={styles.success}>
-                Great! You'll receive a text when tomorrow's game is ready.
-              </p>
-            )}
           </form>
         </div>
       </div>
