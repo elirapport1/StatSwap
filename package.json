@@ -5,12 +5,12 @@
   "type": "module",
   "homepage": "https://elirapport1.github.io/StatSwap",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --config config/vite.config.ts",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview --config config/vite.config.ts",
     "generate-stats": "tsx src/data/playerStats.ts",
     "start": "react-scripts start",
-    "build": "vite build",
+    "build": "vite build --config config/vite.config.ts",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
