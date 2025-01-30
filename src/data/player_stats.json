@@ -1,17 +1,17 @@
 {
-  "Reggie Miller": {
-    "Career FG Attempted": 17499,
-    "Career 3-PT Attempted": 6486,
-    "Career High Rebounds": 12
+  "Cade Cunningham": {
+    "Career Games Played": 181,
+    "Career Points Per Game": 21.2,
+    "Career FG Attempted": 3311
   },
-  "Stephen Jackson": {
-    "Career FG Attempted": 11112,
-    "Career 3-PT Attempted": 3763,
-    "Career High Rebounds": 12
+  "Shaquille O'Neal": {
+    "Career Games Played": 1207,
+    "Career Points Per Game": 23.7,
+    "Career FG Attempted": 19457
   },
-  "Jayson Tatum": {
-    "Career FG Attempted": 9841,
-    "Career 3-PT Attempted": 3901,
-    "Career High Rebounds": 19
+  "Rudy Gobert": {
+    "Career Games Played": 804,
+    "Career Points Per Game": 12.5,
+    "Career FG Attempted": 5729
   }
 }
