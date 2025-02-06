@@ -1,17 +1,17 @@
 {
-  "Patty Mills": {
-    "Career 3-PT Attempted": 3997,
-    "Career Points Per Game": 8.8,
-    "Career High Points": 34
-  },
   "Kobe Bryant": {
-    "Career 3-PT Attempted": 5546,
-    "Career Points Per Game": 25,
-    "Career High Points": 81
+    "Career Minutes Per Game": 36.1,
+    "Career Personal Fouls": 3353,
+    "Career Offensive Rebounds": 1499
   },
-  "Kemba Walker": {
-    "Career 3-PT Attempted": 4642,
-    "Career Points Per Game": 19.3,
-    "Career High Points": 60
+  "Spencer Dinwiddie": {
+    "Career Minutes Per Game": 27.6,
+    "Career Personal Fouls": 1298,
+    "Career Offensive Rebounds": 247
+  },
+  "Josh Giddey": {
+    "Career Minutes Per Game": 28.9,
+    "Career Personal Fouls": 420,
+    "Career Offensive Rebounds": 435
   }
 }
