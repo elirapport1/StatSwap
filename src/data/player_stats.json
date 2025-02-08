@@ -1,17 +1,17 @@
 {
-  "Wesley Matthews": {
-    "Career Offensive Rebounds": 498,
-    "Career Assists": 1843,
-    "Career Defensive Rebounds": 2259
+  "Devin Booker": {
+    "Career Rebounds Per Game": 4,
+    "Career FT Percentage": 87.2,
+    "Career Minutes Per Game": 34.3
   },
-  "Shaquille O'Neal": {
-    "Career Offensive Rebounds": 4209,
-    "Career Assists": 3026,
-    "Career Defensive Rebounds": 8890
+  "Myles Turner": {
+    "Career Rebounds Per Game": 6.8,
+    "Career FT Percentage": 77,
+    "Career Minutes Per Game": 28.7
   },
-  "Kevin Huerter": {
-    "Career Offensive Rebounds": 264,
-    "Career Assists": 1332,
-    "Career Defensive Rebounds": 1289
+  "Deandre Ayton": {
+    "Career Rebounds Per Game": 10.5,
+    "Career FT Percentage": 75.6,
+    "Career Minutes Per Game": 30.9
   }
 }
