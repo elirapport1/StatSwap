@@ -1,17 +1,17 @@
 {
-  "Devin Booker": {
-    "Career Rebounds Per Game": 4,
-    "Career FT Percentage": 87.2,
-    "Career Minutes Per Game": 34.3
+  "Marc Gasol": {
+    "Career 3-PT Made": 431,
+    "Career FT Made": 2813,
+    "Career Plus-Minus": 1139
   },
-  "Myles Turner": {
-    "Career Rebounds Per Game": 6.8,
-    "Career FT Percentage": 77,
-    "Career Minutes Per Game": 28.7
+  "Trey Burke": {
+    "Career 3-PT Made": 564,
+    "Career FT Made": 534,
+    "Career Plus-Minus": -547
   },
-  "Deandre Ayton": {
-    "Career Rebounds Per Game": 10.5,
-    "Career FT Percentage": 75.6,
-    "Career Minutes Per Game": 30.9
+  "Luol Deng": {
+    "Career 3-PT Made": 658,
+    "Career FT Made": 2443,
+    "Career Plus-Minus": 1357
   }
 }
