@@ -1,17 +1,17 @@
 {
-  "Anthony Davis": {
-    "Career Rebounds Per Game": 10.7,
-    "Career Assists": 1976,
-    "Weight": 268
+  "Rasheed Wallace": {
+    "Career FG Percentage": 46.7,
+    "Career Turnovers": 1693,
+    "Career Personal Fouls": 3259
   },
   "Scottie Pippen": {
-    "Career Rebounds Per Game": 6.4,
-    "Career Assists": 6135,
-    "Weight": 228
+    "Career FG Percentage": 47.3,
+    "Career Turnovers": 3257,
+    "Career Personal Fouls": 3329
   },
-  "Danny Granger": {
-    "Career Rebounds Per Game": 4.9,
-    "Career Assists": 1097,
-    "Weight": 222
+  "Stephen Jackson": {
+    "Career FG Percentage": 41.4,
+    "Career Turnovers": 2141,
+    "Career Personal Fouls": 2043
   }
 }
