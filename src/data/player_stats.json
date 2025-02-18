@@ -1,17 +1,17 @@
 {
-  "Harrison Barnes": {
-    "Career Assists": 1694,
-    "Career Turnovers": 1104,
-    "career triple doubles": 0
+  "Kyrie Irving": {
+    "Career Turnovers Per Game": 2.5,
+    "Career 3-PT Percentage": 39.5,
+    "career triple doubles": 3
   },
-  "Myles Turner": {
-    "Career Assists": 772,
-    "Career Turnovers": 875,
-    "career triple doubles": 0
+  "Richard Jefferson": {
+    "Career Turnovers Per Game": 1.5,
+    "Career 3-PT Percentage": 37.6,
+    "career triple doubles": 1
   },
-  "JJ Redick": {
-    "Career Assists": 1862,
-    "Career Turnovers": 1040,
-    "career triple doubles": 0
+  "Jason Kidd": {
+    "Career Turnovers Per Game": 2.9,
+    "Career 3-PT Percentage": 34.9,
+    "career triple doubles": 107
   }
 }
