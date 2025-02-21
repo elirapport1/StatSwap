@@ -1,17 +1,17 @@
 {
-  "Vlade Divac": {
-    "Career FT Attempted": 4176,
-    "Career Turnovers Per Game": 2.2,
-    "Career 3-PT Percentage": 23.5
+  "Jaylen Brown": {
+    "Career FT Percentage": 72.3,
+    "Career Turnovers Per Game": 2.1,
+    "career minutes per game": 30.6
   },
-  "Tobias Harris": {
-    "Career FT Attempted": 2753,
-    "Career Turnovers Per Game": 1.4,
-    "Career 3-PT Percentage": 36.6
+  "Chris Paul": {
+    "Career FT Percentage": 87.1,
+    "Career Turnovers Per Game": 2.3,
+    "career minutes per game": 33.9
   },
-  "Patty Mills": {
-    "Career FT Attempted": 864,
-    "Career Turnovers Per Game": 0.9,
-    "Career 3-PT Percentage": 38.5
+  "Gary Payton": {
+    "Career FT Percentage": 72.9,
+    "Career Turnovers Per Game": 2.3,
+    "career minutes per game": 35.3
   }
 }
