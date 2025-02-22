@@ -1,17 +1,17 @@
 {
-  "Jaylen Brown": {
-    "Career FT Percentage": 72.3,
-    "Career Turnovers Per Game": 2.1,
-    "career minutes per game": 30.6
+  "Killian Hayes": {
+    "Career FG Attempted": 1764,
+    "Career Personal Fouls": 537,
+    "Career Steals Per Game": 1.2
   },
-  "Chris Paul": {
-    "Career FT Percentage": 87.1,
-    "Career Turnovers Per Game": 2.3,
-    "career minutes per game": 33.9
+  "Patrick Beverley": {
+    "Career FG Attempted": 4671,
+    "Career Personal Fouls": 1947,
+    "Career Steals Per Game": 1.1
   },
-  "Gary Payton": {
-    "Career FT Percentage": 72.9,
-    "Career Turnovers Per Game": 2.3,
-    "career minutes per game": 35.3
+  "Ricky Rubio": {
+    "Career FG Attempted": 6364,
+    "Career Personal Fouls": 1738,
+    "Career Steals Per Game": 1.8
   }
 }
