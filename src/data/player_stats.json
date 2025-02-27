@@ -1,17 +1,17 @@
 {
-  "Kobe Bryant": {
-    "Career High Assists": 17,
-    "Career Steals": 1944,
-    "Career FT Attempted": 10011
+  "JaVale McGee": {
+    "Career Rebounds Per Game": 5,
+    "career minutes per game": 16.1,
+    "Career High Points": 33
   },
-  "Bam Adebayo": {
-    "Career High Assists": 11,
-    "Career Steals": 575,
-    "Career FT Attempted": 2491
+  "Jaren Jackson Jr.": {
+    "Career Rebounds Per Game": 5.6,
+    "career minutes per game": 28.5,
+    "Career High Points": 44
   },
-  "Pascal Siakam": {
-    "Career High Assists": 13,
-    "Career Steals": 551,
-    "Career FT Attempted": 2502
+  "Jason Richardson": {
+    "Career Rebounds Per Game": 5,
+    "career minutes per game": 34.1,
+    "Career High Points": 44
   }
 }
