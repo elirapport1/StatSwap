@@ -1,17 +1,17 @@
 {
-  "Udonis Haslem": {
-    "Career FT Percentage": 75.6,
-    "Career Rebounds": 5791,
-    "Career FT Made": 1239
+  "Jeremy Lin": {
+    "Career Turnovers Per Game": 2.3,
+    "Career Turnovers": 1085,
+    "Career 3-PT Percentage": 34.2
   },
-  "Juwan Howard": {
-    "Career FT Percentage": 76.4,
-    "Career Rebounds": 7428,
-    "Career FT Made": 3067
+  "Karl Malone": {
+    "Career Turnovers Per Game": 3.1,
+    "Career Turnovers": 4524,
+    "Career 3-PT Percentage": 27.4
   },
-  "Eric Gordon": {
-    "Career FT Percentage": 81,
-    "Career Rebounds": 2113,
-    "Career FT Made": 2408
+  "Joel Embiid": {
+    "Career Turnovers Per Game": 3.4,
+    "Career Turnovers": 1547,
+    "Career 3-PT Percentage": 33.9
   }
 }
