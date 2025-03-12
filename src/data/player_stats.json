@@ -1,17 +1,17 @@
 {
-  "Anthony Edwards": {
-    "Career Minutes": 12687,
-    "Career Steals": 485,
-    "Career Turnovers Per Game": 2.9
+  "Paul Millsap": {
+    "Career High Turnovers": 9,
+    "Career Blocks Per Game": 1,
+    "Career Personal Fouls": 3248
   },
-  "Stephon Marbury": {
-    "Career Minutes": 31891,
-    "Career Steals": 1022,
-    "Career Turnovers Per Game": 3
+  "Caris LeVert": {
+    "Career High Turnovers": 7,
+    "Career Blocks Per Game": 0.4,
+    "Career Personal Fouls": 1008
   },
-  "Kyle Lowry": {
-    "Career Minutes": 36644,
-    "Career Steals": 1497,
-    "Career Turnovers Per Game": 2.2
+  "Alonzo Mourning": {
+    "Career High Turnovers": 10,
+    "Career Blocks Per Game": 2.8,
+    "Career Personal Fouls": 2810
   }
 }
