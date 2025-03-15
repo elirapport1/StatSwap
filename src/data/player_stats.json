@@ -1,17 +1,17 @@
 {
   "JaVale McGee": {
-    "Career Turnovers Per Game": 1,
-    "Career 3-PT Made": 15,
-    "Career Rebounds Per Game": 5
+    "Career Plus-Minus": -756,
+    "Career FT Attempted": 1627,
+    "Career Steals Per Game": 0.4
   },
-  "Ray Allen": {
-    "Career Turnovers Per Game": 2.1,
-    "Career 3-PT Made": 2973,
-    "Career Rebounds Per Game": 4.1
+  "Jeff Green": {
+    "Career Plus-Minus": -1810,
+    "Career FT Attempted": 3482,
+    "Career Steals Per Game": 0.6
   },
-  "Joel Embiid": {
-    "Career Turnovers Per Game": 3.4,
-    "Career 3-PT Made": 532,
-    "Career Rebounds Per Game": 11
+  "Darius Bazley": {
+    "Career Plus-Minus": -1132,
+    "Career FT Attempted": 492,
+    "Career Steals Per Game": 0.6
   }
 }
