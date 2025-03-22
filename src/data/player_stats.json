@@ -1,17 +1,17 @@
 {
-  "Kevin Love": {
-    "Career Minutes Per Game": 28.9,
-    "Career FG Made": 5074,
-    "Career FG Percentage": 43.8
+  "Robert Covington": {
+    "Career Minutes": 17326,
+    "career minutes per game": 28.2,
+    "Career Blocks Per Game": 0.9
   },
-  "Michael Redd": {
-    "Career Minutes Per Game": 32,
-    "Career FG Made": 4207,
-    "Career FG Percentage": 44.7
+  "Jason Terry": {
+    "Career Minutes": 42034,
+    "career minutes per game": 29.8,
+    "Career Blocks Per Game": 0.2
   },
-  "Josh Giddey": {
-    "Career Minutes Per Game": 29.1,
-    "Career FG Made": 1536,
-    "Career FG Percentage": 46.4
+  "Cuttino Mobley": {
+    "Career Minutes": 27618,
+    "career minutes per game": 37,
+    "Career Blocks Per Game": 0.4
   }
 }
