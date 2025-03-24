@@ -1,17 +1,17 @@
 {
-  "Luguentz Dort": {
-    "career minutes per game": 29.2,
-    "Career 3-PT Percentage": 35.6,
-    "career double doubles": 5
+  "Nikola Vučević": {
+    "Career FT Percentage": 77,
+    "Career Steals Per Game": 0.8,
+    "Career Minutes": 30218
   },
-  "Scottie Barnes": {
-    "career minutes per game": 34.7,
-    "Career 3-PT Percentage": 30,
-    "career double doubles": 76
+  "Paul Millsap": {
+    "Career FT Percentage": 73.6,
+    "Career Steals Per Game": 1.2,
+    "Career Minutes": 30500
   },
   "Joe Ingles": {
-    "career minutes per game": 24.2,
-    "Career 3-PT Percentage": 40.9,
-    "career double doubles": 17
+    "Career FT Percentage": 77.4,
+    "Career Steals Per Game": 0.9,
+    "Career Minutes": 17483
   }
 }
