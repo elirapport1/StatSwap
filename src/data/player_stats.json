@@ -1,17 +1,17 @@
 {
-  "Jeremy Lin": {
-    "Career Steals Per Game": 1.1,
-    "Career High Turnovers": 9,
-    "Career 3-PT Attempted": 1313
+  "Norman Powell": {
+    "Career High Steals": 5,
+    "Career Turnovers Per Game": 1.3,
+    "Weight": 215
   },
-  "Roy Hibbert": {
-    "Career Steals Per Game": 0.4,
-    "Career High Turnovers": 7,
-    "Career 3-PT Attempted": 24
+  "Seth Curry": {
+    "Career High Steals": 5,
+    "Career Turnovers Per Game": 1,
+    "Weight": 185
   },
-  "Kendrick Perkins": {
-    "Career Steals Per Game": 0.3,
-    "Career High Turnovers": 7,
-    "Career 3-PT Attempted": 14
+  "Shane Battier": {
+    "Career High Steals": 5,
+    "Career Turnovers Per Game": 0.9,
+    "Weight": 220
   }
 }
