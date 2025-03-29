@@ -1,17 +1,17 @@
 {
-  "Rajon Rondo": {
-    "Career Turnovers Per Game": 2.7,
-    "Career Steals Per Game": 1.6,
-    "Career FT Percentage": 61.1
+  "Alec Burks": {
+    "Career FT Percentage": 80.5,
+    "Career Personal Fouls": 1386,
+    "Career Minutes": 17415
   },
-  "Nicolas Batum": {
-    "Career Turnovers Per Game": 1.5,
-    "Career Steals Per Game": 0.9,
-    "Career FT Percentage": 83.2
+  "Patty Mills": {
+    "Career FT Percentage": 85.7,
+    "Career Personal Fouls": 1161,
+    "Career Minutes": 18299
   },
-  "Luis Scola": {
-    "Career Turnovers Per Game": 1.5,
-    "Career Steals Per Game": 0.6,
-    "Career FT Percentage": 74
+  "Luka Dončić": {
+    "Career FT Percentage": 75,
+    "Career Personal Fouls": 1007,
+    "Career Minutes": 15423
   }
 }
