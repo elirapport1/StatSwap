@@ -1,17 +1,17 @@
 {
-  "Alec Burks": {
-    "Career FT Percentage": 80.5,
-    "Career Personal Fouls": 1386,
-    "Career Minutes": 17415
+  "Dirk Nowitzki": {
+    "career double doubles": 411,
+    "Career FT Made": 7240,
+    "Career Blocks Per Game": 0.8
+  },
+  "Kris Humphries": {
+    "career double doubles": 84,
+    "Career FT Made": 1139,
+    "Career Blocks Per Game": 0.6
   },
   "Patty Mills": {
-    "Career FT Percentage": 85.7,
-    "Career Personal Fouls": 1161,
-    "Career Minutes": 18299
-  },
-  "Luka Dončić": {
-    "Career FT Percentage": 75,
-    "Career Personal Fouls": 1007,
-    "Career Minutes": 15423
+    "career double doubles": 2,
+    "Career FT Made": 748,
+    "Career Blocks Per Game": 0.1
   }
 }
