@@ -1,17 +1,17 @@
 {
+  "Cade Cunningham": {
+    "Career Rebounds Per Game": 5.4,
+    "Career Personal Fouls": 570,
+    "Career Games Played": 204
+  },
   "Jordan Clarkson": {
-    "Career FT Made": 1645,
-    "Career Assists Per Game": 2.9,
-    "career double doubles": 15
+    "Career Rebounds Per Game": 3.4,
+    "Career Personal Fouls": 1266,
+    "Career Games Played": 753
   },
-  "Kendrick Perkins": {
-    "Career FT Made": 804,
-    "Career Assists Per Game": 1,
-    "career double doubles": 43
-  },
-  "Jordan Poole": {
-    "Career FT Made": 1233,
-    "Career Assists Per Game": 3.8,
-    "career double doubles": 8
+  "Lorenzen Wright": {
+    "Career Rebounds Per Game": 6.4,
+    "Career Personal Fouls": 2276,
+    "Career Games Played": 778
   }
 }
