@@ -1,17 +1,17 @@
 {
-  "Cade Cunningham": {
-    "Career Rebounds Per Game": 5.4,
-    "Career Personal Fouls": 570,
-    "Career Games Played": 204
+  "Spencer Dinwiddie": {
+    "Career Blocks Per Game": 0.3,
+    "Career Turnovers": 1000,
+    "Career FT Made": 1847
   },
-  "Jordan Clarkson": {
-    "Career Rebounds Per Game": 3.4,
-    "Career Personal Fouls": 1266,
-    "Career Games Played": 753
+  "Fred VanVleet": {
+    "Career Blocks Per Game": 0.5,
+    "Career Turnovers": 905,
+    "Career FT Made": 1290
   },
-  "Lorenzen Wright": {
-    "Career Rebounds Per Game": 6.4,
-    "Career Personal Fouls": 2276,
-    "Career Games Played": 778
+  "Jalen Johnson": {
+    "Career Blocks Per Game": 0.6,
+    "Career Turnovers": 257,
+    "Career FT Made": 255
   }
 }
