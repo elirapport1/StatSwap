@@ -1,17 +1,17 @@
 {
-  "Russell Westbrook": {
-    "Career FG Percentage": 43.9,
-    "Career Assists Per Game": 8,
-    "Career Games Played": 1234
+  "Kyle Kuzma": {
+    "Career Rebounds Per Game": 6.3,
+    "Career FG Attempted": 7762,
+    "Career Turnovers": 1170
   },
-  "Michael Jordan": {
-    "Career FG Percentage": 49.7,
-    "Career Assists Per Game": 5.3,
-    "Career Games Played": 1072
+  "Grant Williams": {
+    "Career Rebounds Per Game": 3.7,
+    "Career FG Attempted": 2094,
+    "Career Turnovers": 387
   },
-  "Dwight Howard": {
-    "Career FG Percentage": 58.7,
-    "Career Assists Per Game": 1.3,
-    "Career Games Played": 1242
+  "Kyle Korver": {
+    "Career Rebounds Per Game": 3,
+    "Career FG Attempted": 9278,
+    "Career Turnovers": 1290
   }
 }
