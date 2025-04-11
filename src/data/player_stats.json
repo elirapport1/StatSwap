@@ -1,17 +1,17 @@
 {
-  "Tim Hardaway Jr.": {
-    "Career Assists Per Game": 1.8,
-    "Weight": 205,
-    "Career High Points": 42
+  "Eric Gordon": {
+    "career triple doubles": 0,
+    "Career Minutes": 28883,
+    "Career Steals": 776
   },
-  "LaMarcus Aldridge": {
-    "Career Assists Per Game": 1.9,
-    "Weight": 250,
-    "Career High Points": 56
+  "Kenyon Martin": {
+    "career triple doubles": 1,
+    "Career Minutes": 23134,
+    "Career Steals": 893
   },
-  "Luis Scola": {
-    "Career Assists Per Game": 1.6,
-    "Weight": 240,
-    "Career High Points": 44
+  "Jamal Murray": {
+    "career triple doubles": 1,
+    "Career Minutes": 16743,
+    "Career Steals": 542
   }
 }
