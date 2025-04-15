@@ -1,17 +1,17 @@
 {
-  "Allen Iverson": {
-    "Career Rebounds": 3394,
-    "Career Points Per Game": 26.7,
-    "Career Steals Per Game": 2.2
+  "Domantas Sabonis": {
+    "Career Minutes": 19896,
+    "Career FT Attempted": 2680,
+    "Career Points": 10401
   },
-  "Jeff Teague": {
-    "Career Rebounds": 1989,
-    "Career Points Per Game": 12.2,
-    "Career Steals Per Game": 1.1
+  "Robin Lopez": {
+    "Career Minutes": 20937,
+    "Career FT Attempted": 1751,
+    "Career Points": 8326
   },
-  "Kevin Porter Jr.": {
-    "Career Rebounds": 1120,
-    "Career Points Per Game": 13.9,
-    "Career Steals Per Game": 1.1
+  "Cameron Johnson": {
+    "Career Minutes": 9020,
+    "Career FT Attempted": 684,
+    "Career Points": 4395
   }
 }
