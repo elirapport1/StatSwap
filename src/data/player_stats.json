@@ -1,17 +1,17 @@
 {
-  "Domantas Sabonis": {
-    "Career Minutes": 19896,
-    "Career FT Attempted": 2680,
-    "Career Points": 10401
+  "Hassan Whiteside": {
+    "career triple doubles": 4,
+    "Career Turnovers Per Game": 1.5,
+    "Career Defensive Rebounds": 3915
   },
-  "Robin Lopez": {
-    "Career Minutes": 20937,
-    "Career FT Attempted": 1751,
-    "Career Points": 8326
+  "P.J. Washington": {
+    "career triple doubles": 0,
+    "Career Turnovers Per Game": 1.6,
+    "Career Defensive Rebounds": 1809
   },
-  "Cameron Johnson": {
-    "Career Minutes": 9020,
-    "Career FT Attempted": 684,
-    "Career Points": 4395
+  "Devin Vassell": {
+    "career triple doubles": 0,
+    "Career Turnovers Per Game": 1.1,
+    "Career Defensive Rebounds": 1007
   }
 }
