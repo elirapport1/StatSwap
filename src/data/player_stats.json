@@ -1,17 +1,17 @@
 {
-  "Khris Middleton": {
-    "Career 3-PT Attempted": 3644,
-    "Career High Points": 51,
-    "Career Points Per Game": 16.6
+  "Marcus Camby": {
+    "career minutes per game": 29.5,
+    "Career Turnovers Per Game": 1.4,
+    "Career FG Percentage": 46.6
   },
-  "Patrick Williams": {
-    "Career 3-PT Attempted": 864,
-    "Career High Points": 35,
-    "Career Points Per Game": 9.6
+  "Richaun Holmes": {
+    "career minutes per game": 19.1,
+    "Career Turnovers Per Game": 0.8,
+    "Career FG Percentage": 60.5
   },
-  "Joel Embiid": {
-    "Career 3-PT Attempted": 1568,
-    "Career High Points": 70,
-    "Career Points Per Game": 27.7
+  "Luka Dončić": {
+    "career minutes per game": 34.9,
+    "Career Turnovers Per Game": 3.9,
+    "Career FG Percentage": 46.8
   }
 }
