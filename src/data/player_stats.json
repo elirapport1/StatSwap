@@ -1,17 +1,17 @@
 {
-  "Marcus Camby": {
-    "career minutes per game": 29.5,
-    "Career Turnovers Per Game": 1.4,
-    "Career FG Percentage": 46.6
+  "Donovan Mitchell": {
+    "Career Blocks": 173,
+    "Weight": 215,
+    "career triple doubles": 0
   },
-  "Richaun Holmes": {
-    "career minutes per game": 19.1,
-    "Career Turnovers Per Game": 0.8,
-    "Career FG Percentage": 60.5
+  "Kobe Bryant": {
+    "Career Blocks": 640,
+    "Weight": 212,
+    "career triple doubles": 21
   },
-  "Luka Dončić": {
-    "career minutes per game": 34.9,
-    "Career Turnovers Per Game": 3.9,
-    "Career FG Percentage": 46.8
+  "Brandon Ingram": {
+    "Career Blocks": 280,
+    "Weight": 190,
+    "career triple doubles": 3
   }
 }
