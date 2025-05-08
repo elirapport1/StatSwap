@@ -1,17 +1,17 @@
 {
-  "Paul George": {
-    "Career Steals Per Game": 1.7,
-    "Career FG Attempted": 14553,
-    "career double doubles": 126
+  "Tracy McGrady": {
+    "Career FG Made": 6709,
+    "Career FT Percentage": 74.6,
+    "Career Steals Per Game": 1.2
   },
-  "Antawn Jamison": {
-    "Career Steals Per Game": 1,
-    "Career FG Attempted": 17024,
-    "career double doubles": 309
+  "Rudy Gobert": {
+    "Career FG Made": 3903,
+    "Career FT Percentage": 64.1,
+    "Career Steals Per Game": 0.7
   },
-  "Luka Dončić": {
-    "Career Steals Per Game": 1.2,
-    "Career FG Attempted": 9321,
-    "career double doubles": 239
+  "Donovan Mitchell": {
+    "Career FG Made": 4720,
+    "Career FT Percentage": 84,
+    "Career Steals Per Game": 1.4
   }
 }
