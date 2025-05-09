@@ -1,17 +1,17 @@
 {
-  "Tracy McGrady": {
-    "Career FG Made": 6709,
-    "Career FT Percentage": 74.6,
-    "Career Steals Per Game": 1.2
+  "Jason Richardson": {
+    "Career Turnovers": 1503,
+    "Career FG Made": 5558,
+    "Career 3-PT Made": 1608
   },
-  "Rudy Gobert": {
-    "Career FG Made": 3903,
-    "Career FT Percentage": 64.1,
-    "Career Steals Per Game": 0.7
+  "Grayson Allen": {
+    "Career Turnovers": 399,
+    "Career FG Made": 1416,
+    "Career 3-PT Made": 855
   },
-  "Donovan Mitchell": {
-    "Career FG Made": 4720,
-    "Career FT Percentage": 84,
-    "Career Steals Per Game": 1.4
+  "Kevin Garnett": {
+    "Career Turnovers": 3179,
+    "Career FG Made": 10505,
+    "Career 3-PT Made": 174
   }
 }
