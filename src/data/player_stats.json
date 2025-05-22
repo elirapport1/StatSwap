@@ -1,17 +1,17 @@
 {
-  "Trae Young": {
-    "Career Rebounds Per Game": 3.5,
-    "Career High Assists": 22,
-    "Career Turnovers Per Game": 4.2
+  "Alec Burks": {
+    "Career Turnovers Per Game": 1.1,
+    "career minutes per game": 22.2,
+    "Career Turnovers": 903
   },
-  "Brandon Miller": {
-    "Career Rebounds Per Game": 4.4,
-    "Career High Assists": 9,
-    "Career Turnovers Per Game": 2.1
+  "Isaiah Thomas": {
+    "Career Turnovers Per Game": 2.2,
+    "career minutes per game": 28,
+    "Career Turnovers": 1242
   },
-  "Shawn Kemp": {
-    "Career Rebounds Per Game": 8.4,
-    "Career High Assists": 12,
-    "Career Turnovers Per Game": 2.6
+  "Andre Iguodala": {
+    "Career Turnovers Per Game": 1.8,
+    "career minutes per game": 32.1,
+    "Career Turnovers": 2240
   }
 }
