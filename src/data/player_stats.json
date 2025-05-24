@@ -1,17 +1,17 @@
 {
-  "Marcus Camby": {
-    "Weight": 240,
-    "Career Defensive Rebounds": 6902,
-    "Career Points": 9262
+  "Tyreke Evans": {
+    "Career Blocks Per Game": 0.4,
+    "Career FG Percentage": 44,
+    "Career Rebounds Per Game": 4.6
   },
-  "Andrew Wiggins": {
-    "Weight": 197,
-    "Career Defensive Rebounds": 2428,
-    "Career Points": 14169
+  "Serge Ibaka": {
+    "Career Blocks Per Game": 1.9,
+    "Career FG Percentage": 51.3,
+    "Career Rebounds Per Game": 7.1
   },
-  "Roy Hibbert": {
-    "Weight": 270,
-    "Career Defensive Rebounds": 2646,
-    "Career Points": 6611
+  "Terry Rozier": {
+    "Career Blocks Per Game": 0.2,
+    "Career FG Percentage": 41.8,
+    "Career Rebounds Per Game": 3.9
   }
 }
