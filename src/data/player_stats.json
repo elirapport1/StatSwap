@@ -1,17 +1,17 @@
 {
-  "Jalen Williams": {
-    "Career Blocks Per Game": 0.6,
-    "Career Games Played": 215,
-    "Career Points Per Game": 18.1
+  "Kevin Durant": {
+    "Weight": 240,
+    "Career Defensive Rebounds": 7088,
+    "Career FG Attempted": 21000
   },
-  "Killian Hayes": {
-    "Career Blocks Per Game": 0.4,
-    "Career Games Played": 216,
-    "Career Points Per Game": 8.1
+  "Chris Webber": {
+    "Weight": 245,
+    "Career Defensive Rebounds": 5853,
+    "Career FG Attempted": 15024
   },
-  "Dirk Nowitzki": {
-    "Career Blocks Per Game": 0.8,
-    "Career Games Played": 1522,
-    "Career Points Per Game": 20.7
+  "Donovan Mitchell": {
+    "Weight": 215,
+    "Career Defensive Rebounds": 1889,
+    "Career FG Attempted": 10512
   }
 }
