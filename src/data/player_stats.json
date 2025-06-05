@@ -1,17 +1,17 @@
 {
-  "Kevin Durant": {
-    "Weight": 240,
-    "Career Defensive Rebounds": 7088,
-    "Career FG Attempted": 21000
+  "Carmelo Anthony": {
+    "Career Steals": 1223,
+    "Career High Points": 62,
+    "Career FG Made": 10119
   },
-  "Chris Webber": {
-    "Weight": 245,
-    "Career Defensive Rebounds": 5853,
-    "Career FG Attempted": 15024
+  "Manu Ginóbili": {
+    "Career Steals": 1392,
+    "Career High Points": 48,
+    "Career FG Made": 4584
   },
-  "Donovan Mitchell": {
-    "Weight": 215,
-    "Career Defensive Rebounds": 1889,
-    "Career FG Attempted": 10512
+  "LaMelo Ball": {
+    "Career Steals": 340,
+    "Career High Points": 50,
+    "Career FG Made": 1716
   }
 }
