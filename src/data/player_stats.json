@@ -1,17 +1,17 @@
 {
-  "Coby White": {
-    "Career High Rebounds": 11,
-    "Career Turnovers": 752,
-    "Career FT Made": 864
+  "Kyle Lowry": {
+    "Career Minutes Per Game": 31.3,
+    "Career FT Percentage": 81.5,
+    "Career FG Percentage": 42.3
   },
-  "Bogdan Bogdanović": {
-    "Career High Rebounds": 12,
-    "Career Turnovers": 719,
-    "Career FT Made": 730
+  "Duncan Robinson": {
+    "Career Minutes Per Game": 26,
+    "Career FT Percentage": 87.4,
+    "Career FG Percentage": 43.4
   },
-  "Michael Redd": {
-    "Career High Rebounds": 14,
-    "Career Turnovers": 963,
-    "Career FT Made": 2513
+  "Paul Millsap": {
+    "Career Minutes Per Game": 28.1,
+    "Career FT Percentage": 73.6,
+    "Career FG Percentage": 48.9
   }
 }
