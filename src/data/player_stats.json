@@ -1,17 +1,17 @@
 {
-  "Vlade Divac": {
-    "Career Minutes": 33838,
-    "Career Assists": 3541,
-    "Career High Steals": 6
+  "Shai Gilgeous-Alexander": {
+    "career minutes per game": 33.1,
+    "Career High Steals": 7,
+    "Career High Turnovers": 8
   },
-  "Anthony Edwards": {
-    "Career Minutes": 13262,
-    "Career Assists": 1600,
-    "Career High Steals": 6
+  "Cole Anthony": {
+    "career minutes per game": 24.8,
+    "Career High Steals": 3,
+    "Career High Turnovers": 7
   },
-  "Jalen Suggs": {
-    "Career Minutes": 5580,
-    "Career Assists": 698,
-    "Career High Steals": 6
+  "Kristaps Porziņģis": {
+    "career minutes per game": 30.7,
+    "Career High Steals": 5,
+    "Career High Turnovers": 6
   }
 }
