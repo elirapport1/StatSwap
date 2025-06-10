@@ -1,17 +1,17 @@
 {
-  "Shai Gilgeous-Alexander": {
-    "career minutes per game": 33.1,
-    "Career High Steals": 7,
-    "Career High Turnovers": 8
-  },
-  "Cole Anthony": {
-    "career minutes per game": 24.8,
-    "Career High Steals": 3,
-    "Career High Turnovers": 7
+  "Scoot Henderson": {
+    "Weight": 206,
+    "Career Offensive Rebounds": 105,
+    "Career Blocks": 26
   },
   "Kristaps Porziņģis": {
-    "career minutes per game": 30.7,
-    "Career High Steals": 5,
-    "Career High Turnovers": 6
+    "Weight": 240,
+    "Career Offensive Rebounds": 868,
+    "Career Blocks": 909
+  },
+  "Goran Dragić": {
+    "Weight": 190,
+    "Career Offensive Rebounds": 643,
+    "Career Blocks": 167
   }
 }
