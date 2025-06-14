@@ -1,17 +1,17 @@
 {
-  "Chauncey Billups": {
-    "Career FT Percentage": 89.4,
-    "career triple doubles": 2,
-    "Career High Rebounds": 12
+  "Jayson Tatum": {
+    "Career Turnovers Per Game": 2.4,
+    "Career Points": 13784,
+    "Career FG Attempted": 10429
   },
-  "Josh Green": {
-    "Career FT Percentage": 68.7,
-    "career triple doubles": 0,
-    "Career High Rebounds": 12
+  "Tim Hardaway": {
+    "Career Turnovers Per Game": 2.9,
+    "Career Points": 15373,
+    "Career FG Attempted": 13076
   },
-  "Derrick Favors": {
-    "Career FT Percentage": 66.3,
-    "career triple doubles": 0,
-    "Career High Rebounds": 20
+  "Victor Wembanyama": {
+    "Career Turnovers Per Game": 3.5,
+    "Career Points": 2638,
+    "Career FG Attempted": 2043
   }
 }
