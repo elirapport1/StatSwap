@@ -1,17 +1,17 @@
 {
-  "Malik Monk": {
-    "Career Rebounds": 1377,
-    "Career 3-PT Made": 938,
-    "Career FT Made": 864
+  "Andre Iguodala": {
+    "career minutes per game": 32.1,
+    "Career Minutes Per Game": 32.1,
+    "Career Steals Per Game": 1.4
   },
-  "Alec Burks": {
-    "Career Rebounds": 2642,
-    "Career 3-PT Made": 975,
-    "Career FT Made": 1859
+  "Robert Horry": {
+    "career minutes per game": 24.5,
+    "Career Minutes Per Game": 24.5,
+    "Career Steals Per Game": 1
   },
-  "Victor Oladipo": {
-    "Career Rebounds": 2245,
-    "Career 3-PT Made": 814,
-    "Career FT Made": 1453
+  "Paul Pierce": {
+    "career minutes per game": 34.2,
+    "Career Minutes Per Game": 34.2,
+    "Career Steals Per Game": 1.3
   }
 }
