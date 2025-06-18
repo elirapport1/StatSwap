@@ -1,17 +1,17 @@
 {
-  "Andre Iguodala": {
-    "career minutes per game": 32.1,
-    "Career Minutes Per Game": 32.1,
-    "Career Steals Per Game": 1.4
+  "Larry Johnson": {
+    "Career Assists Per Game": 3.3,
+    "Career High Rebounds": 23,
+    "Career High Points": 44
   },
-  "Robert Horry": {
-    "career minutes per game": 24.5,
-    "Career Minutes Per Game": 24.5,
-    "Career Steals Per Game": 1
+  "Christian Braun": {
+    "Career Assists Per Game": 1.7,
+    "Career High Rebounds": 12,
+    "Career High Points": 30
   },
-  "Paul Pierce": {
-    "career minutes per game": 34.2,
-    "Career Minutes Per Game": 34.2,
-    "Career Steals Per Game": 1.3
+  "Ben Wallace": {
+    "Career Assists Per Game": 1.3,
+    "Career High Rebounds": 28,
+    "Career High Points": 23
   }
 }
