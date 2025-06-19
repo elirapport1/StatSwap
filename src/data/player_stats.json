@@ -1,17 +1,17 @@
 {
-  "Larry Johnson": {
-    "Career Assists Per Game": 3.3,
-    "Career High Rebounds": 23,
-    "Career High Points": 44
+  "Al Horford": {
+    "Career Points Per Game": 12.9,
+    "Career FG Attempted": 11900,
+    "career double doubles": 277
   },
-  "Christian Braun": {
-    "Career Assists Per Game": 1.7,
-    "Career High Rebounds": 12,
-    "Career High Points": 30
+  "Dikembe Mutombo": {
+    "Career Points Per Game": 9.8,
+    "Career FG Attempted": 8045,
+    "career double doubles": 471
   },
-  "Ben Wallace": {
-    "Career Assists Per Game": 1.3,
-    "Career High Rebounds": 28,
-    "Career High Points": 23
+  "Tre Jones": {
+    "Career Points Per Game": 8.4,
+    "Career FG Attempted": 1998,
+    "career double doubles": 15
   }
 }
