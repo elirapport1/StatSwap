@@ -1,17 +1,17 @@
 {
-  "Andre Iguodala": {
-    "Career Rebounds Per Game": 4.9,
-    "Career Blocks Per Game": 0.5,
-    "Career Rebounds": 6047
+  "Deandre Ayton": {
+    "Career Steals": 292,
+    "Career Steals Per Game": 0.7,
+    "Career FG Percentage": 59
   },
-  "Shawn Kemp": {
-    "Career Rebounds Per Game": 8.4,
-    "Career Blocks Per Game": 1.2,
-    "Career Rebounds": 8834
+  "Pau Gasol": {
+    "Career Steals": 606,
+    "Career Steals Per Game": 0.5,
+    "Career FG Percentage": 50.7
   },
-  "Donovan Mitchell": {
-    "Career Rebounds Per Game": 4.3,
-    "Career Blocks Per Game": 0.3,
-    "Career Rebounds": 2324
+  "Jabari Smith Jr.": {
+    "Career Steals": 120,
+    "Career Steals Per Game": 0.6,
+    "Career FG Percentage": 43.2
   }
 }
