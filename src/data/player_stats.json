@@ -1,17 +1,17 @@
 {
-  "De'Andre Hunter": {
-    "Career Steals": 224,
-    "Career 3-PT Made": 587,
-    "Career Turnovers": 448
+  "Kevin Durant": {
+    "Career Minutes Per Game": 36.7,
+    "Career Turnovers Per Game": 3.2,
+    "Career 3-PT Attempted": 5620
   },
-  "Cade Cunningham": {
-    "Career Steals": 215,
-    "Career 3-PT Made": 399,
-    "Career Turnovers": 794
+  "Jimmy Butler": {
+    "Career Minutes Per Game": 33.1,
+    "Career Turnovers Per Game": 1.6,
+    "Career 3-PT Attempted": 2084
   },
-  "Victor Wembanyama": {
-    "Career Steals": 140,
-    "Career 3-PT Made": 270,
-    "Career Turnovers": 409
+  "Tyreke Evans": {
+    "Career Minutes Per Game": 30.7,
+    "Career Turnovers Per Game": 2.5,
+    "Career 3-PT Attempted": 1548
   }
 }
