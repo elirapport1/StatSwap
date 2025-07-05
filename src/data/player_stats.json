@@ -1,17 +1,17 @@
 {
-  "Kevin Durant": {
-    "Career Minutes Per Game": 36.7,
-    "Career Turnovers Per Game": 3.2,
-    "Career 3-PT Attempted": 5620
-  },
-  "Jimmy Butler": {
-    "Career Minutes Per Game": 33.1,
-    "Career Turnovers Per Game": 1.6,
-    "Career 3-PT Attempted": 2084
-  },
   "Tyreke Evans": {
-    "Career Minutes Per Game": 30.7,
-    "Career Turnovers Per Game": 2.5,
-    "Career 3-PT Attempted": 1548
+    "Career Rebounds Per Game": 4.6,
+    "Career Assists Per Game": 4.8,
+    "Career Offensive Rebounds": 500
+  },
+  "Goran Dragić": {
+    "Career Rebounds Per Game": 3,
+    "Career Assists Per Game": 4.7,
+    "Career Offensive Rebounds": 643
+  },
+  "Cameron Johnson": {
+    "Career Rebounds Per Game": 3.9,
+    "Career Assists Per Game": 2,
+    "Career Offensive Rebounds": 267
   }
 }
