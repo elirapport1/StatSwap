@@ -1,17 +1,17 @@
 {
-  "Joel Embiid": {
-    "Career High Rebounds": 22,
-    "Career Minutes": 14408,
-    "Career FT Percentage": 82.8
+  "Carlos Boozer": {
+    "Career Plus-Minus": 303,
+    "Career Turnovers Per Game": 2.1,
+    "Weight": 258
   },
-  "Kemba Walker": {
-    "Career High Rebounds": 12,
-    "Career Minutes": 24810,
-    "Career FT Percentage": 84
+  "Amaré Stoudemire": {
+    "Career Plus-Minus": 1631,
+    "Career Turnovers Per Game": 2.3,
+    "Weight": 245
   },
-  "Allan Houston": {
-    "Career High Rebounds": 12,
-    "Career Minutes": 28311,
-    "Career FT Percentage": 86.3
+  "Dyson Daniels": {
+    "Career Plus-Minus": -3,
+    "Career Turnovers Per Game": 1.4,
+    "Weight": 199
   }
 }
