@@ -1,17 +1,17 @@
 {
-  "Klay Thompson": {
-    "Career High Points": 60,
-    "Career 3-PT Percentage": 41.1,
-    "Career Minutes Per Game": 32.1
+  "Russell Westbrook": {
+    "Career FT Made": 5982,
+    "Career Rebounds Per Game": 7,
+    "Career FG Percentage": 43.9
   },
-  "Stephon Marbury": {
-    "Career High Points": 50,
-    "Career 3-PT Percentage": 32.5,
-    "Career Minutes Per Game": 37.7
+  "Kevin Porter Jr.": {
+    "Career FT Made": 603,
+    "Career Rebounds Per Game": 4.1,
+    "Career FG Percentage": 43.5
   },
-  "Rudy Gay": {
-    "Career High Points": 41,
-    "Career 3-PT Percentage": 34.6,
-    "Career Minutes Per Game": 30.9
+  "Deandre Ayton": {
+    "Career FT Made": 704,
+    "Career Rebounds Per Game": 10.5,
+    "Career FG Percentage": 59
   }
 }
