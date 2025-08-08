@@ -1,17 +1,17 @@
 {
-  "Caris LeVert": {
-    "Career Plus-Minus": 140,
-    "Career High Points": 51,
-    "Career Steals": 548
+  "Tony Parker": {
+    "Career High Points": 55,
+    "Career Turnovers": 2865,
+    "Career FG Made": 7777
   },
-  "Kevin Garnett": {
-    "Career Plus-Minus": 4913,
-    "Career High Points": 47,
-    "Career Steals": 1859
+  "Aaron Gordon": {
+    "Career High Points": 41,
+    "Career Turnovers": 1068,
+    "Career FG Made": 3696
   },
-  "Udonis Haslem": {
-    "Career Plus-Minus": 452,
-    "Career High Points": 28,
-    "Career Steals": 424
+  "Alec Burks": {
+    "Career High Points": 34,
+    "Career Turnovers": 903,
+    "Career FG Made": 2756
   }
 }
