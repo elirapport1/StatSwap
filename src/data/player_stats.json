@@ -1,17 +1,17 @@
 {
-  "Tony Parker": {
-    "Career High Points": 55,
-    "Career Turnovers": 2865,
-    "Career FG Made": 7777
+  "Monte Morris": {
+    "Career FT Made": 386,
+    "career minutes per game": 23.4,
+    "Career 3-PT Made": 470
   },
-  "Aaron Gordon": {
-    "Career High Points": 41,
-    "Career Turnovers": 1068,
-    "Career FG Made": 3696
+  "Bradley Beal": {
+    "Career FT Made": 2848,
+    "career minutes per game": 34.4,
+    "Career 3-PT Made": 1717
   },
-  "Alec Burks": {
-    "Career High Points": 34,
-    "Career Turnovers": 903,
-    "Career FG Made": 2756
+  "Walker Kessler": {
+    "Career FT Made": 217,
+    "career minutes per game": 25.2,
+    "Career 3-PT Made": 11
   }
 }
