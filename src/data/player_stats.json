@@ -1,17 +1,17 @@
 {
-  "Brook Lopez": {
-    "Career Rebounds": 6737,
-    "Career Turnovers": 1751,
-    "Career Blocks Per Game": 1.9
+  "Karl Malone": {
+    "Career 3-PT Made": 85,
+    "Career FG Attempted": 26210,
+    "Career Points": 36928
   },
-  "Herbert Jones": {
-    "Career Rebounds": 915,
-    "Career Turnovers": 316,
-    "Career Blocks Per Game": 0.7
+  "Charles Oakley": {
+    "Career 3-PT Made": 68,
+    "Career FG Attempted": 10263,
+    "Career Points": 12417
   },
-  "Shai Gilgeous-Alexander": {
-    "Career Rebounds": 2211,
-    "Career Turnovers": 1072,
-    "Career Blocks Per Game": 0.8
+  "James Harden": {
+    "Career 3-PT Made": 3175,
+    "Career FG Attempted": 18610,
+    "Career Points": 27687
   }
 }
