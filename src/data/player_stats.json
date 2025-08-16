@@ -1,17 +1,17 @@
 {
-  "Jordan Clarkson": {
-    "Career High Rebounds": 12,
-    "Career Turnovers": 1416,
-    "Career Personal Fouls": 1266
+  "Ray Allen": {
+    "Career 3-PT Percentage": 40,
+    "Career FG Made": 8567,
+    "Career Assists Per Game": 3.4
   },
-  "Kris Humphries": {
-    "Career High Rebounds": 23,
-    "Career Turnovers": 691,
-    "Career Personal Fouls": 1456
+  "LaMelo Ball": {
+    "Career 3-PT Percentage": 36.5,
+    "Career FG Made": 1716,
+    "Career Assists Per Game": 7.4
   },
-  "Jayson Tatum": {
-    "Career High Rebounds": 19,
-    "Career Turnovers": 1389,
-    "Career Personal Fouls": 1232
+  "Donovan Mitchell": {
+    "Career 3-PT Percentage": 36.6,
+    "Career FG Made": 4720,
+    "Career Assists Per Game": 4.7
   }
 }
