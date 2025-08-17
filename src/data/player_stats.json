@@ -1,17 +1,17 @@
 {
-  "Ray Allen": {
-    "Career 3-PT Percentage": 40,
-    "Career FG Made": 8567,
-    "Career Assists Per Game": 3.4
+  "Nicolas Batum": {
+    "career minutes per game": 28.9,
+    "Career Rebounds Per Game": 4.8,
+    "Career Steals": 1028
   },
-  "LaMelo Ball": {
-    "Career 3-PT Percentage": 36.5,
-    "Career FG Made": 1716,
-    "Career Assists Per Game": 7.4
+  "Jerry Stackhouse": {
+    "career minutes per game": 31.2,
+    "Career Rebounds Per Game": 3.2,
+    "Career Steals": 869
   },
-  "Donovan Mitchell": {
-    "Career 3-PT Percentage": 36.6,
-    "Career FG Made": 4720,
-    "Career Assists Per Game": 4.7
+  "D'Angelo Russell": {
+    "career minutes per game": 29.8,
+    "Career Rebounds Per Game": 3.4,
+    "Career Steals": 666
   }
 }
