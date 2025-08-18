@@ -1,17 +1,17 @@
 {
-  "Nicolas Batum": {
-    "career minutes per game": 28.9,
-    "Career Rebounds Per Game": 4.8,
-    "Career Steals": 1028
-  },
-  "Jerry Stackhouse": {
-    "career minutes per game": 31.2,
-    "Career Rebounds Per Game": 3.2,
-    "Career Steals": 869
+  "George Hill": {
+    "Career Points": 9545,
+    "Career FT Made": 1725,
+    "Career Plus-Minus": 2487
   },
   "D'Angelo Russell": {
-    "career minutes per game": 29.8,
-    "Career Rebounds Per Game": 3.4,
-    "Career Steals": 666
+    "Career Points": 10868,
+    "Career FT Made": 1476,
+    "Career Plus-Minus": -1033
+  },
+  "Andrea Bargnani": {
+    "Career Points": 7873,
+    "Career FT Made": 1382,
+    "Career Plus-Minus": -1284
   }
 }
