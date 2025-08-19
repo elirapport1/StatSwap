@@ -1,17 +1,17 @@
 {
-  "George Hill": {
-    "Career Points": 9545,
-    "Career FT Made": 1725,
-    "Career Plus-Minus": 2487
+  "J.R. Smith": {
+    "Career FT Percentage": 73.3,
+    "Career 3-PT Percentage": 37.3,
+    "Career Offensive Rebounds": 494
   },
-  "D'Angelo Russell": {
-    "Career Points": 10868,
-    "Career FT Made": 1476,
-    "Career Plus-Minus": -1033
+  "Chauncey Billups": {
+    "Career FT Percentage": 89.4,
+    "Career 3-PT Percentage": 38.7,
+    "Career Offensive Rebounds": 480
   },
-  "Andrea Bargnani": {
-    "Career Points": 7873,
-    "Career FT Made": 1382,
-    "Career Plus-Minus": -1284
+  "Royce O'Neale": {
+    "Career FT Percentage": 77,
+    "Career 3-PT Percentage": 38.5,
+    "Career Offensive Rebounds": 394
   }
 }
