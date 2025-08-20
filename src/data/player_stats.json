@@ -1,17 +1,17 @@
 {
-  "J.R. Smith": {
-    "Career FT Percentage": 73.3,
-    "Career 3-PT Percentage": 37.3,
-    "Career Offensive Rebounds": 494
-  },
   "Chauncey Billups": {
-    "Career FT Percentage": 89.4,
-    "Career 3-PT Percentage": 38.7,
-    "Career Offensive Rebounds": 480
+    "Career 3-PT Attempted": 4725,
+    "Career Points Per Game": 15.2,
+    "Career Minutes Per Game": 31.6
   },
-  "Royce O'Neale": {
-    "Career FT Percentage": 77,
-    "Career 3-PT Percentage": 38.5,
-    "Career Offensive Rebounds": 394
+  "LaMarcus Aldridge": {
+    "Career 3-PT Attempted": 710,
+    "Career Points Per Game": 19.1,
+    "Career Minutes Per Game": 33.7
+  },
+  "Aaron Gordon": {
+    "Career 3-PT Attempted": 2302,
+    "Career Points Per Game": 13.6,
+    "Career Minutes Per Game": 29.3
   }
 }
