@@ -1,17 +1,17 @@
 {
-  "Tim Hardaway Jr.": {
-    "Career Steals": 495,
-    "Career 3-PT Attempted": 5109,
-    "Career FG Attempted": 9258
+  "Pau Gasol": {
+    "career minutes per game": 33.4,
+    "Career Minutes Per Game": 33.4,
+    "Career High Points": 46
   },
-  "Darius Garland": {
-    "Career Steals": 447,
-    "Career 3-PT Attempted": 2313,
-    "Career FG Attempted": 5818
+  "Andre Iguodala": {
+    "career minutes per game": 32.1,
+    "Career Minutes Per Game": 32.1,
+    "Career High Points": 34
   },
-  "Walker Kessler": {
-    "Career Steals": 91,
-    "Career 3-PT Attempted": 56,
-    "Career FG Attempted": 1183
+  "Michael Finley": {
+    "career minutes per game": 34.4,
+    "Career Minutes Per Game": 34.4,
+    "Career High Points": 42
   }
 }
