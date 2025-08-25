@@ -1,17 +1,17 @@
 {
-  "Pau Gasol": {
-    "career minutes per game": 33.4,
-    "Career Minutes Per Game": 33.4,
-    "Career High Points": 46
+  "Kevin Garnett": {
+    "Career Turnovers Per Game": 2.2,
+    "Career Points Per Game": 17.8,
+    "Career Defensive Rebounds": 11453
   },
-  "Andre Iguodala": {
-    "career minutes per game": 32.1,
-    "Career Minutes Per Game": 32.1,
-    "Career High Points": 34
+  "Paul Pierce": {
+    "Career Turnovers Per Game": 2.6,
+    "Career Points Per Game": 19.7,
+    "Career Defensive Rebounds": 6435
   },
-  "Michael Finley": {
-    "career minutes per game": 34.4,
-    "Career Minutes Per Game": 34.4,
-    "Career High Points": 42
+  "Kevin Huerter": {
+    "Career Turnovers Per Game": 1.2,
+    "Career Points Per Game": 11.6,
+    "Career Defensive Rebounds": 1363
   }
 }
