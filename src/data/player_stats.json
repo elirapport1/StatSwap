@@ -1,17 +1,17 @@
 {
-  "Kevin Garnett": {
-    "Career Turnovers Per Game": 2.2,
-    "Career Points Per Game": 17.8,
-    "Career Defensive Rebounds": 11453
+  "Caleb Martin": {
+    "Career Offensive Rebounds": 326,
+    "Career Minutes Per Game": 24.3,
+    "Career FG Attempted": 2161
   },
-  "Paul Pierce": {
-    "Career Turnovers Per Game": 2.6,
-    "Career Points Per Game": 19.7,
-    "Career Defensive Rebounds": 6435
+  "Clint Capela": {
+    "Career Offensive Rebounds": 2432,
+    "Career Minutes Per Game": 26.2,
+    "Career FG Attempted": 5628
   },
-  "Kevin Huerter": {
-    "Career Turnovers Per Game": 1.2,
-    "Career Points Per Game": 11.6,
-    "Career Defensive Rebounds": 1363
+  "Derrick Rose": {
+    "Career Offensive Rebounds": 553,
+    "Career Minutes Per Game": 30.5,
+    "Career FG Attempted": 10798
   }
 }
