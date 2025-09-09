@@ -1,17 +1,17 @@
 {
-  "Reggie Bullock": {
-    "Career Defensive Rebounds": 1263,
-    "Career FG Percentage": 42.4,
-    "Career FT Percentage": 82.7
+  "Kyle Korver": {
+    "Career Blocks Per Game": 0.3,
+    "Career Assists": 2114,
+    "career triple doubles": 0
   },
-  "Jamal Crawford": {
-    "Career Defensive Rebounds": 2482,
-    "Career FG Percentage": 41,
-    "Career FT Percentage": 86.2
+  "Draymond Green": {
+    "Career Blocks Per Game": 1,
+    "Career Assists": 4948,
+    "career triple doubles": 33
   },
-  "Jrue Holiday": {
-    "Career Defensive Rebounds": 3342,
-    "Career FG Percentage": 46.2,
-    "Career FT Percentage": 78.8
+  "Tyus Jones": {
+    "Career Blocks Per Game": 0.1,
+    "Career Assists": 3022,
+    "career triple doubles": 2
   }
 }
