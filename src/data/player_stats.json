@@ -1,17 +1,17 @@
 {
-  "Kyle Korver": {
-    "Career Blocks Per Game": 0.3,
-    "Career Assists": 2114,
+  "Mike Miller": {
+    "Career High Turnovers": 8,
+    "Career FG Percentage": 45.9,
+    "career triple doubles": 1
+  },
+  "Lauri Markkanen": {
+    "Career High Turnovers": 6,
+    "Career FG Percentage": 45.5,
     "career triple doubles": 0
   },
-  "Draymond Green": {
-    "Career Blocks Per Game": 1,
-    "Career Assists": 4948,
-    "career triple doubles": 33
-  },
-  "Tyus Jones": {
-    "Career Blocks Per Game": 0.1,
-    "Career Assists": 3022,
+  "Kirk Hinrich": {
+    "Career High Turnovers": 9,
+    "Career FG Percentage": 41.1,
     "career triple doubles": 2
   }
 }
