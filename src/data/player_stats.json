@@ -1,17 +1,17 @@
 {
-  "P.J. Tucker": {
-    "Career Points Per Game": 6.6,
-    "Career Turnovers Per Game": 0.9,
-    "Career Rebounds": 4778
+  "Brook Lopez": {
+    "Career Offensive Rebounds": 2161,
+    "Career 3-PT Made": 1075,
+    "Career Turnovers": 1751
   },
-  "Hedo Türkoğlu": {
-    "Career Points Per Game": 11.1,
-    "Career Turnovers Per Game": 1.6,
-    "Career Rebounds": 3971
+  "Mike Miller": {
+    "Career Offensive Rebounds": 632,
+    "Career 3-PT Made": 1590,
+    "Career Turnovers": 1561
   },
-  "Paul George": {
-    "Career Points Per Game": 20.6,
-    "Career Turnovers Per Game": 2.7,
-    "Career Rebounds": 5684
+  "Jordan Poole": {
+    "Career Offensive Rebounds": 153,
+    "Career 3-PT Made": 1015,
+    "Career Turnovers": 956
   }
 }
