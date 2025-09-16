@@ -1,17 +1,17 @@
 {
-  "Reggie Bullock": {
-    "Career High Assists": 6,
-    "Career Blocks Per Game": 0.1,
-    "Career Offensive Rebounds": 188
+  "Andrew Bynum": {
+    "Weight": 285,
+    "Career 3-PT Attempted": 9,
+    "Career Defensive Rebounds": 2214
   },
-  "Domantas Sabonis": {
-    "Career High Assists": 16,
-    "Career Blocks Per Game": 0.5,
-    "Career Offensive Rebounds": 1749
+  "DeAndre Jordan": {
+    "Weight": 265,
+    "Career 3-PT Attempted": 13,
+    "Career Defensive Rebounds": 7594
   },
-  "Alec Burks": {
-    "Career High Assists": 9,
-    "Career Blocks Per Game": 0.2,
-    "Career Offensive Rebounds": 428
+  "Tim Hardaway": {
+    "Weight": 195,
+    "Career 3-PT Attempted": 4345,
+    "Career Defensive Rebounds": 2311
   }
 }
