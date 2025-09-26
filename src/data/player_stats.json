@@ -1,17 +1,17 @@
 {
-  "Andrei Kirilenko": {
-    "Career Blocks Per Game": 1.8,
-    "Career Turnovers": 1518,
-    "Career Assists Per Game": 2.7
+  "Kyle Lowry": {
+    "Career Steals": 1499,
+    "career minutes per game": 31.3,
+    "Career 3-PT Percentage": 36.8
   },
-  "Nick Van Exel": {
-    "Career Blocks Per Game": 0.1,
-    "Career Turnovers": 1850,
-    "Career Assists Per Game": 6.6
+  "Desmond Bane": {
+    "Career Steals": 312,
+    "career minutes per game": 29.6,
+    "Career 3-PT Percentage": 41
   },
-  "Marcus Smart": {
-    "Career Blocks Per Game": 0.4,
-    "Career Turnovers": 1198,
-    "Career Assists Per Game": 4.6
+  "John Collins": {
+    "Career Steals": 288,
+    "career minutes per game": 29.1,
+    "Career 3-PT Percentage": 36.3
   }
 }
