@@ -1,17 +1,17 @@
 {
-  "Cameron Johnson": {
-    "Career Turnovers Per Game": 0.9,
-    "Career Blocks Per Game": 0.3,
-    "Career High Steals": 4
+  "Jalen Green": {
+    "Career FG Percentage": 42.2,
+    "Career Rebounds": 1310,
+    "career minutes per game": 32.7
   },
-  "Monte Morris": {
-    "Career Turnovers Per Game": 0.7,
-    "Career Blocks Per Game": 0.2,
-    "Career High Steals": 5
+  "Miles Bridges": {
+    "Career FG Percentage": 46.2,
+    "Career Rebounds": 2627,
+    "career minutes per game": 30.8
   },
-  "Ja Morant": {
-    "Career Turnovers Per Game": 3.4,
-    "Career Blocks Per Game": 0.3,
-    "Career High Steals": 5
+  "Tim Hardaway": {
+    "Career FG Percentage": 43.1,
+    "Career Rebounds": 2855,
+    "career minutes per game": 35.3
   }
 }
