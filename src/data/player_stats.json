@@ -1,17 +1,17 @@
 {
-  "Jalen Green": {
-    "Career FG Percentage": 42.2,
-    "Career Rebounds": 1310,
-    "career minutes per game": 32.7
+  "Evan Mobley": {
+    "Career FG Attempted": 3235,
+    "Career 3-PT Percentage": 31.5,
+    "Career Minutes": 8745
   },
-  "Miles Bridges": {
-    "Career FG Percentage": 46.2,
-    "Career Rebounds": 2627,
-    "career minutes per game": 30.8
+  "George Hill": {
+    "Career FG Attempted": 7393,
+    "Career 3-PT Percentage": 38,
+    "Career Minutes": 24500
   },
-  "Tim Hardaway": {
-    "Career FG Percentage": 43.1,
-    "Career Rebounds": 2855,
-    "career minutes per game": 35.3
+  "Jason Kidd": {
+    "Career FG Attempted": 15557,
+    "Career 3-PT Percentage": 34.9,
+    "Career Minutes": 50111
   }
 }
