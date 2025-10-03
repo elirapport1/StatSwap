@@ -1,17 +1,17 @@
 {
-  "Brandon Ingram": {
-    "Career Offensive Rebounds": 361,
-    "Career Points Per Game": 19.5,
-    "Career Steals": 358
+  "Julius Randle": {
+    "Career Turnovers": 1994,
+    "career minutes per game": 32,
+    "Career 3-PT Made": 850
   },
-  "Nerlens Noel": {
-    "Career Offensive Rebounds": 898,
-    "Career Points Per Game": 7.1,
-    "Career Steals": 588
+  "Tim Hardaway Jr.": {
+    "Career Turnovers": 799,
+    "career minutes per game": 27.4,
+    "Career 3-PT Made": 1844
   },
-  "Damian Lillard": {
-    "Career Offensive Rebounds": 534,
-    "Career Points Per Game": 25.1,
-    "Career Steals": 874
+  "Udonis Haslem": {
+    "Career Turnovers": 810,
+    "career minutes per game": 24.7,
+    "Career 3-PT Made": 9
   }
 }
