@@ -1,17 +1,17 @@
 {
-  "Trae Young": {
-    "career double doubles": 256,
-    "career minutes per game": 34.4,
-    "Career Games Played": 483
+  "Tracy McGrady": {
+    "Career FT Made": 3882,
+    "Career Rebounds Per Game": 5.6,
+    "Career FT Percentage": 74.6
   },
-  "Devin Booker": {
-    "career double doubles": 70,
-    "career minutes per game": 34.4,
-    "Career Games Played": 673
+  "Shane Battier": {
+    "Career FT Made": 1194,
+    "Career Rebounds Per Game": 4.2,
+    "Career FT Percentage": 74.3
   },
-  "Richaun Holmes": {
-    "career double doubles": 61,
-    "career minutes per game": 19.1,
-    "Career Games Played": 489
+  "Austin Reaves": {
+    "Career FT Made": 881,
+    "Career Rebounds Per Game": 3.8,
+    "Career FT Percentage": 86.3
   }
 }
