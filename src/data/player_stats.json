@@ -1,17 +1,17 @@
 {
-  "Nic Claxton": {
-    "Career High Steals": 4,
-    "Career Minutes": 8023,
-    "Career Points Per Game": 10.3
+  "Paul George": {
+    "Career FT Percentage": 85.3,
+    "Career High Points": 48,
+    "career triple doubles": 4
   },
-  "LaMelo Ball": {
-    "Career High Steals": 5,
-    "Career Minutes": 7374,
-    "Career Points Per Game": 21
+  "Jalen Williams": {
+    "Career FT Percentage": 80.3,
+    "Career High Points": 41,
+    "career triple doubles": 0
   },
-  "Reggie Jackson": {
-    "Career High Steals": 6,
-    "Career Minutes": 21858,
-    "Career Points Per Game": 12.3
+  "Jalen Johnson": {
+    "Career FT Percentage": 71.2,
+    "Career High Points": 30,
+    "career triple doubles": 2
   }
 }
