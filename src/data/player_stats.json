@@ -1,17 +1,17 @@
 {
-  "Paul George": {
-    "Career FT Percentage": 85.3,
-    "Career High Points": 48,
-    "career triple doubles": 4
+  "Buddy Hield": {
+    "Career Assists": 1775,
+    "Career FG Percentage": 43.3,
+    "Career Defensive Rebounds": 2409
   },
-  "Jalen Williams": {
-    "Career FT Percentage": 80.3,
-    "Career High Points": 41,
-    "career triple doubles": 0
+  "Patrick Beverley": {
+    "Career Assists": 2245,
+    "Career FG Percentage": 41.3,
+    "Career Defensive Rebounds": 2044
   },
-  "Jalen Johnson": {
-    "Career FT Percentage": 71.2,
-    "Career High Points": 30,
-    "career triple doubles": 2
+  "Bradley Beal": {
+    "Career Assists": 3432,
+    "Career FG Percentage": 46.4,
+    "Career Defensive Rebounds": 2557
   }
 }
