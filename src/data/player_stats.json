@@ -1,17 +1,17 @@
 {
-  "Anthony Black": {
-    "Career Steals Per Game": 0.8,
-    "Career Steals": 121,
-    "Career High Rebounds": 10
+  "Tyler Herro": {
+    "Career FT Attempted": 1056,
+    "Career Blocks Per Game": 0.2,
+    "Career FT Percentage": 87.4
   },
-  "Tim Hardaway Jr.": {
-    "Career Steals Per Game": 0.6,
-    "Career Steals": 495,
-    "Career High Rebounds": 11
+  "Steve Nash": {
+    "Career FT Attempted": 3384,
+    "Career Blocks Per Game": 0.1,
+    "Career FT Percentage": 90.4
   },
-  "Dennis Schröder": {
-    "Career Steals Per Game": 0.8,
-    "Career Steals": 694,
-    "Career High Rebounds": 12
+  "Clint Capela": {
+    "Career FT Attempted": 1863,
+    "Career Blocks Per Game": 1.4,
+    "Career FT Percentage": 54.4
   }
 }
