@@ -1,17 +1,17 @@
 {
-  "Vince Carter": {
-    "Career High Points": 51,
-    "Career FT Attempted": 6082,
-    "Career Blocks Per Game": 0.6
+  "OG Anunoby": {
+    "Career Rebounds Per Game": 4.4,
+    "Weight": 240,
+    "Career Turnovers Per Game": 1.3
   },
-  "Emeka Okafor": {
-    "Career High Points": 30,
-    "Career FT Attempted": 2325,
-    "Career Blocks Per Game": 1.6
+  "Wilson Chandler": {
+    "Career Rebounds Per Game": 5.3,
+    "Weight": 235,
+    "Career Turnovers Per Game": 1.4
   },
-  "Ben Simmons": {
-    "Career High Points": 42,
-    "Career FT Attempted": 1459,
-    "Career Blocks Per Game": 0.7
+  "Kenyon Martin": {
+    "Career Rebounds Per Game": 6.8,
+    "Weight": 225,
+    "Career Turnovers Per Game": 1.7
   }
 }
