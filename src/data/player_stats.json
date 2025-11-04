@@ -1,17 +1,17 @@
 {
-  "OG Anunoby": {
-    "Career Rebounds Per Game": 4.4,
-    "Weight": 240,
-    "Career Turnovers Per Game": 1.3
+  "Danny Granger": {
+    "Career High Points": 44,
+    "Career FT Attempted": 2577,
+    "Career Turnovers": 1098
   },
-  "Wilson Chandler": {
-    "Career Rebounds Per Game": 5.3,
-    "Weight": 235,
-    "Career Turnovers Per Game": 1.4
+  "Marcus Morris": {
+    "Career High Points": 38,
+    "Career FT Attempted": 1768,
+    "Career Turnovers": 942
   },
-  "Kenyon Martin": {
-    "Career Rebounds Per Game": 6.8,
-    "Weight": 225,
-    "Career Turnovers Per Game": 1.7
+  "Gilbert Arenas": {
+    "Career High Points": 60,
+    "Career FT Attempted": 3584,
+    "Career Turnovers": 1744
   }
 }
