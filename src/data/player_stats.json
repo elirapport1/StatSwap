@@ -1,17 +1,17 @@
 {
-  "Dyson Daniels": {
-    "Career 3-PT Made": 152,
-    "Career FT Attempted": 257,
-    "Career Turnovers Per Game": 1.5
+  "Dwight Howard": {
+    "Career Rebounds Per Game": 11.8,
+    "Career 3-PT Attempted": 103,
+    "Career FT Percentage": 56.7
   },
-  "Al Horford": {
-    "Career 3-PT Made": 992,
-    "Career FT Attempted": 2110,
-    "Career Turnovers Per Game": 1.4
+  "Shawn Kemp": {
+    "Career Rebounds Per Game": 8.4,
+    "Career 3-PT Attempted": 119,
+    "Career FT Percentage": 74.1
   },
-  "Luka Dončić": {
-    "Career 3-PT Made": 1416,
-    "Career FT Attempted": 3842,
-    "Career Turnovers Per Game": 4
+  "Killian Hayes": {
+    "Career Rebounds Per Game": 2.9,
+    "Career 3-PT Attempted": 620,
+    "Career FT Percentage": 77.7
   }
 }
