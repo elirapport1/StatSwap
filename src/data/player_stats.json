@@ -1,17 +1,17 @@
 {
-  "Myles Turner": {
-    "Career FT Attempted": 2124,
-    "Career Personal Fouls": 1932,
-    "Career FG Made": 3421
+  "Shawn Marion": {
+    "career minutes per game": 34.5,
+    "Career High Rebounds": 24,
+    "Career Blocks": 1233
   },
-  "Josh Green": {
-    "Career FT Attempted": 291,
-    "Career Personal Fouls": 578,
-    "Career FG Made": 736
+  "Christian Laettner": {
+    "career minutes per game": 29.7,
+    "Career High Rebounds": 19,
+    "Career Blocks": 675
   },
-  "Tim Duncan": {
-    "Career FT Attempted": 8468,
-    "Career Personal Fouls": 3304,
-    "Career FG Made": 10285
+  "Marc Gasol": {
+    "career minutes per game": 32.2,
+    "Career High Rebounds": 17,
+    "Career Blocks": 1254
   }
 }
