@@ -1,17 +1,17 @@
 {
-  "Shawn Marion": {
-    "career minutes per game": 34.5,
-    "Career High Rebounds": 24,
-    "Career Blocks": 1233
-  },
-  "Christian Laettner": {
-    "career minutes per game": 29.7,
-    "Career High Rebounds": 19,
-    "Career Blocks": 675
+  "Josh Giddey": {
+    "Career High Turnovers": 7,
+    "Career FT Percentage": 76.4,
+    "Career High Steals": 8
   },
   "Marc Gasol": {
-    "career minutes per game": 32.2,
-    "Career High Rebounds": 17,
-    "Career Blocks": 1254
+    "Career High Turnovers": 8,
+    "Career FT Percentage": 77.6,
+    "Career High Steals": 5
+  },
+  "Nikola Jokić": {
+    "Career High Turnovers": 10,
+    "Career FT Percentage": 82.4,
+    "Career High Steals": 7
   }
 }
