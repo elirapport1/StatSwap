@@ -1,17 +1,17 @@
 {
-  "Desmond Bane": {
-    "Career Points": 5946,
-    "Career 3-PT Attempted": 2077,
-    "Career Minutes Per Game": 29.8
+  "Rasheed Wallace": {
+    "Career Minutes": 36243,
+    "career double doubles": 176,
+    "Career Turnovers Per Game": 1.5
   },
-  "Jayson Tatum": {
-    "Career Points": 13784,
-    "Career 3-PT Attempted": 4181,
-    "Career Minutes Per Game": 34.5
+  "Michael Porter Jr.": {
+    "Career Minutes": 10557,
+    "career double doubles": 60,
+    "Career Turnovers Per Game": 1.2
   },
-  "Derrick Favors": {
-    "Career Points": 8354,
-    "Career 3-PT Attempted": 192,
-    "Career Minutes Per Game": 24.3
+  "Latrell Sprewell": {
+    "Career Minutes": 35270,
+    "career double doubles": 37,
+    "Career Turnovers Per Game": 2.7
   }
 }
