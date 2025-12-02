@@ -1,17 +1,17 @@
 {
-  "Rasheed Wallace": {
-    "Career Minutes": 36243,
-    "career double doubles": 176,
-    "Career Turnovers Per Game": 1.5
+  "José Calderón": {
+    "Career Turnovers Per Game": 1.5,
+    "Career Games Played": 895,
+    "career minutes per game": 26.4
   },
-  "Michael Porter Jr.": {
-    "Career Minutes": 10557,
-    "career double doubles": 60,
-    "Career Turnovers Per Game": 1.2
+  "Anthony Edwards": {
+    "Career Turnovers Per Game": 2.9,
+    "Career Games Played": 397,
+    "career minutes per game": 34.7
   },
-  "Latrell Sprewell": {
-    "Career Minutes": 35270,
-    "career double doubles": 37,
-    "Career Turnovers Per Game": 2.7
+  "Aaron Gordon": {
+    "Career Turnovers Per Game": 1.5,
+    "Career Games Played": 733,
+    "career minutes per game": 29.3
   }
 }
