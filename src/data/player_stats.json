@@ -1,17 +1,17 @@
 {
-  "Chauncey Billups": {
-    "Career FT Percentage": 89.4,
-    "Career Rebounds": 2992,
-    "Career FG Made": 4738
+  "Norman Powell": {
+    "Weight": 215,
+    "Career Turnovers Per Game": 1.3,
+    "Career Assists Per Game": 1.6
   },
-  "Ben Wallace": {
-    "Career FT Percentage": 41.4,
-    "Career Rebounds": 10482,
-    "Career FG Made": 2569
+  "Zion Williamson": {
+    "Weight": 284,
+    "Career Turnovers Per Game": 2.9,
+    "Career Assists Per Game": 4.3
   },
-  "Rajon Rondo": {
-    "Career FT Percentage": 61.1,
-    "Career Rebounds": 4349,
-    "Career FG Made": 3886
+  "Darius Bazley": {
+    "Weight": 216,
+    "Career Turnovers Per Game": 1.2,
+    "Career Assists Per Game": 1.2
   }
 }
