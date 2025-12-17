@@ -1,17 +1,17 @@
 {
-  "Donte DiVincenzo": {
-    "Weight": 203,
-    "Career 3-PT Made": 996,
-    "Career Games Played": 442
+  "Bradley Beal": {
+    "Career Minutes": 27681,
+    "Career Blocks Per Game": 0.4,
+    "Career FT Percentage": 82.1
   },
-  "Chauncey Billups": {
-    "Weight": 210,
-    "Career 3-PT Made": 1830,
-    "Career Games Played": 1043
+  "Luka Dončić": {
+    "Career Minutes": 16420,
+    "Career Blocks Per Game": 0.5,
+    "Career FT Percentage": 75.5
   },
-  "Christian Laettner": {
-    "Weight": 245,
-    "Career 3-PT Made": 92,
-    "Career Games Played": 868
+  "Trae Young": {
+    "Career Minutes": 16760,
+    "Career Blocks Per Game": 0.2,
+    "Career FT Percentage": 87.3
   }
 }
