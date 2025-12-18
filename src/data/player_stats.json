@@ -1,17 +1,17 @@
 {
-  "Bradley Beal": {
-    "Career Minutes": 27681,
-    "Career Blocks Per Game": 0.4,
-    "Career FT Percentage": 82.1
+  "Gordon Hayward": {
+    "Career Steals Per Game": 1,
+    "Career High Turnovers": 8,
+    "Career Offensive Rebounds": 629
   },
-  "Luka Dončić": {
-    "Career Minutes": 16420,
-    "Career Blocks Per Game": 0.5,
-    "Career FT Percentage": 75.5
+  "Jalen Rose": {
+    "Career Steals Per Game": 0.8,
+    "Career High Turnovers": 9,
+    "Career Offensive Rebounds": 491
   },
-  "Trae Young": {
-    "Career Minutes": 16760,
-    "Career Blocks Per Game": 0.2,
-    "Career FT Percentage": 87.3
+  "Tobias Harris": {
+    "Career Steals Per Game": 0.8,
+    "Career High Turnovers": 7,
+    "Career Offensive Rebounds": 985
   }
 }
