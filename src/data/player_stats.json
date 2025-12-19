@@ -1,17 +1,17 @@
 {
-  "Gordon Hayward": {
-    "Career Steals Per Game": 1,
-    "Career High Turnovers": 8,
-    "Career Offensive Rebounds": 629
+  "Jalen Williams": {
+    "Career Rebounds Per Game": 4.6,
+    "Career FG Attempted": 3069,
+    "Career Assists Per Game": 4.3
   },
-  "Jalen Rose": {
-    "Career Steals Per Game": 0.8,
-    "Career High Turnovers": 9,
-    "Career Offensive Rebounds": 491
+  "Eric Bledsoe": {
+    "Career Rebounds Per Game": 3.9,
+    "Career FG Attempted": 8169,
+    "Career Assists Per Game": 4.7
   },
-  "Tobias Harris": {
-    "Career Steals Per Game": 0.8,
-    "Career High Turnovers": 7,
-    "Career Offensive Rebounds": 985
+  "Davion Mitchell": {
+    "Career Rebounds Per Game": 1.8,
+    "Career FG Attempted": 2247,
+    "Career Assists Per Game": 3.7
   }
 }
