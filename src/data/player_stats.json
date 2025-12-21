@@ -1,17 +1,17 @@
 {
-  "Austin Reaves": {
-    "Career FG Percentage": 48.3,
-    "Career Steals": 231,
-    "Career Turnovers": 560
+  "Kyle Kuzma": {
+    "Career FG Attempted": 8052,
+    "Career High Rebounds": 22,
+    "Career Blocks Per Game": 0.5
   },
-  "David Robinson": {
-    "Career FG Percentage": 51.8,
-    "Career Steals": 1388,
-    "Career Turnovers": 2417
+  "Victor Oladipo": {
+    "Career FG Attempted": 7152,
+    "Career High Rebounds": 15,
+    "Career Blocks Per Game": 0.5
   },
-  "Roy Hibbert": {
-    "Career FG Percentage": 46.5,
-    "Career Steals": 241,
-    "Career Turnovers": 1038
+  "Grayson Allen": {
+    "Career FG Attempted": 3372,
+    "Career High Rebounds": 10,
+    "Career Blocks Per Game": 0.3
   }
 }
