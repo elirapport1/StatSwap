@@ -1,17 +1,17 @@
 {
-  "Andre Iguodala": {
-    "Career Assists Per Game": 4.2,
-    "Career Minutes": 39507,
-    "Career 3-PT Attempted": 3278
+  "Russell Westbrook": {
+    "Career Assists": 10140,
+    "Career 3-PT Made": 1423,
+    "Career FT Percentage": 77.1
   },
-  "Kirk Hinrich": {
-    "Career Assists Per Game": 4.8,
-    "Career Minutes": 27015,
-    "Career 3-PT Attempted": 3122
+  "Brandon Ingram": {
+    "Career Assists": 2249,
+    "Career 3-PT Made": 743,
+    "Career FT Percentage": 78.9
   },
-  "Mehmet Okur": {
-    "Career Assists Per Game": 1.7,
-    "Career Minutes": 18429,
-    "Career 3-PT Attempted": 1590
+  "Karl Anthony Towns": {
+    "Career Assists": 2119,
+    "Career 3-PT Made": 1166,
+    "Career FT Percentage": 83.9
   }
 }
