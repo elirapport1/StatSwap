@@ -1,17 +1,17 @@
 {
-  "John Wall": {
-    "Career Personal Fouls": 1394,
-    "career double doubles": 261,
-    "Career Offensive Rebounds": 361
+  "Juwan Howard": {
+    "Career Turnovers": 2469,
+    "Career Rebounds": 7428,
+    "Career Blocks Per Game": 0.3
   },
-  "Mehmet Okur": {
-    "Career Personal Fouls": 1815,
-    "career double doubles": 146,
-    "Career Offensive Rebounds": 1261
+  "Dwyane Wade": {
+    "Career Turnovers": 3326,
+    "Career Rebounds": 4933,
+    "Career Blocks Per Game": 0.8
   },
-  "Mitch Richmond": {
-    "Career Personal Fouls": 2503,
-    "career double doubles": 30,
-    "Career Offensive Rebounds": 881
+  "Kenyon Martin": {
+    "Career Turnovers": 1318,
+    "Career Rebounds": 5159,
+    "Career Blocks Per Game": 1.1
   }
 }
