@@ -1,17 +1,17 @@
 {
-  "Juwan Howard": {
-    "Career Turnovers": 2469,
-    "Career Rebounds": 7428,
-    "Career Blocks Per Game": 0.3
+  "Kyle Lowry": {
+    "career minutes per game": 31.2,
+    "Career Steals": 1500,
+    "Career Rebounds Per Game": 4.2
   },
-  "Dwyane Wade": {
-    "Career Turnovers": 3326,
-    "Career Rebounds": 4933,
-    "Career Blocks Per Game": 0.8
+  "Royce O'Neale": {
+    "career minutes per game": 26.4,
+    "Career Steals": 526,
+    "Career Rebounds Per Game": 4.8
   },
-  "Kenyon Martin": {
-    "Career Turnovers": 1318,
-    "Career Rebounds": 5159,
-    "Career Blocks Per Game": 1.1
+  "Trae Young": {
+    "career minutes per game": 34.3,
+    "Career Steals": 515,
+    "Career Rebounds Per Game": 3.5
   }
 }
