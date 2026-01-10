@@ -1,17 +1,17 @@
 {
-  "Mario Chalmers": {
-    "Career Steals": 950,
-    "Career FG Attempted": 4641,
-    "Career FG Made": 1936
+  "Dirk Nowitzki": {
+    "Career Points Per Game": 20.7,
+    "Weight": 245,
+    "Career FG Percentage": 47.1
   },
-  "Yao Ming": {
-    "Career Steals": 189,
-    "Career FG Attempted": 6445,
-    "Career FG Made": 3380
+  "Ray Allen": {
+    "Career Points Per Game": 18.9,
+    "Weight": 205,
+    "Career FG Percentage": 45.2
   },
-  "Luol Deng": {
-    "Career Steals": 880,
-    "Career FG Attempted": 11257,
-    "Career FG Made": 5130
+  "Blake Griffin": {
+    "Career Points Per Game": 19,
+    "Weight": 250,
+    "Career FG Percentage": 49.3
   }
 }
