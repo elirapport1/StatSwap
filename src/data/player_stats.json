@@ -1,17 +1,17 @@
 {
-  "Dirk Nowitzki": {
-    "Career Points Per Game": 20.7,
-    "Weight": 245,
-    "Career FG Percentage": 47.1
+  "Brook Lopez": {
+    "Career 3-PT Attempted": 3191,
+    "Career FG Percentage": 49.5,
+    "Career Blocks Per Game": 1.8
   },
-  "Ray Allen": {
-    "Career Points Per Game": 18.9,
-    "Weight": 205,
-    "Career FG Percentage": 45.2
+  "Cade Cunningham": {
+    "Career 3-PT Attempted": 1377,
+    "Career FG Percentage": 44.9,
+    "Career Blocks Per Game": 0.6
   },
-  "Blake Griffin": {
-    "Career Points Per Game": 19,
-    "Weight": 250,
-    "Career FG Percentage": 49.3
+  "Jordan Clarkson": {
+    "Career 3-PT Attempted": 4325,
+    "Career FG Percentage": 43.6,
+    "Career Blocks Per Game": 0.2
   }
 }
