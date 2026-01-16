@@ -1,17 +1,17 @@
 {
-  "Reggie Jackson": {
-    "Career FT Percentage": 85.4,
-    "Career Plus-Minus": 787,
-    "Career Turnovers Per Game": 1.8
+  "Paul Millsap": {
+    "Weight": 257,
+    "Career Blocks Per Game": 1,
+    "Career Games Played": 1085
   },
-  "Tyreke Evans": {
-    "Career FT Percentage": 75.7,
-    "Career Plus-Minus": -1151,
-    "Career Turnovers Per Game": 2.5
+  "Fred VanVleet": {
+    "Weight": 197,
+    "Career Blocks Per Game": 0.5,
+    "Career Games Played": 550
   },
-  "Amen Thompson": {
-    "Career FT Percentage": 72.2,
-    "Career Plus-Minus": 544,
-    "Career Turnovers Per Game": 1.9
+  "Pau Gasol": {
+    "Weight": 250,
+    "Career Blocks Per Game": 1.6,
+    "Career Games Played": 1226
   }
 }
