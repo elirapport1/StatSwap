@@ -1,17 +1,17 @@
 {
-  "Michael Jordan": {
-    "Career Personal Fouls": 2783,
-    "Career Turnovers Per Game": 2.7,
-    "Career Points Per Game": 30.1
+  "Jermaine O'Neal": {
+    "Career FT Made": 3007,
+    "Career Assists Per Game": 1.4,
+    "career minutes per game": 27.1
   },
-  "Harrison Barnes": {
-    "Career Personal Fouls": 1528,
-    "Career Turnovers Per Game": 1.1,
-    "Career Points Per Game": 13.7
+  "Robin Lopez": {
+    "Career FT Made": 1301,
+    "Career Assists Per Game": 0.8,
+    "career minutes per game": 21.1
   },
-  "Peja Stojaković": {
-    "Career Personal Fouls": 1398,
-    "Career Turnovers Per Game": 1.4,
-    "Career Points Per Game": 17
+  "Stephen Curry": {
+    "Career FT Made": 4222,
+    "Career Assists Per Game": 6.3,
+    "career minutes per game": 34
   }
 }
