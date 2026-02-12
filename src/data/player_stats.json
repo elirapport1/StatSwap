@@ -1,17 +1,17 @@
 {
-  "Jermaine O'Neal": {
-    "Career FT Made": 3007,
-    "Career Assists Per Game": 1.4,
-    "career minutes per game": 27.1
+  "Jordan Poole": {
+    "Career Minutes Per Game": 27.4,
+    "Weight": 194,
+    "Career Blocks Per Game": 0.3
   },
-  "Robin Lopez": {
-    "Career FT Made": 1301,
-    "Career Assists Per Game": 0.8,
-    "career minutes per game": 21.1
+  "Paul Millsap": {
+    "Career Minutes Per Game": 28.1,
+    "Weight": 257,
+    "Career Blocks Per Game": 1
   },
-  "Stephen Curry": {
-    "Career FT Made": 4222,
-    "Career Assists Per Game": 6.3,
-    "career minutes per game": 34
+  "Ivica Zubac": {
+    "Career Minutes Per Game": 23.5,
+    "Weight": 240,
+    "Career Blocks Per Game": 1
   }
 }
