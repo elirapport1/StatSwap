@@ -1,17 +1,17 @@
 {
-  "Serge Ibaka": {
-    "Career Points": 11028,
-    "career minutes per game": 27.3,
-    "Career Plus-Minus": 2537
+  "Bradley Beal": {
+    "Career Rebounds Per Game": 4,
+    "Career Assists Per Game": 4.3,
+    "Weight": 207
   },
-  "Reggie Jackson": {
-    "Career Points": 10845,
-    "career minutes per game": 24.7,
-    "Career Plus-Minus": 787
+  "Lorenzen Wright": {
+    "Career Rebounds Per Game": 6.4,
+    "Career Assists Per Game": 0.8,
+    "Weight": 255
   },
-  "Jason Richardson": {
-    "Career Points": 14644,
-    "career minutes per game": 34.1,
-    "Career Plus-Minus": -106
+  "Josh Giddey": {
+    "Career Rebounds Per Game": 7.6,
+    "Career Assists Per Game": 6.4,
+    "Weight": 214
   }
 }
