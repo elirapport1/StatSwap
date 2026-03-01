@@ -1,17 +1,17 @@
 {
-  "De'Andre Hunter": {
-    "Career High Turnovers": 6,
-    "Career Blocks Per Game": 0.3,
-    "Career Games Played": 372
+  "Scottie Pippen": {
+    "Career Minutes Per Game": 34.9,
+    "Career 3-PT Attempted": 3002,
+    "Career 3-PT Percentage": 32.6
   },
-  "Bruce Bowen": {
-    "Career High Turnovers": 5,
-    "Career Blocks Per Game": 0.4,
-    "Career Games Played": 873
+  "Kevin Love": {
+    "Career Minutes Per Game": 28.5,
+    "Career 3-PT Attempted": 4670,
+    "Career 3-PT Percentage": 36.8
   },
-  "Kyle Korver": {
-    "Career High Turnovers": 5,
-    "Career Blocks Per Game": 0.3,
-    "Career Games Played": 1232
+  "Miles Bridges": {
+    "Career Minutes Per Game": 31,
+    "Career 3-PT Attempted": 2512,
+    "Career 3-PT Percentage": 33.9
   }
 }
