@@ -1,17 +1,17 @@
 {
-  "James Harden": {
-    "Career Personal Fouls": 2962,
-    "Career FG Made": 8550,
-    "Career FT Made": 8541
+  "Ray Allen": {
+    "Career 3-PT Percentage": 40,
+    "Career Steals": 1451,
+    "Weight": 205
   },
-  "Marcus Camby": {
-    "Career Personal Fouls": 2687,
-    "Career FG Made": 3767,
-    "Career FT Made": 1710
+  "Kobe Bryant": {
+    "Career 3-PT Percentage": 32.9,
+    "Career Steals": 1944,
+    "Weight": 212
   },
-  "Fred VanVleet": {
-    "Career Personal Fouls": 1205,
-    "Career FG Made": 2763,
-    "Career FT Made": 1292
+  "Joe Harris": {
+    "Career 3-PT Percentage": 43.6,
+    "Career Steals": 241,
+    "Weight": 220
   }
 }
