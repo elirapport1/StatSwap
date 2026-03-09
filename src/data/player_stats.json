@@ -1,17 +1,17 @@
 {
-  "Ray Allen": {
-    "Career 3-PT Percentage": 40,
-    "Career Steals": 1451,
-    "Weight": 205
+  "Patrick Williams": {
+    "Career FT Percentage": 76.2,
+    "Career FG Made": 1127,
+    "Career Games Played": 332
   },
-  "Kobe Bryant": {
-    "Career 3-PT Percentage": 32.9,
-    "Career Steals": 1944,
-    "Weight": 212
+  "Derek Fisher": {
+    "Career FT Percentage": 81.7,
+    "Career FG Made": 3720,
+    "Career Games Played": 1287
   },
-  "Joe Harris": {
-    "Career 3-PT Percentage": 43.6,
-    "Career Steals": 241,
-    "Weight": 220
+  "Roy Hibbert": {
+    "Career FT Percentage": 75.5,
+    "Career FG Made": 2622,
+    "Career Games Played": 662
   }
 }
