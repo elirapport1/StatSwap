@@ -1,17 +1,17 @@
 {
-  "Grant Hill": {
-    "Career High Rebounds": 18,
-    "Career Assists": 4252,
-    "Career Assists Per Game": 4.1
+  "Ivica Zubac": {
+    "Career Offensive Rebounds": 1685,
+    "Career 3-PT Made": 1,
+    "career double doubles": 194
   },
-  "Trae Young": {
-    "Career High Rebounds": 13,
-    "Career Assists": 4851,
-    "Career Assists Per Game": 9.8
+  "Patrick Beverley": {
+    "Career Offensive Rebounds": 685,
+    "Career 3-PT Made": 973,
+    "career double doubles": 25
   },
-  "DeAndre Jordan": {
-    "Career High Rebounds": 27,
-    "Career Assists": 1053,
-    "Career Assists Per Game": 0.9
+  "Stephen Curry": {
+    "Career Offensive Rebounds": 685,
+    "Career 3-PT Made": 4233,
+    "career double doubles": 170
   }
 }
