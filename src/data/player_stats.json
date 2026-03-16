@@ -1,17 +1,17 @@
 {
-  "Donte DiVincenzo": {
-    "Career High Points": 40,
-    "Career FT Made": 456,
-    "Career Minutes": 12683
+  "Russell Westbrook": {
+    "Career 3-PT Made": 1493,
+    "Career High Assists": 24,
+    "Career FG Made": 9780
+  },
+  "Klay Thompson": {
+    "Career 3-PT Made": 2869,
+    "Career High Assists": 8,
+    "Career FG Made": 6401
   },
   "Lorenzen Wright": {
-    "Career High Points": 33,
-    "Career FT Made": 1077,
-    "Career Minutes": 18535
-  },
-  "Pau Gasol": {
-    "Career High Points": 46,
-    "Career FT Made": 4755,
-    "Career Minutes": 41001
+    "Career 3-PT Made": 2,
+    "Career High Assists": 5,
+    "Career FG Made": 2556
   }
 }
