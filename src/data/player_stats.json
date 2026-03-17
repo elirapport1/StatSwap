@@ -1,17 +1,17 @@
 {
-  "Russell Westbrook": {
-    "Career 3-PT Made": 1493,
-    "Career High Assists": 24,
-    "Career FG Made": 9780
+  "Gary Trent Jr.": {
+    "Career Blocks Per Game": 0.2,
+    "Career Points Per Game": 13,
+    "career minutes per game": 27.3
   },
-  "Klay Thompson": {
-    "Career 3-PT Made": 2869,
-    "Career High Assists": 8,
-    "Career FG Made": 6401
+  "Austin Rivers": {
+    "Career Blocks Per Game": 0.2,
+    "Career Points Per Game": 8.5,
+    "career minutes per game": 23.8
   },
-  "Lorenzen Wright": {
-    "Career 3-PT Made": 2,
-    "Career High Assists": 5,
-    "Career FG Made": 2556
+  "Kirk Hinrich": {
+    "Career Blocks Per Game": 0.3,
+    "Career Points Per Game": 10.9,
+    "career minutes per game": 30.7
   }
 }
