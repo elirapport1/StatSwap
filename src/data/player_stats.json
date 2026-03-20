@@ -1,17 +1,17 @@
 {
-  "Grant Hill": {
-    "Career High Assists": 14,
-    "Career Minutes": 34776,
-    "Career Minutes Per Game": 33.9
+  "Luol Deng": {
+    "Weight": 237,
+    "Career Points Per Game": 14.8,
+    "Career 3-PT Percentage": 33.2
   },
-  "Anthony Edwards": {
-    "Career High Assists": 12,
-    "Career Minutes": 15323,
-    "Career Minutes Per Game": 34.9
+  "Shaquille O'Neal": {
+    "Weight": 325,
+    "Career Points Per Game": 23.7,
+    "Career 3-PT Percentage": 4.5
   },
-  "DeAndre Jordan": {
-    "Career High Assists": 9,
-    "Career Minutes": 28030,
-    "Career Minutes Per Game": 25
+  "Metta World Peace": {
+    "Weight": 260,
+    "Career Points Per Game": 13.2,
+    "Career 3-PT Percentage": 33.9
   }
 }
