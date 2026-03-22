@@ -1,17 +1,17 @@
 {
-  "Jason Terry": {
-    "Career Rebounds": 3274,
-    "Career High Steals": 6,
-    "Career High Turnovers": 8
+  "Christian Laettner": {
+    "career minutes per game": 29.7,
+    "career triple doubles": 0,
+    "Weight": 245
   },
-  "Max Strus": {
-    "Career Rebounds": 1077,
-    "Career High Steals": 4,
-    "Career High Turnovers": 5
+  "Grady Dick": {
+    "career minutes per game": 21.4,
+    "career triple doubles": 0,
+    "Weight": 200
   },
-  "Lauri Markkanen": {
-    "Career Rebounds": 3490,
-    "Career High Steals": 4,
-    "Career High Turnovers": 6
+  "Allen Iverson": {
+    "career minutes per game": 41.1,
+    "career triple doubles": 1,
+    "Weight": 165
   }
 }
