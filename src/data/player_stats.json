@@ -1,17 +1,17 @@
 {
-  "Gerald Wallace": {
-    "Career High Steals": 8,
-    "Career Points Per Game": 11.9,
-    "Career FG Attempted": 7492
+  "Joakim Noah": {
+    "Career FG Percentage": 49.1,
+    "Career 3-PT Percentage": 0,
+    "Career FT Percentage": 70
   },
-  "Pascal Siakam": {
-    "Career High Steals": 5,
-    "Career Points Per Game": 18.5,
-    "Career FG Attempted": 9841
+  "Richard Hamilton": {
+    "Career FG Percentage": 44.9,
+    "Career 3-PT Percentage": 34.6,
+    "Career FT Percentage": 85.2
   },
-  "Michael Jordan": {
-    "Career High Steals": 10,
-    "Career Points Per Game": 30.1,
-    "Career FG Attempted": 24537
+  "LaMelo Ball": {
+    "Career FG Percentage": 41.7,
+    "Career 3-PT Percentage": 36.5,
+    "Career FT Percentage": 84.5
   }
 }
