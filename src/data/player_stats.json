@@ -1,17 +1,17 @@
 {
-  "Donte DiVincenzo": {
-    "Career Games Played": 494,
-    "Career 3-PT Made": 1150,
-    "career double doubles": 12
+  "Andrew Wiggins": {
+    "Career FT Percentage": 72.8,
+    "Career FT Attempted": 3592,
+    "Career Personal Fouls": 1799
   },
-  "Kemba Walker": {
-    "Career Games Played": 750,
-    "Career 3-PT Made": 1670,
-    "career double doubles": 47
+  "Dikembe Mutombo": {
+    "Career FT Percentage": 68.4,
+    "Career FT Attempted": 4960,
+    "Career Personal Fouls": 3383
   },
-  "LeBron James": {
-    "Career Games Played": 1619,
-    "Career 3-PT Made": 2631,
-    "career double doubles": 620
+  "Stephen Curry": {
+    "Career FT Percentage": 91.2,
+    "Career FT Attempted": 4631,
+    "Career Personal Fouls": 2385
   }
 }
