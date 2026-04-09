@@ -1,17 +1,17 @@
 {
-  "Harrison Barnes": {
-    "Career Rebounds": 4950,
-    "Career Blocks Per Game": 0.2,
-    "Career FT Percentage": 81
+  "John Stockton": {
+    "Career FT Attempted": 5796,
+    "Career FT Percentage": 82.6,
+    "Career 3-PT Attempted": 2202
   },
-  "Norman Powell": {
-    "Career Rebounds": 1849,
-    "Career Blocks Per Game": 0.3,
-    "Career FT Percentage": 82.4
+  "JJ Redick": {
+    "Career FT Attempted": 2310,
+    "Career FT Percentage": 89.2,
+    "Career 3-PT Attempted": 4704
   },
-  "Anthony Black": {
-    "Career Rebounds": 602,
-    "Career Blocks Per Game": 0.5,
-    "Career FT Percentage": 72.3
+  "Scoot Henderson": {
+    "Career FT Attempted": 507,
+    "Career FT Percentage": 80.1,
+    "Career 3-PT Attempted": 717
   }
 }
