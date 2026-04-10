@@ -1,17 +1,17 @@
 {
-  "John Stockton": {
-    "Career FT Attempted": 5796,
-    "Career FT Percentage": 82.6,
-    "Career 3-PT Attempted": 2202
+  "John Wall": {
+    "Career Turnovers": 2412,
+    "Career Minutes": 22588,
+    "Career Minutes Per Game": 34.9
   },
-  "JJ Redick": {
-    "Career FT Attempted": 2310,
-    "Career FT Percentage": 89.2,
-    "Career 3-PT Attempted": 4704
+  "Mehmet Okur": {
+    "Career Turnovers": 991,
+    "Career Minutes": 18429,
+    "Career Minutes Per Game": 29.1
   },
-  "Scoot Henderson": {
-    "Career FT Attempted": 507,
-    "Career FT Percentage": 80.1,
-    "Career 3-PT Attempted": 717
+  "Tyson Chandler": {
+    "Career Turnovers": 1656,
+    "Career Minutes": 31617,
+    "Career Minutes Per Game": 27.3
   }
 }
