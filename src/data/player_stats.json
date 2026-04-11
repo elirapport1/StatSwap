@@ -1,17 +1,17 @@
 {
-  "John Wall": {
-    "Career Turnovers": 2412,
-    "Career Minutes": 22588,
-    "Career Minutes Per Game": 34.9
+  "Jason Kidd": {
+    "Career High Rebounds": 19,
+    "Career Assists Per Game": 8.7,
+    "Career 3-PT Made": 1988
   },
-  "Mehmet Okur": {
-    "Career Turnovers": 991,
-    "Career Minutes": 18429,
-    "Career Minutes Per Game": 29.1
+  "Kirk Hinrich": {
+    "Career High Rebounds": 13,
+    "Career Assists Per Game": 4.8,
+    "Career 3-PT Made": 1172
   },
-  "Tyson Chandler": {
-    "Career Turnovers": 1656,
-    "Career Minutes": 31617,
-    "Career Minutes Per Game": 27.3
+  "Dejounte Murray": {
+    "Career High Rebounds": 17,
+    "Career Assists Per Game": 5.4,
+    "Career 3-PT Made": 623
   }
 }
