@@ -1,17 +1,17 @@
 {
-  "Tim Hardaway Jr.": {
-    "Career Blocks Per Game": 0.1,
-    "Career Turnovers Per Game": 0.9,
-    "Career Rebounds": 2544
+  "Jae Crowder": {
+    "Career High Steals": 5,
+    "Career Assists": 1281,
+    "career double doubles": 22
   },
-  "Klay Thompson": {
-    "Career Blocks Per Game": 0.5,
-    "Career Turnovers Per Game": 1.6,
-    "Career Rebounds": 3184
+  "Chris Webber": {
+    "Career High Steals": 8,
+    "Career Assists": 3526,
+    "career double doubles": 445
   },
-  "De'Andre Hunter": {
-    "Career Blocks Per Game": 0.3,
-    "Career Turnovers Per Game": 1.4,
-    "Career Rebounds": 1521
+  "Lamar Odom": {
+    "Career High Steals": 6,
+    "Career Assists": 3554,
+    "career double doubles": 299
   }
 }
