@@ -1,17 +1,17 @@
 {
-  "Cole Anthony": {
-    "Career Rebounds": 1459,
-    "Career FT Attempted": 911,
-    "career double doubles": 13
-  },
-  "Juwan Howard": {
-    "Career Rebounds": 7428,
-    "Career FT Attempted": 4014,
-    "career double doubles": 190
+  "Jaylen Brown": {
+    "Career Minutes": 20908,
+    "Career Defensive Rebounds": 3013,
+    "Career Minutes Per Game": 31
   },
   "Jaden McDaniels": {
-    "Career Rebounds": 1836,
-    "Career FT Attempted": 643,
-    "career double doubles": 10
+    "Career Minutes": 12764,
+    "Career Defensive Rebounds": 1355,
+    "Career Minutes Per Game": 29.1
+  },
+  "Nikola Jokić": {
+    "Career Minutes": 25904,
+    "Career Defensive Rebounds": 6802,
+    "Career Minutes Per Game": 32
   }
 }
