@@ -1,17 +1,17 @@
 {
-  "Donovan Mitchell": {
-    "Career Personal Fouls": 1463,
-    "Career Rebounds Per Game": 4.3,
-    "Career Defensive Rebounds": 2155
+  "Juwan Howard": {
+    "Career Turnovers": 2469,
+    "Career 3-PT Percentage": 12,
+    "Career Blocks": 312
   },
-  "Ben Simmons": {
-    "Career Personal Fouls": 1059,
-    "Career Rebounds Per Game": 7.4,
-    "Career Defensive Rebounds": 2199
+  "Al Jefferson": {
+    "Career Turnovers": 1211,
+    "Career 3-PT Percentage": 12.1,
+    "Career Blocks": 1093
   },
-  "Max Strus": {
-    "Career Personal Fouls": 634,
-    "Career Rebounds Per Game": 3.5,
-    "Career Defensive Rebounds": 915
+  "Ben Wallace": {
+    "Career Turnovers": 1061,
+    "Career 3-PT Percentage": 13.7,
+    "Career Blocks": 2137
   }
 }
