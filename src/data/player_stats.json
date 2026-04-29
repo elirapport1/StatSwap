@@ -1,17 +1,17 @@
 {
-  "Malik Monk": {
-    "Career Plus-Minus": -442,
-    "Career Games Played": 585,
-    "Career Minutes Per Game": 22.7
+  "Hedo Türkoğlu": {
+    "Career Blocks Per Game": 0.3,
+    "Career Personal Fouls": 2403,
+    "Career FG Made": 3851
   },
-  "Donovan Mitchell": {
-    "Career Plus-Minus": 2960,
-    "Career Games Played": 609,
-    "Career Minutes Per Game": 33.8
+  "Jerry Stackhouse": {
+    "Career Blocks Per Game": 0.5,
+    "Career Personal Fouls": 1810,
+    "Career FG Made": 5386
   },
-  "Cameron Johnson": {
-    "Career Plus-Minus": 622,
-    "Career Games Played": 394,
-    "Career Minutes Per Game": 27.1
+  "Amaré Stoudemire": {
+    "Career Blocks Per Game": 1.2,
+    "Career Personal Fouls": 2685,
+    "Career FG Made": 5911
   }
 }
