@@ -1,17 +1,17 @@
 {
-  "Andre Drummond": {
-    "Career Rebounds Per Game": 11.9,
-    "career triple doubles": 0,
-    "Career FT Percentage": 48.9
+  "Jalen Suggs": {
+    "Career 3-PT Made": 459,
+    "Career FT Made": 527,
+    "Career Assists": 1010
   },
-  "Dillon Brooks": {
-    "Career Rebounds Per Game": 3.3,
-    "career triple doubles": 0,
-    "Career FT Percentage": 81
+  "Kris Humphries": {
+    "Career 3-PT Made": 55,
+    "Career FT Made": 1139,
+    "Career Assists": 556
   },
-  "Roy Hibbert": {
-    "Career Rebounds Per Game": 6.3,
-    "career triple doubles": 1,
-    "Career FT Percentage": 75.5
+  "Gordon Hayward": {
+    "Career 3-PT Made": 1111,
+    "Career FT Made": 2726,
+    "Career Assists": 2940
   }
 }
