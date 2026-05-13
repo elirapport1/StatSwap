@@ -1,17 +1,17 @@
 {
-  "Tyler Herro": {
-    "Career Rebounds": 1960,
-    "Career Personal Fouls": 553,
-    "Career FG Attempted": 6189
+  "Nené": {
+    "Career Steals Per Game": 1.1,
+    "Career Steals": 1041,
+    "Career Minutes": 25238
   },
-  "Clint Capela": {
-    "Career Rebounds": 7330,
-    "Career Personal Fouls": 1632,
-    "Career FG Attempted": 5855
+  "Michael Jordan": {
+    "Career Steals Per Game": 2.3,
+    "Career Steals": 2514,
+    "Career Minutes": 41011
   },
-  "Kyle Kuzma": {
-    "Career Rebounds": 3726,
-    "Career Personal Fouls": 1256,
-    "Career FG Attempted": 8479
+  "Kevin Durant": {
+    "Career Steals Per Game": 1,
+    "Career Steals": 1235,
+    "Career Minutes": 44076
   }
 }
