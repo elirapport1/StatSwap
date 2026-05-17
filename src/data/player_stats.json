@@ -1,17 +1,17 @@
 {
-  "Chris Bosh": {
-    "Career Minutes Per Game": 35.8,
-    "Career Blocks": 932,
-    "Career Personal Fouls": 2159
+  "Juwan Howard": {
+    "Weight": 250,
+    "Career FT Percentage": 76.4,
+    "Career Blocks": 312
   },
-  "Robin Lopez": {
-    "Career Minutes Per Game": 21.1,
-    "Career Blocks": 1045,
-    "Career Personal Fouls": 1858
+  "Austin Reaves": {
+    "Weight": 197,
+    "Career FT Percentage": 86.5,
+    "Career Blocks": 106
   },
-  "Lou Williams": {
-    "Career Minutes Per Game": 24.1,
-    "Career Blocks": 192,
-    "Career Personal Fouls": 1439
+  "Robert Covington": {
+    "Weight": 209,
+    "Career FT Percentage": 81.1,
+    "Career Blocks": 578
   }
 }
