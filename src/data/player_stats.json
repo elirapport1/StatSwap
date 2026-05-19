@@ -1,17 +1,17 @@
 {
-  "Markelle Fultz": {
-    "Career 3-PT Percentage": 28,
-    "Career Blocks Per Game": 0.3,
-    "Career Personal Fouls": 466
+  "David Robinson": {
+    "Weight": 250,
+    "Career Turnovers": 2417,
+    "Career Blocks Per Game": 3
   },
-  "J.R. Smith": {
-    "Career 3-PT Percentage": 37.3,
-    "Career Blocks Per Game": 0.2,
-    "Career Personal Fouls": 2191
+  "Derrick White": {
+    "Weight": 190,
+    "Career Turnovers": 828,
+    "Career Blocks Per Game": 1
   },
-  "Collin Sexton": {
-    "Career 3-PT Percentage": 38.9,
-    "Career Blocks Per Game": 0.1,
-    "Career Personal Fouls": 1064
+  "Tracy McGrady": {
+    "Weight": 225,
+    "Career Turnovers": 2029,
+    "Career Blocks Per Game": 0.9
   }
 }
