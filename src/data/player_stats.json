@@ -1,17 +1,17 @@
 {
-  "Gilbert Arenas": {
-    "career triple doubles": 4,
-    "Career FT Percentage": 80.3,
-    "Career FG Attempted": 8850
+  "Benedict Mathurin": {
+    "Career Assists Per Game": 1.9,
+    "career minutes per game": 28.6,
+    "Career FG Percentage": 44.2
   },
-  "DeMar DeRozan": {
-    "career triple doubles": 1,
-    "Career FT Percentage": 84.3,
-    "Career FG Attempted": 20320
+  "LeBron James": {
+    "Career Assists Per Game": 7.4,
+    "career minutes per game": 37.6,
+    "Career FG Percentage": 50.7
   },
-  "John Stockton": {
-    "career triple doubles": 0,
-    "Career FT Percentage": 82.6,
-    "Career FG Attempted": 13658
+  "Mason Plumlee": {
+    "Career Assists Per Game": 2.3,
+    "career minutes per game": 21.6,
+    "Career FG Percentage": 59.6
   }
 }
