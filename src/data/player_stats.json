@@ -1,17 +1,17 @@
 {
-  "Benedict Mathurin": {
-    "Career Assists Per Game": 1.9,
-    "career minutes per game": 28.6,
-    "Career FG Percentage": 44.2
+  "Trae Young": {
+    "Career Blocks": 76,
+    "career double doubles": 259,
+    "Career High Steals": 5
   },
-  "LeBron James": {
-    "Career Assists Per Game": 7.4,
-    "career minutes per game": 37.6,
-    "Career FG Percentage": 50.7
+  "Gilbert Arenas": {
+    "Career Blocks": 134,
+    "career double doubles": 51,
+    "Career High Steals": 8
   },
-  "Mason Plumlee": {
-    "Career Assists Per Game": 2.3,
-    "career minutes per game": 21.6,
-    "Career FG Percentage": 59.6
+  "Rashard Lewis": {
+    "Career Blocks": 541,
+    "career double doubles": 85,
+    "Career High Steals": 7
   }
 }
