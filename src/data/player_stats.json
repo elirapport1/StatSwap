@@ -1,17 +1,17 @@
 {
-  "Deandre Ayton": {
-    "Career High Turnovers": 7,
-    "Career Rebounds Per Game": 10.1,
-    "Career High Rebounds": 23
+  "Scottie Pippen": {
+    "career minutes per game": 34.9,
+    "Career Blocks": 947,
+    "Career 3-PT Percentage": 32.6
   },
-  "Anthony Edwards": {
-    "Career High Turnovers": 8,
-    "Career Rebounds Per Game": 5.2,
-    "Career High Rebounds": 14
+  "Christian Wood": {
+    "career minutes per game": 23.2,
+    "Career Blocks": 295,
+    "Career 3-PT Percentage": 37.2
   },
-  "Malcolm Brogdon": {
-    "Career High Turnovers": 7,
-    "Career Rebounds Per Game": 4.1,
-    "Career High Rebounds": 15
+  "Tyreke Evans": {
+    "career minutes per game": 30.7,
+    "Career Blocks": 222,
+    "Career 3-PT Percentage": 32.3
   }
 }
