@@ -1,17 +1,17 @@
 {
-  "André Drummond": {
-    "Career Minutes": 25450,
-    "Career High Assists": 8,
-    "Career FT Made": 1848
-  },
-  "Christian Braun": {
-    "Career Minutes": 6910,
-    "Career High Assists": 7,
-    "Career FT Made": 389
-  },
   "Keegan Murray": {
-    "Career Minutes": 8373,
-    "Career High Assists": 6,
-    "Career FT Made": 263
+    "Career Blocks": 206,
+    "Career Rebounds": 1430,
+    "Career High Points": 47
+  },
+  "Yao Ming": {
+    "Career Blocks": 920,
+    "Career Rebounds": 4494,
+    "Career High Points": 41
+  },
+  "Danny Green": {
+    "Career Blocks": 634,
+    "Career Rebounds": 2827,
+    "Career High Points": 33
   }
 }
