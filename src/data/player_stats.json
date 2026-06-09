@@ -1,17 +1,17 @@
 {
-  "Fred VanVleet": {
-    "Career Assists": 3121,
-    "Career FG Attempted": 6885,
-    "Career Personal Fouls": 1205
+  "Stephen Curry": {
+    "Career Blocks": 282,
+    "Career High Assists": 16,
+    "career minutes per game": 34
   },
-  "Grant Hill": {
-    "Career Assists": 4252,
-    "Career FG Attempted": 13126,
-    "Career Personal Fouls": 2377
+  "Kevin Porter Jr.": {
+    "Career Blocks": 93,
+    "Career High Assists": 14,
+    "career minutes per game": 28.1
   },
-  "Shawn Kemp": {
-    "Career Assists": 1704,
-    "Career FG Attempted": 11278,
-    "Career Personal Fouls": 3826
+  "Keegan Murray": {
+    "Career Blocks": 206,
+    "Career High Assists": 6,
+    "career minutes per game": 32.7
   }
 }
