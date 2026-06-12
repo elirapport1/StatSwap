@@ -1,17 +1,17 @@
 {
-  "RJ Barrett": {
-    "Career High Points": 46,
-    "Career Assists": 1465,
-    "Career Points": 8391
+  "Jayson Tatum": {
+    "Career Points": 14132,
+    "Career Blocks": 387,
+    "Career Steals Per Game": 1.1
   },
-  "Grayson Allen": {
-    "Career High Points": 42,
-    "Career Assists": 1007,
-    "Career Points": 5091
+  "Caleb Martin": {
+    "Career Points": 2832,
+    "Career Blocks": 147,
+    "Career Steals Per Game": 0.8
   },
-  "Carmelo Anthony": {
-    "Career High Points": 62,
-    "Career Assists": 3422,
-    "Career Points": 28289
+  "Ben Simmons": {
+    "Career Points": 5021,
+    "Career Blocks": 255,
+    "Career Steals Per Game": 1.5
   }
 }
