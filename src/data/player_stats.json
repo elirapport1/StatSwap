@@ -1,17 +1,17 @@
 {
-  "Kevin Durant": {
-    "Career High Points": 55,
-    "Career FT Percentage": 88.2,
-    "Career Assists": 5280
+  "Derrick White": {
+    "Career High Steals": 6,
+    "Career High Points": 41,
+    "Career Defensive Rebounds": 1765
   },
-  "Max Strus": {
-    "Career High Points": 32,
-    "Career FT Percentage": 81.1,
-    "Career Assists": 752
+  "Shawn Marion": {
+    "Career High Steals": 8,
+    "Career High Points": 44,
+    "Career Defensive Rebounds": 7369
   },
-  "Chauncey Billups": {
-    "Career High Points": 39,
-    "Career FT Percentage": 89.4,
-    "Career Assists": 5636
+  "Michael Jordan": {
+    "Career High Steals": 10,
+    "Career High Points": 69,
+    "Career Defensive Rebounds": 5004
   }
 }
