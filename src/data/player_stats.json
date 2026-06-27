@@ -1,17 +1,17 @@
 {
-  "Kevin Love": {
-    "Career High Points": 51,
-    "Career Blocks Per Game": 0.4,
-    "career double doubles": 470
+  "Michael Beasley": {
+    "Career Points Per Game": 12.4,
+    "Career Offensive Rebounds": 664,
+    "Career FT Attempted": 1450
   },
-  "Nikola Jokić": {
-    "Career High Points": 61,
-    "Career Blocks Per Game": 0.7,
-    "career double doubles": 558
+  "Kyle Lowry": {
+    "Career Points Per Game": 13.8,
+    "Career Offensive Rebounds": 892,
+    "Career FT Attempted": 4484
   },
-  "Kevon Looney": {
-    "Career High Points": 18,
-    "Career Blocks Per Game": 0.5,
-    "career double doubles": 23
+  "Stephen Jackson": {
+    "Career Points Per Game": 15.1,
+    "Career Offensive Rebounds": 674,
+    "Career FT Attempted": 3154
   }
 }
