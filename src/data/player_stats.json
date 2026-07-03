@@ -1,17 +1,17 @@
 {
-  "Paul George": {
-    "Career Defensive Rebounds": 5110,
-    "Career Steals": 1601,
-    "Career Rebounds": 5880
+  "Tyler Herro": {
+    "Weight": 205,
+    "Career 3-PT Attempted": 2796,
+    "Career FT Made": 1022
   },
-  "David Robinson": {
-    "Career Defensive Rebounds": 7414,
-    "Career Steals": 1388,
-    "Career Rebounds": 10497
+  "Marcus Morris": {
+    "Weight": 218,
+    "Career 3-PT Attempted": 3447,
+    "Career FT Made": 1369
   },
-  "Karl Anthony Towns": {
-    "Career Defensive Rebounds": 5990,
-    "Career Steals": 588,
-    "Career Rebounds": 8025
+  "Anthony Edwards": {
+    "Weight": 225,
+    "Career 3-PT Attempted": 3557,
+    "Career FT Made": 1936
   }
 }
