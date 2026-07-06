@@ -1,17 +1,17 @@
 {
-  "Tim Duncan": {
-    "Career Points": 26496,
-    "Career High Turnovers": 10,
-    "Career Minutes": 47368
+  "Cole Anthony": {
+    "Career Points Per Game": 12,
+    "Career High Steals": 3,
+    "Weight": 185
   },
-  "Bogdan Bogdanović": {
-    "Career Points": 7344,
-    "Career High Turnovers": 6,
-    "Career Minutes": 14750
+  "Zion Williamson": {
+    "Career Points Per Game": 23.8,
+    "Career High Steals": 6,
+    "Weight": 284
   },
-  "Monta Ellis": {
-    "Career Points": 14858,
-    "Career High Turnovers": 11,
-    "Career Minutes": 29011
+  "D'Angelo Russell": {
+    "Career Points Per Game": 17,
+    "Career High Steals": 7,
+    "Weight": 193
   }
 }
