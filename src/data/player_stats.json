@@ -1,17 +1,17 @@
 {
-  "Michael Jordan": {
-    "Career Turnovers": 2924,
-    "Career Rebounds": 6672,
-    "Career Assists Per Game": 5.3
+  "Tyrese Maxey": {
+    "Career Games Played": 388,
+    "Career Blocks": 162,
+    "Career Steals": 420
   },
-  "Damian Lillard": {
-    "Career Turnovers": 2541,
-    "Career Rebounds": 3845,
-    "Career Assists Per Game": 6.7
+  "Dikembe Mutombo": {
+    "Career Games Played": 1196,
+    "Career Blocks": 3289,
+    "Career Steals": 494
   },
-  "Trey Burke": {
-    "Career Turnovers": 555,
-    "Career Rebounds": 878,
-    "Career Assists Per Game": 3.1
+  "Marcus Morris": {
+    "Career Games Played": 832,
+    "Career Blocks": 238,
+    "Career Steals": 545
   }
 }
